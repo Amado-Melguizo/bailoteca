@@ -1,0 +1,348 @@
+
+{
+  "foundation": {
+    "title": "badge.foundation",
+    "description": "desc.linea.foundation.short",
+    "items": [
+      {
+        "id": "basic-on1",
+        "name": "fig.linea.basic.on1",
+        "video": "",
+        "desc": "desc.linea.basic.on1",
+        "tech": "tech.linea.basic",
+        "err": "err.linea.basic",
+        "tip": "tip.linea.basic"
+      },
+      {
+        "id": "basic-on2",
+        "name": "fig.linea.basic.on2",
+        "video": "",
+        "desc": "desc.linea.basic.on2",
+        "tech": "tech.linea.basic",
+        "err": "err.linea.basic",
+        "tip": "tip.linea.basic"
+      },
+      {
+        "id": "open-break",
+        "name": "fig.linea.openbreak",
+        "video": "",
+        "desc": "desc.linea.openbreak",
+        "tech": "tech.linea.openbreak",
+        "err": "err.linea.openbreak",
+        "tip": "tip.linea.openbreak"
+      },
+      {
+        "id": "spot-turn",
+        "name": "fig.linea.spotturn",
+        "video": "",
+        "desc": "desc.linea.spotturn",
+        "tech": "tech.linea.spotturn",
+        "err": "err.linea.spotturn",
+        "tip": "tip.linea.spotturn"
+      },
+      {
+        "id": "back-spot-turn",
+        "name": "fig.linea.backspotturn",
+        "video": "",
+        "desc": "desc.linea.backspotturn",
+        "tech": "tech.linea.backspotturn",
+        "err": "err.linea.backspotturn",
+        "tip": "tip.linea.backspotturn"
+      }
+    ]
+  },
+  "beginner": {
+    "title": "badge.beginner",
+    "description": "desc.linea.beginner.short",
+    "items": [
+      {
+        "id": "right-turn",
+        "name": "fig.linea.rightturn",
+        "video": "",
+        "desc": "desc.linea.rightturn",
+        "tech": "tech.linea.turns",
+        "err": "err.linea.turns",
+        "tip": "tip.linea.turns"
+      },
+      {
+        "id": "left-turn",
+        "name": "fig.linea.leftturn",
+        "video": "",
+        "desc": "desc.linea.leftturn",
+        "tech": "tech.linea.turns",
+        "err": "err.linea.turns",
+        "tip": "tip.linea.turns"
+      },
+      {
+        "id": "cbl",
+        "name": "fig.linea.cbl",
+        "video": "",
+        "desc": "desc.linea.cbl",
+        "tech": "tech.linea.cbl",
+        "err": "err.linea.cbl",
+        "tip": "tip.linea.cbl"
+      },
+      {
+        "id": "cbl-inside-turn",
+        "name": "fig.linea.cbl.inside",
+        "video": "",
+        "desc": "desc.linea.cbl.inside",
+        "tech": "tech.linea.cbl",
+        "err": "err.linea.cbl",
+        "tip": "tip.linea.cbl"
+      },
+      {
+        "id": "cbl-outside-turn",
+        "name": "fig.linea.cbl.outside",
+        "video": "",
+        "desc": "desc.linea.cbl.outside",
+        "tech": "tech.linea.cbl",
+        "err": "err.linea.cbl",
+        "tip": "tip.linea.cbl"
+      },
+      {
+        "id": "suzyq-basic",
+        "name": "fig.linea.suzyq.basic",
+        "video": "",
+        "desc": "desc.linea.suzyq.basic",
+        "tech": "tech.linea.suzyq",
+        "err": "err.linea.suzyq",
+        "tip": "tip.linea.suzyq"
+      }
+    ]
+  },
+  "improver": {
+    "title": "badge.improver",
+    "description": "desc.linea.improver.short",
+    "items": [
+      {
+        "id": "double-right-turn",
+        "name": "fig.linea.double.right",
+        "video": "",
+        "desc": "desc.linea.double.right",
+        "tech": "tech.linea.doubleturn",
+        "err": "err.linea.doubleturn",
+        "tip": "tip.linea.doubleturn"
+      },
+      {
+        "id": "free-spin",
+        "name": "fig.linea.freespin",
+        "video": "",
+        "desc": "desc.linea.freespin",
+        "tech": "tech.linea.freespin",
+        "err": "err.linea.freespin",
+        "tip": "tip.linea.freespin"
+      },
+      {
+        "id": "hammerlock",
+        "name": "fig.linea.hammerlock",
+        "video": "",
+        "desc": "desc.linea.hammerlock",
+        "tech": "tech.linea.hammerlock",
+        "err": "err.linea.hammerlock",
+        "tip": "tip.linea.hammerlock"
+      },
+      {
+        "id": "copa-basic",
+        "name": "fig.linea.copa.basic",
+        "video": "",
+        "desc": "desc.linea.copa.basic",
+        "tech": "tech.linea.copa",
+        "err": "err.linea.copa",
+        "tip": "tip.linea.copa"
+      },
+      {
+        "id": "titanic",
+        "name": "fig.linea.titanic",
+        "video": "",
+        "desc": "desc.linea.titanic",
+        "tech": "tech.linea.titanic",
+        "err": "err.linea.titanic",
+        "tip": "tip.linea.titanic"
+      },
+      {
+        "id": "reverse-cbl",
+        "name": "fig.linea.reverse.cbl",
+        "video": "",
+        "desc": "desc.linea.reverse.cbl",
+        "tech": "tech.linea.cbl",
+        "err": "err.linea.cbl",
+        "tip": "tip.linea.cbl"
+      },
+      {
+        "id": "wrap-turn",
+        "name": "fig.linea.wrapturn",
+        "video": "",
+        "desc": "desc.linea.wrapturn",
+        "tech": "tech.linea.wrapturn",
+        "err": "err.linea.wrapturn",
+        "tip": "tip.linea.wrapturn"
+      }
+    ]
+  },
+  "intermediate": {
+    "title": "badge.intermediate",
+    "description": "desc.linea.intermediate.short",
+    "items": [
+      {
+        "id": "cbl-360",
+        "name": "fig.linea.cbl360",
+        "video": "",
+        "desc": "desc.linea.cbl360",
+        "tech": "tech.linea.cbl360",
+        "err": "err.linea.cbl360",
+        "tip": "tip.linea.cbl360"
+      },
+      {
+        "id": "double-left-turn",
+        "name": "fig.linea.double.left",
+        "video": "",
+        "desc": "desc.linea.double.left",
+        "tech": "tech.linea.doubleturn",
+        "err": "err.linea.doubleturn",
+        "tip": "tip.linea.doubleturn"
+      },
+      {
+        "id": "check-turn",
+        "name": "fig.linea.checkturn",
+        "video": "",
+        "desc": "desc.linea.checkturn",
+        "tech": "tech.linea.checkturn",
+        "err": "err.linea.checkturn",
+        "tip": "tip.linea.checkturn"
+      },
+      {
+        "id": "free-spins-io",
+        "name": "fig.linea.freespins.io",
+        "video": "",
+        "desc": "desc.linea.freespins.io",
+        "tech": "tech.linea.freespin",
+        "err": "err.linea.freespin",
+        "tip": "tip.linea.freespin"
+      },
+      {
+        "id": "shadow-position",
+        "name": "fig.linea.shadow",
+        "video": "",
+        "desc": "desc.linea.shadow",
+        "tech": "tech.linea.shadow",
+        "err": "err.linea.shadow",
+        "tip": "tip.linea.shadow"
+      },
+      {
+        "id": "hand-toss",
+        "name": "fig.linea.handtoss",
+        "video": "",
+        "desc": "desc.linea.handtoss",
+        "tech": "tech.linea.handtoss",
+        "err": "err.linea.handtoss",
+        "tip": "tip.linea.handtoss"
+      },
+      {
+        "id": "cbl-double-turn",
+        "name": "fig.linea.cbldouble",
+        "video": "",
+        "desc": "desc.linea.cbldouble",
+        "tech": "tech.linea.cbl",
+        "err": "err.linea.cbl",
+        "tip": "tip.linea.cbl"
+      }
+    ]
+  },
+  "advanced": {
+    "title": "badge.advanced",
+    "description": "desc.linea.advanced.short",
+    "items": [
+      {
+        "id": "triple-right-turn",
+        "name": "fig.linea.triple.right",
+        "video": "",
+        "desc": "desc.linea.triple.right",
+        "tech": "tech.linea.spin",
+        "err": "err.linea.spin",
+        "tip": "tip.linea.spin"
+      },
+      {
+        "id": "spin-technique",
+        "name": "fig.linea.spintec",
+        "video": "",
+        "desc": "desc.linea.spintec",
+        "tech": "tech.linea.spin",
+        "err": "err.linea.spin",
+        "tip": "tip.linea.spin"
+      },
+      {
+        "id": "copa-advanced",
+        "name": "fig.linea.copa.adv",
+        "video": "",
+        "desc": "desc.linea.copa.adv",
+        "tech": "tech.linea.copa",
+        "err": "err.linea.copa",
+        "tip": "tip.linea.copa"
+      },
+      {
+        "id": "barrel-turn",
+        "name": "fig.linea.barrel",
+        "video": "",
+        "desc": "desc.linea.barrel",
+        "tech": "tech.linea.barrel",
+        "err": "err.linea.barrel",
+        "tip": "tip.linea.barrel"
+      },
+      {
+        "id": "whip-inside",
+        "name": "fig.linea.whip.inside",
+        "video": "",
+        "desc": "desc.linea.whip.inside",
+        "tech": "tech.linea.whip",
+        "err": "err.linea.whip",
+        "tip": "tip.linea.whip"
+      },
+      {
+        "id": "whip-outside",
+        "name": "fig.linea.whip.outside",
+        "video": "",
+        "desc": "desc.linea.whip.outside",
+        "tech": "tech.linea.whip",
+        "err": "err.linea.whip",
+        "tip": "tip.linea.whip"
+      },
+      {
+        "id": "multiple-wraps",
+        "name": "fig.linea.multiwraps",
+        "video": "",
+        "desc": "desc.linea.multiwraps",
+        "tech": "tech.linea.multiwraps",
+        "err": "err.linea.multiwraps",
+        "tip": "tip.linea.multiwraps"
+      },
+      {
+        "id": "copa-360-wrap-exit",
+        "name": "fig.linea.copa.360wrap",
+        "video": "",
+        "desc": "desc.linea.copa.360wrap",
+        "tech": "tech.linea.copa",
+        "err": "err.linea.copa",
+        "tip": "tip.linea.copa"
+      },
+      {
+        "id": "cbl-3-spins",
+        "name": "fig.linea.cbl.3spins",
+        "video": "",
+        "desc": "desc.linea.cbl.3spins",
+        "tech": "tech.linea.spin",
+        "err": "err.linea.spin",
+        "tip": "tip.linea.spin"
+      },
+      {
+        "id": "pachanga-advanced",
+        "name": "fig.linea.pachanga.adv",
+        "video": "",
+        "desc": "desc.linea.pachanga.adv",
+        "tech": "tech.linea.pachanga",
+        "err": "err.linea.pachanga",
+        "tip": "tip.linea.pachanga"
+      }
+    ]
+  }
+}

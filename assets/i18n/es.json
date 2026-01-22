@@ -1,0 +1,565 @@
+{
+  "nav.home": "Inicio",
+  "nav.salsa": "Salsa",
+  "nav.bachata": "Bachata",
+  "nav.choreos": "Coreografías",
+  "theme.toggle": "Cambiar modo",
+  "lang.es": "Español",
+  "lang.en": "Inglés",
+
+  "title.bachata": "Árbol de Figuras: Bachata",
+  "subtitle.bachata": "Del básico, a intermedio y avanzado, con ejemplos en vídeo.",
+  "footer.bachata": "Aprende a Bailar – Bachata",
+
+  "badge.foundation": "Fundamentos",
+  "badge.beginner": "Principiante",
+  "badge.improver": "Mejorador",
+  "badge.intermediate": "Intermedio",
+  "badge.advanced": "Avanzado",
+
+  "variations.show": "Variaciones",
+  "variations.button": "Ver variaciones",
+  "lbl.technique": "Técnica",
+  "lbl.errors": "Errores comunes",
+  "lbl.tip": "Tip",
+
+  "desc.bachata.foundation.short": "Ritmo, pasos base y coordinación inicial.",
+  "desc.bachata.improver.short": "Conexión y fluidez: dobles giros, sombra y footwork dominicano.",
+  "desc.bachata.beginner.short": "Giros básicos, envolventes y entradas sencillas.",
+  "desc.bachata.intermediate.short": "Movimientos fluidos y body movement.",
+  "desc.bachata.advanced.short": "Musicalidad, control y footwork avanzado.",
+
+
+  "fig.basic.lateral": "Paso básico lateral",
+  "desc.bachata.basic.lateral": "Paso lateral con toque; torso relajado y conexión cómoda.",
+
+  "fig.basic.forwardback": "Paso básico adelante-atrás",
+  "desc.bachata.basic.forwardback": "Adelante‑atrás con toque; cuida eje y transferencia suave del peso.",
+
+  "fig.basic.inplace": "Paso básico en el sitio",
+  "desc.bachata.basic.inplace": "3 pasos + toque en el sitio; ideal para controlar el peso y el ritmo.",
+
+  "fig.basic.box": "Caja (Box step)",
+  "desc.bachata.box": "Patrón en forma de caja; pasos cortos y frame estable.",
+
+  "fig.basic.turnR": "Giro derecha de follower",
+  "fig.basic.turnL": "Giro izquierda de leader",
+  "desc.bachata.turn": "Preparación suave, señal clara y eje estable.",
+
+  "fig.basic.hands": "Cambios de manos / Doble mano",
+  "desc.bachata.hands": "Agarres abierto/cerrado y cambios de mano; base de sombrero y pasadas.",
+
+  "fig.basic.wrap": "Vuelta envolvente simple (Wrap)",
+  "desc.bachata.wrap": "Envolvente (wrap/unwrap) con trayectorias claras y cómodas.",
+
+  "fig.basic.cbl": "Cross body básico",
+  "desc.bachata.cbl": "Entrada/salida frontal tipo cross body; controla orientación y trayectoria.",
+
+  "fig.basic.shines": "Shines básicos",
+  "desc.bachata.shines.basic": "Punta‑talón, V‑step y Suzy Q con acentos suaves.",
+
+  "tech.bachata.basic": "Tap sin golpear; pasos cortos y peso claro.",
+  "err.bachata.basic": "Confundir paso y toque; amplitud excesiva.",
+  "tip.bachata.basic": "Metrónomo 85–95 BPM para consolidar timing.",
+
+  "tech.bachata.turn": "Anticipa el giro desde el centro; mano ligera.",
+  "err.bachata.turn": "Giro sobre planta completa; brazos rígidos.",
+  "tip.bachata.turn": "Spotting hacia un punto fijo.",
+
+  "tech.bachata.lateral": "Conduce con el peso; evita rebote en el toque.",
+  "err.bachata.lateral": "Separar demasiado la pareja; toque fuera de tiempo.",
+  "tip.bachata.lateral": "Mantén centros alineados.",
+
+  "fig.onda": "Onda (Sensual)",
+  "desc.bachata.onda": "Secuencia pecho → abdomen → cadera → rodillas; disociación y control.",
+
+  "fig.ochos": "Ochos",
+  "desc.bachata.ochos": "Figura “∞” de cadera/torso integrada en lateral o en sitio.",
+
+  "fig.inter.doubleturn": "Doble giro de follower",
+  "fig.inter.shadow": "Entrada por sombra",
+  "desc.bachata.shadow": "Entrada a posición sombra; líneas paralelas; salida a wrap o free spin.",
+
+  "fig.inter.syncop": "Footwork sincopado dominicano",
+
+  "tech.bachata.onda": "Respiración y secuencia descendente; amplitud controlada.",
+  "err.bachata.onda": "Solo cadera; no volver a neutro.",
+  "tip.bachata.onda": "Empieza lento y acelera gradualmente.",
+
+  "tech.bachata.ochos": "Traslado + giro de cadera; hombros neutrales.",
+  "err.bachata.ochos": "Perder tiempo por amplitud; hombros arriba.",
+  "tip.bachata.ochos": "Practica frente a pared para control de eje.",
+
+  "fig.footwork": "Footwork avanzado",
+  "desc.bachata.footwork": "Patrones sincopados, control de peso, acentos y cortes.",
+
+  "fig.fusion": "Fusión Sensual/Dominicana",
+  "desc.bachata.fusion": "Integra ondas y giros con patrones dominicanos; transiciones suaves.",
+
+  "fig.adv.multiturn": "Combo de giros múltiples",
+  "fig.adv.dip": "Cambré avanzado (Deep dip seguro)",
+  "desc.bachata.dip": "Cambré seguro con soporte pélvico/espalda y preparación clara.",
+  "fig.adv.isos": "Isolaciones multilínea",
+
+  "tech.bachata.footwork": "Construye bloques de 8 y añade acentos después.",
+  "err.bachata.footwork": "Tap donde debe ir paso; perder el 1 al reconectar.",
+  "tip.bachata.footwork": "Acentúa contratiempos con palmas.",
+
+  "tech.bachata.fusion": "Frame controlado; respira la onda antes del giro.",
+  "err.bachata.fusion": "Mezclar sin lógica musical; olvidar reconectar.",
+  "tip.bachata.fusion": "Define un tema: ondas en A, dominicana en B.",
+
+  "variations.title": "Variaciones",
+  "fig.wrap.turnexit": "Wrap con giro y salida",
+  "desc.wrap.turnexit": "Tras el wrap, añade un inside turn y libera hacia lateral.",
+  "tech.wrap.turnexit": "Guía rotación desde el centro con muñeca relajada.",
+  "err.wrap.turnexit": "Exceso de fuerza al liberar.",
+  "tip.wrap.turnexit": "Mantén trayectoria circular suave.",
+
+  "fig.wrap.shoulder": "Wrap con salida por hombro",
+  "desc.wrap.shoulder": "Salida cómoda por encima del hombro con altura media.",
+  "tech.wrap.shoulder": "Altura correcta y muñeca libre; evita ángulos incómodos.",
+  "err.wrap.shoulder": "Cruces tensos por mala altura.",
+  "tip.wrap.shoulder": "Piensa “altura media, muñeca suelta”.",
+
+  "fig.wave.lateral": "Onda lateral",
+  "desc.wave.lateral": "Onda desplazando el centro hacia un lateral; amplitud controlada.",
+
+  "fig.wave.inverted": "Onda invertida",
+  "desc.wave.inverted": "Secuencia ascendente (cadera → abdomen → pecho); guía suave.",
+
+  "fig.ochos.bothhands": "Ochos con ambas manos",
+  "desc.ochos.bothhands": "Control extra desde ambas manos; cuida no bloquear hombros.",
+
+  "fig.ochos.intowrap": "Ochos hacia wrap",
+  "desc.ochos.intowrap": "Conecta ochos con envolvente; marca la transición en 7‑8.",
+
+  "fig.double.handchange": "Doble giro con cambio de manos",
+  "desc.double.handchange": "Encadena el segundo giro con cambio de manos limpio y altura correcta.",
+
+  "fig.double.sync": "Doble giro sincronizado (pareja)",
+  "desc.double.sync": "Ambos giran coordinados; mantiene el frame elástico y el eje vertical.",
+
+  "fig.adv.tornado360": "Tornado / 360 extendido",
+  "desc.tornado360": "Giro continuo con control de velocidad y salida definida.",
+
+  "fig.adv.counterturn.handchange": "Contra‑giro con cambio de manos",
+  "desc.counterturn.handchange": "Invierte la dirección tras un primer giro; evita tirones de brazo.",
+
+  "fig.adv.combo.shadowwrap360dip": "Sombra → wrap → 360 → dip (combo)",
+  "desc.combo.shadowwrap360dip": "Secuencia enlazada que combina posiciones y dinámicas de pareja.",
+
+  "nav.salsa.cubana": "Salsa Cubana",
+  "nav.salsa.linea": "Salsa en Línea",
+  "title.salsa.cubana": "Árbol de Figuras: Salsa Cubana",
+  "subtitle.salsa.cubana": "Foundation, Beginner, Improver, Intermediate y Advanced con ejemplos en vídeo.",
+  "footer.salsa.cubana": "Aprende a Bailar – Salsa Cubana",
+  "title.salsa.linea": "Árbol de Figuras: Salsa en Línea",
+  "subtitle.salsa.linea": "Estructura On1/On2: de fundamentos a combinaciones avanzadas.",
+  "footer.salsa.linea": "Aprende a Bailar – Salsa en Línea",
+
+  "desc.cubana.foundation.short": "Ritmo, conexión básica y figuras de base del Casino.",
+  "desc.cubana.beginner.short": "Patrones esenciales y primeras variaciones.",
+  "desc.cubana.improver.short": "Encadenamientos y control de trayectorias.",
+  "desc.cubana.intermediate.short": "Nudos de manos, sombreados y transiciones fluidas.",
+  "desc.cubana.advanced.short": "Combinaciones largas, pausas, re-direcciones y musicalidad.",
+  "desc.linea.foundation.short": "Timing On1/On2, postura, conexión y giros en el sitio.",
+  "desc.linea.beginner.short": "CBL y giros básicos con control del eje.",
+  "desc.linea.improver.short": "Doble giro, copa, wraps y cambios de frame.",
+  "desc.linea.intermediate.short": "CBL 360, checks, sombras y control de velocidad.",
+  "desc.linea.advanced.short": "Spins múltiples, whips y combos de show.",
+
+  "fig.cubana.guapea": "Guapea",
+  "desc.cubana.guapea": "Paso de base en Casino con apertura y cierre; mantiene conexión relajada.",
+  "tech.cubana.guapea": "Marca claro 1‑2‑3 / 5‑6‑7, torso estable y pasos cortos.",
+  "err.cubana.guapea": "Abrir demasiado el compás; perder el eje.",
+  "tip.cubana.guapea": "Piensa en 'L' suave con pies; mira al partner.",
+
+  "fig.cubana.basicstep": "Paso básico",
+  "desc.cubana.basicstep": "Patrón base para consolidar peso y ritmo.",
+  "tech.cubana.basic": "Transferencia nítida y pausas controladas.",
+  "err.cubana.basic": "Pasos largos y rebote en las pausas.",
+  "tip.cubana.basic": "Practica con palmadas en 2 y 6.",
+
+  "fig.cubana.dilequeno": "Dile que no",
+  "desc.cubana.dilequeno": "Cambio de lugar para volver a posición abierta con oferta de mano.",
+  "tech.cubana.dilequeno": "Desplaza con el centro; deja camino libre.",
+  "err.cubana.dilequeno": "Bloquear la trayectoria; llegar tarde al 5.",
+  "tip.cubana.dilequeno": "Abre y cambia (1‑2‑3) → sal y ofrece (5‑6‑7).",
+
+  "fig.cubana.dame": "Dame",
+  "desc.cubana.dame": "Intercambio de parejas/posiciones; base para Rueda y social.",
+  "tech.cubana.dame": "Claridad de mano y mirada; pasos cortos hacia el partner.",
+  "err.cubana.dame": "Mano rígida; entrar demasiado tarde.",
+  "tip.cubana.dame": "Prepara la oferta en 3.",
+
+  "fig.cubana.damedos": "Dame dos",
+  "desc.cubana.damedos": "Doble intercambio enlazado manteniendo el frame.",
+
+  "fig.cubana.vacilala": "Vacílala",
+  "desc.cubana.vacilala": "Giro exhibido con presentación y salida al frente.",
+  "tech.cubana.vacilala": "Eleva en 3, guía vertical, ofrece espacio en 5.",
+  "err.cubana.vacilala": "Subir tarde el brazo; cerrar el paso.",
+  "tip.cubana.vacilala": "Arco suave por encima de la cabeza.",
+
+  "fig.cubana.camina": "Camina",
+  "desc.cubana.camina": "Desplazamiento simple para respirar la música y conectar.",
+  "tech.cubana.camina": "Pasos naturales, hombros neutros.",
+  "err.cubana.camina": "Mirar al suelo; rigidez en brazos.",
+  "tip.cubana.camina": "Respira en la frase; mira al partner.",
+
+  "fig.cubana.abrecierra": "Abre y cierra",
+  "desc.cubana.abrecierra": "Apertura lateral y cierre al centro con conexión ligera.",
+  "tech.cubana.abrecierra": "Lleva desde el centro; evita tirar de manos.",
+  "err.cubana.abrecierra": "Exceso de amplitud que rompe el tiempo.",
+  "tip.cubana.abrecierra": "Mantén pies debajo del cuerpo.",
+
+  "fig.cubana.balsero": "Balsero",
+  "desc.cubana.balsero": "Cambio de lugar suave con control de trayectorias.",
+  "tech.cubana.balsero": "Altura de brazos constante y codos cerca.",
+  "err.cubana.balsero": "Cruzar manos sin plan; enredos.",
+  "tip.cubana.balsero": "Piensa 'trayectoria limpia, altura media'.",
+
+  "fig.cubana.enchufla": "Enchufla",
+  "desc.cubana.enchufla": "Giro hacia adentro con cambio de lugar; base del Casino.",
+  "tech.cubana.enchufla": "Prepara en 1; guía en 2‑3; cambia en 5‑6‑7.",
+  "err.cubana.enchufla": "Guiar con brazo; quedarse corto en 5‑6‑7.",
+  "tip.cubana.enchufla": "Giro + cruce de caminos.",
+  "fig.cubana.enchufla.doble": "Enchufla doble",
+  "desc.cubana.enchufla.doble": "Dos enchuflas encadenadas manteniendo el eje.",
+  "fig.cubana.enchufla.convuelta": "Enchufla con vuelta",
+  "desc.cubana.enchufla.convuelta": "Añade inside turn tras el cambio.",
+
+  "fig.cubana.exhibela": "Exhíbela",
+  "desc.cubana.exhibela": "Preparación y giro de exhibición con salida clara.",
+  "tech.cubana.exhibela": "Abre espacio antes de elevar; ofrece mano limpia.",
+  "err.cubana.exhibela": "Elevar tarde; agarre rígido.",
+  "tip.cubana.exhibela": "Ensaya forma del brazo al espejo.",
+
+  "fig.cubana.setenta.basic": "Setenta (básico)",
+  "desc.cubana.setenta.basic": "Versión simple con nudo corto y salida directa.",
+
+  "fig.cubana.abanico": "Abanico",
+  "desc.cubana.abanico": "Despliegue de brazo con giro suave y control de altura.",
+  "tech.cubana.abanico": "Altura media y muñeca libre; sin tirones.",
+  "err.cubana.abanico": "Ángulos incómodos por altura incorrecta.",
+  "tip.cubana.abanico": "Piensa 'semicírculo cómodo'.",
+
+  "fig.cubana.sombrero.basic": "Sombrero (básico)",
+  "desc.cubana.sombrero.basic": "Cruzados por encima con salida a dile que no.",
+
+  "fig.cubana.dilequesi": "Dile que sí",
+  "desc.cubana.dilequesi": "Entrada frontal con presentación y salida al frente.",
+  "tech.cubana.dilequesi": "Marca dirección con torso; pasos cortos.",
+  "err.cubana.dilequesi": "Empujar de manos; perder línea.",
+  "tip.cubana.dilequesi": "Prepara la diagonal en 7‑8.",
+
+  "fig.cubana.cruzao": "Cruzao",
+  "desc.cubana.cruzao": "Cruces fluidos con control de espacio.",
+  "tech.cubana.cruzao": "Mantén codos cerca y trayectorias limpias.",
+  "err.cubana.cruzao": "Enredos por altura; falta de pausa.",
+  "tip.cubana.cruzao": "Respira la pausa antes del cruce.",
+
+  "fig.cubana.paseala": "Páséala",
+  "desc.cubana.paseala": "Paseo guiado con líneas y salidas limpias.",
+  "tech.cubana.paseala": "Guía desde el centro; visualiza la ruta.",
+  "err.cubana.paseala": "Cerrar el paso o bloquear hombros.",
+  "tip.cubana.paseala": "Abre puerta con torso, no con brazos.",
+
+  "fig.cubana.besito": "Besito",
+  "desc.cubana.besito": "Inserta pausa y cercanía manteniendo comodidad.",
+  "tech.cubana.besito": "Pausa clara; contacto cómodo y consensuado.",
+  "err.cubana.besito": "Acercamiento brusco; falta de señal.",
+  "tip.cubana.besito": "Prioriza confort y lectura del partner.",
+
+  "fig.cubana.montana": "Montaña",
+  "desc.cubana.montana": "Cruces por encima creando 'montaña' y salida.",
+  "tech.cubana.montana": "Altura constante y muñeca suelta.",
+  "err.cubana.montana": "Forzar trayectorias; perder timing.",
+  "tip.cubana.montana": "Líneas cortas y limpias.",
+
+  "fig.cubana.laflor": "La flor",
+  "desc.cubana.laflor": "Patrón circular con múltiples cambios de mano.",
+  "tech.cubana.laflor": "Planifica cada cambio 1‑2‑3 / 5‑6‑7.",
+  "err.cubana.laflor": "Soltar tarde; enredos.",
+  "tip.cubana.laflor": "'Primero camino, luego giro'.",
+
+  "fig.cubana.setenta": "Setenta",
+  "desc.cubana.setenta": "Nudos de manos clásicos con entradas y salidas limpias.",
+  "tech.cubana.setenta": "Señala cambio de manos antes del nudo.",
+  "err.cubana.setenta": "Alturas inconsistentes; perder línea.",
+  "tip.cubana.setenta": "Pies cortos, hombros neutrales.",
+
+  "fig.cubana.sombrero": "Sombrero",
+  "desc.cubana.sombrero": "Figura icónica con 'sombrero' y salida.",
+  "fig.cubana.sombrero.complicado": "Sombrero complicado",
+  "desc.cubana.sombrero.complicado": "Versión con nudos y pausas intermedias.",
+  "fig.cubana.sombrero.doble": "Sombrero doble",
+  "desc.cubana.sombrero.doble": "Doble sombrero enlazado con salida limpia.",
+
+  "fig.cubana.setenta.complicado": "Setenta complicado",
+  "desc.cubana.setenta.complicado": "Mayor número de nudos y cambios de mano.",
+  "fig.cubana.setenta.moderno": "Setenta moderno",
+  "desc.cubana.setenta.moderno": "Trayectorias actualizadas con variaciones modernas.",
+
+  "fig.cubana.cocacola": "Coca Cola",
+  "desc.cubana.cocacola": "Entrada con re-dirección y giro controlado.",
+  "tech.cubana.cocacola": "Marca la parada antes de re-entrar.",
+  "err.cubana.cocacola": "Exceso de fuerza al re-dirigir.",
+  "tip.cubana.cocacola": "Usa la pausa para 'dialogar' la siguiente intención.",
+  "fig.cubana.cocacola.doble": "Coca Cola doble",
+  "desc.cubana.cocacola.doble": "Doble redirección encadenada.",
+  "fig.cubana.cocacola.cambiomanos": "Coca Cola con cambio de manos",
+  "desc.cubana.cocacola.cambiomanos": "Añade cambio de manos en la salida.",
+
+  "fig.cubana.enchufla.complicado": "Enchufla complicado",
+  "desc.cubana.enchufla.complicado": "Enlaza con cruces y set‑ups previos.",
+
+  "fig.cubana.vacilala.doble": "Vacílala doble",
+  "desc.cubana.vacilala.doble": "Doble giro con oferta clara y eje vertical.",
+
+  "fig.cubana.copa": "Copa",
+  "desc.cubana.copa": "Parada con copa y re‑orientación controlada.",
+  "tech.cubana.copa": "Pausa nítida; re‑orienta en diagonal suave.",
+  "err.cubana.copa": "Soltar conexión en la pausa; empujar.",
+  "tip.cubana.copa": "Define la intención antes de soltar.",
+  "fig.cubana.copa.doble": "Copa doble",
+  "desc.cubana.copa.doble": "Copa con doble re‑dirección encadenada.",
+
+  "fig.cubana.kentucky": "Kentucky",
+  "desc.cubana.kentucky": "Patrón avanzado con múltiples cruces fluidos.",
+  "tech.cubana.kentucky": "Altura de brazos y pasos compactos.",
+  "err.cubana.kentucky": "Enredos por amplitud; perder el 1.",
+  "tip.cubana.kentucky": "Planifica los cruces antes de ejecutarlos.",
+
+  "fig.cubana.cincuenta": "Cincuenta",
+  "desc.cubana.cincuenta": "Secuencia clásica con cambios rítmicos.",
+
+  "fig.cubana.70_80.mix": "70/80 mix",
+  "desc.cubana.70_80.mix": "Combinación enlazada de setenta y ochenta.",
+
+  "fig.cubana.ochenta": "Ochenta",
+  "desc.cubana.ochenta": "Variación con giro largo y salida.",
+
+  "fig.cubana.tornado": "Tornado",
+  "desc.cubana.tornado": "Giro continuo con control de velocidad y pausas.",
+
+  "fig.cubana.setentaydos": "Setenta y dos",
+  "desc.cubana.setentaydos": "Secuencia extendida de setenta.",
+
+  "fig.cubana.cero": "Cero",
+  "desc.cubana.cero": "Redirección con pausa y retorno controlado.",
+  "fig.cubana.cero.complicado": "Cero complicado",
+  "desc.cubana.cero.complicado": "Versión con cruces y giro extra.",
+
+  "fig.cubana.combo1": "Combo largo 1",
+  "desc.cubana.combo1": "Enchufla → Sombrero → Coca Cola → Dile que no.",
+  "fig.cubana.combo2": "Combo largo 2",
+  "desc.cubana.combo2": "Setenta → Abanico → Copa → Kentucky.",
+
+  "tech.cubana.combo": "Desglosa por bloques de 8 y define las pausas.",
+  "err.cubana.combo": "Encadenar sin respirar; perder conexión.",
+  "tip.cubana.combo": "Ancla cada transición en 7‑8 con mirada.",
+
+  
+
+  "fig.linea.basic.on1": "Paso básico On1",
+  "desc.linea.basic.on1": "Paso base marcando 1‑2‑3 / 5‑6‑7, pausas en 4 y 8.",
+
+  "fig.linea.basic.on2": "Paso básico On2",
+  "desc.linea.basic.on2": "Inicia en el 2; control de pausas, clave y dirección.",
+
+  "tech.linea.basic": "Peso claro, eje vertical y brazos relajados.",
+  "err.linea.basic": "Pisadas largas; perder la pausa.",
+  "tip.linea.basic": "Cuenta en voz alta y usa metrónomo.",
+
+
+  "fig.linea.openbreak": "Ruptura abierta",
+  "desc.linea.openbreak": "Apertura hacia atrás para preparar giros y el CBL.",
+  "tech.linea.openbreak": "Marca leve hacia atrás sin tirar de brazos.",
+  "err.linea.openbreak": "Exceso de amplitud; rigidez de hombros.",
+  "tip.linea.openbreak": "Piensa 'elástico', no rígido.",
+
+
+  "fig.linea.spotturn": "Giro en el sitio",
+  "desc.linea.spotturn": "Giro en el sitio con spotting y preparación clara.",
+  "tech.linea.spotturn": "Pre‑giro en 1/5; mirada fija en un punto.",
+  "err.linea.spotturn": "Girar con planta completa; perder eje.",
+  "tip.linea.spotturn": "Activa el core para iniciar.",
+
+
+  "fig.linea.backspotturn": "Giro hacia atrás",
+  "desc.linea.backspotturn": "Giro hacia atrás manteniendo una línea estable.",
+  "tech.linea.backspotturn": "Paso atrás corto y torso controlado.",
+  "err.linea.backspotturn": "Abrir demasiado la cadera.",
+  "tip.linea.backspotturn": "Mantén hombros neutrales.",
+
+
+  "fig.linea.rightturn": "Giro a la derecha",
+  "desc.linea.rightturn": "Giro a la derecha con guía clara y altura correcta.",
+
+  "fig.linea.leftturn": "Giro a la izquierda",
+  "desc.linea.leftturn": "Giro a la izquierda con control del eje.",
+
+  "tech.linea.turns": "Anticipa con el centro; brazo ligero y alto.",
+  "err.linea.turns": "Brazos rígidos; elevar tarde.",
+  "tip.linea.turns": "Spotting hacia un punto fijo.",
+
+
+  "fig.linea.cbl": "Cross Body Lead (CBL)",
+  "desc.linea.cbl": "Cambio de línea con trayectoria limpia y frame estable.",
+  "tech.linea.cbl": "Abre sendero con torso; marca en diagonal.",
+  "err.linea.cbl": "Cruzar tarde; bloquear la salida.",
+  "tip.linea.cbl": "Piensa 'pista' y 'paso corto'.",
+
+
+  "fig.linea.cbl.inside": "CBL con giro interior",
+  "desc.linea.cbl.inside": "Giro hacia dentro durante el CBL.",
+
+  "fig.linea.cbl.outside": "CBL con giro exterior",
+  "desc.linea.cbl.outside": "Giro hacia fuera sobre el CBL.",
+
+
+  "fig.linea.suzyq.basic": "Suzy Q (básico)",
+  "desc.linea.suzyq.basic": "Footwork básico trenzado.",
+  "tech.linea.suzyq": "Pies paralelos, pasos cortos, torso neutro.",
+  "err.linea.suzyq": "Cruzar demasiado; perder el 1.",
+  "tip.linea.suzyq": "Empieza lento y acelera después.",
+
+
+  "fig.linea.double.right": "Doble giro derecha",
+  "desc.linea.double.right": "Doble giro con preparación clara.",
+  "tech.linea.doubleturn": "Compás corto; impulsa desde el centro.",
+  "err.linea.doubleturn": "Falta de preparación; exceso de brazo.",
+  "tip.linea.doubleturn": "Piensa 'preparar‑girar‑cerrar'.",
+
+
+  "fig.linea.freespin": "Giro libre",
+  "desc.linea.freespin": "Giro sin agarre con control del eje.",
+  "tech.linea.freespin": "Usa mirada/mano para comunicar.",
+  "err.linea.freespin": "Empujar/tirar; perder balance.",
+  "tip.linea.freespin": "Eleva, suelta y recibe.",
+
+
+  "fig.linea.hammerlock": "Enganche atrás (Hammerlock)",
+  "desc.linea.hammerlock": "Agarre detrás de la espalda con salida cómoda.",
+  "tech.linea.hammerlock": "Altura media y muñeca suelta.",
+  "err.linea.hammerlock": "Ángulos incómodos por mala altura.",
+  "tip.linea.hammerlock": "Mantén línea corta y limpia.",
+
+
+  "fig.linea.copa.basic": "Copa (básica)",
+  "desc.linea.copa.basic": "Parada con copa y reorientación.",
+  "tech.linea.copa": "Pausa nítida y re‑dirección suave.",
+  "err.linea.copa": "Forzar retorno; perder conexión.",
+  "tip.linea.copa": "Usa la pausa para comunicar.",
+
+
+  "fig.linea.titanic": "Titanic",
+  "desc.linea.titanic": "Posición abierta estilo 'crucifix' con salida suave.",
+  "tech.linea.titanic": "Controla la altura de brazos.",
+  "err.linea.titanic": "Rigidez excesiva.",
+  "tip.linea.titanic": "Mantén codos suaves.",
+
+
+  "fig.linea.reverse.cbl": "CBL invertido",
+  "desc.linea.reverse.cbl": "Cambio de línea invertido con guía del torso.",
+
+
+  "fig.linea.wrapturn": "Vuelta envolvente",
+  "desc.linea.wrapturn": "Envolvente con salida controlada.",
+  "tech.linea.wrapturn": "Trayectoria circular y altura media.",
+  "err.linea.wrapturn": "Cerrar demasiado el círculo.",
+  "tip.linea.wrapturn": "Dibuja un círculo cómodo.",
+
+
+  "fig.linea.cbl360": "CBL 360°",
+  "desc.linea.cbl360": "Entrada/salida del CBL con giro completo.",
+  "tech.linea.cbl360": "Mantén eje y timing.",
+  "err.linea.cbl360": "Perder centro; salir tarde.",
+  "tip.linea.cbl360": "Piensa 'giro, trazo, salida'.",
+
+
+  "fig.linea.double.left": "Doble giro izquierda",
+  "desc.linea.double.left": "Doble giro controlado hacia la izquierda.",
+
+
+  "fig.linea.checkturn": "Giro con parada (Check turn)",
+  "desc.linea.checkturn": "Chequeo con re‑dirección.",
+  "tech.linea.checkturn": "Marca el check antes de impulsar.",
+  "err.linea.checkturn": "Lanzar sin chequear.",
+  "tip.linea.checkturn": "Check corto y elástico.",
+
+
+  "fig.linea.freespins.io": "Giros Inside/Outside",
+  "desc.linea.freespins.io": "Secuencia de giros libres dentro/fuera.",
+
+
+  "fig.linea.shadow": "Posición sombra",
+  "desc.linea.shadow": "Posición paralela con desplazamiento lateral.",
+  "tech.linea.shadow": "Mantén paralelismo y elasticidad.",
+  "err.linea.shadow": "Hombros arriba; cerrar salida.",
+  "tip.linea.shadow": "Deja espacio para respirar.",
+
+
+  "fig.linea.handtoss": "Lanzamiento de mano",
+  "desc.linea.handtoss": "Lanzamiento suave de mano con recepción limpia.",
+  "tech.linea.handtoss": "Altura media; trayectoria definida.",
+  "err.linea.handtoss": "Tirar fuerte; perder timing.",
+  "tip.linea.handtoss": "Piensa 'soltar', no 'lanzar'.",
+
+
+  "fig.linea.cbldouble": "CBL + doble giro",
+  "desc.linea.cbldouble": "CBL enlazado con doble giro fluido.",
+
+
+  "fig.linea.triple.right": "Triple giro derecha",
+  "desc.linea.triple.right": "Triple giro con control y buen spotting.",
+
+  "fig.linea.spintec": "Técnica de spin",
+  "desc.linea.spintec": "Preparación, carga y cierre de spin.",
+  "tech.linea.spin": "Carga constante, spotting, cierre firme.",
+  "err.linea.spin": "Cargar con brazos; perder mirada.",
+  "tip.linea.spin": "Divide: preparación, giro, cierre.",
+
+
+  "fig.linea.copa.adv": "Copa avanzada",
+  "desc.linea.copa.adv": "Copa con pausa, giro y re‑dirección.",
+
+
+  "fig.linea.barrel": "Giro barril",
+  "desc.linea.barrel": "Giro estilo barril con cambios de nivel.",
+  "tech.linea.barrel": "Centro bajo; trayectorias paralelas.",
+  "err.linea.barrel": "Subir/bajar bruscamente; mareo.",
+  "tip.linea.barrel": "Aumenta el nivel gradualmente.",
+
+
+  "fig.linea.whip.inside": "Whip interior",
+  "desc.linea.whip.inside": "Latigazo hacia dentro con salida fluida.",
+
+  "fig.linea.whip.outside": "Whip exterior",
+  "desc.linea.whip.outside": "Latigazo hacia fuera con control.",
+
+  "tech.linea.whip": "Check claro y recuperación elástica.",
+  "err.linea.whip": "Tirar fuerte; perder centro.",
+  "tip.linea.whip": "Piensa en un resorte controlado.",
+
+
+  "fig.linea.multiwraps": "Envolventes múltiples",
+  "desc.linea.multiwraps": "Cadena de envolventes con salidas limpias.",
+  "tech.linea.multiwraps": "Altura constante y muñeca suelta.",
+  "err.linea.multiwraps": "Ángulos incómodos; enredos.",
+  "tip.linea.multiwraps": "Trazo circular uniforme.",
+
+
+  "fig.linea.copa.360wrap": "Copa → 360 → salida envolvente",
+  "desc.linea.copa.360wrap": "Copa, giro completo y salida envolvente.",
+
+
+  "fig.linea.cbl.3spins": "CBL + triple giro",
+  "desc.linea.cbl.3spins": "CBL enlazado con tres giros controlados.",
+
+
+  "fig.linea.pachanga.adv": "Pachanga avanzada",
+  "desc.linea.pachanga.adv": "Patrón de pachanga con rebotes y desplazamientos."
+}
