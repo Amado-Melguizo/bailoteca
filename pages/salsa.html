@@ -1,0 +1,911 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Salsa – Árbol de Figuras</title>
+
+    <!-- CSS de terceros -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+    <!-- CSS propios -->
+    <link href="../assets/css/common.css" rel="stylesheet" />
+    <link href="../assets/css/salsa.css" rel="stylesheet" />
+  </head>
+  <body class="salsa-page">
+    <!-- Navbar -->
+    <nav
+      class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm"
+    >
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="../index.html"
+          >Aprende a Bailar</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#nav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="nav" class="collapse navbar-collapse">
+          <!-- Dentro del <nav> ... -->
+          <ul class="navbar-nav ms-auto align-items-lg-center">
+            <li class="nav-item">
+              <a class="nav-link" data-i18n="nav.home" href="../index.html"
+                >Inicio</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-i18n="nav.salsa" href="./salsa.html"
+                >Salsa</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-i18n="nav.bachata" href="./bachata.html"
+                >Bachata</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-i18n="nav.choreos" href="#coreografias"
+                >Coreografías</a
+              >
+            </li>
+
+            <!-- 🔧 Toolbar: modo & idioma -->
+            <li class="nav-item ms-lg-3">
+              <div class="toolbar d-flex align-items-center gap-2">
+                <!-- Botón tema -->
+                <button
+                  id="themeToggle"
+                  class="btn btn-outline-light btn-sm icon-btn"
+                  type="button"
+                  aria-label="Cambiar modo"
+                  data-i18n-attr="aria-label:theme.toggle"
+                  title="Modo oscuro/claro"
+                >
+                  <span class="theme-icon" aria-hidden="true">🌙</span>
+                </button>
+
+                <!-- Idioma: ES -->
+                <button
+                  class="btn btn-outline-light btn-sm icon-btn langToggle"
+                  type="button"
+                  data-lang="es"
+                  aria-label="Español"
+                  data-i18n-attr="aria-label:lang.es"
+                  title="Español"
+                >
+                  🇪🇸
+                </button>
+
+                <!-- Idioma: EN -->
+                <button
+                  class="btn btn-outline-light btn-sm icon-btn langToggle"
+                  type="button"
+                  data-lang="en"
+                  aria-label="English"
+                  data-i18n-attr="aria-label:lang.en"
+                  title="English"
+                >
+                  🇬🇧
+                </button>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="py-5 bg-gradient-header text-white">
+      <div class="container text-center">
+        <h1 class="fw-bold mb-2 animate__animated animate__fadeInDown">
+          Árbol de Figuras: Salsa
+        </h1>
+        <p class="lead animate__animated animate__fadeInUp">
+          Empieza por lo básico y desbloquea variaciones y combinaciones más
+          complejas.
+        </p>
+      </div>
+    </header>
+
+    <!-- Árbol -->
+    <section class="py-5">
+      <div class="container">
+        <!-- Leyenda -->
+        <div
+          class="d-flex justify-content-center gap-3 mb-4"
+          data-aos="fade-up"
+        >
+          <span class="badge rounded-pill text-bg-success">Básico</span>
+          <span class="badge rounded-pill text-bg-primary">Intermedio</span>
+          <span class="badge rounded-pill text-bg-danger">Avanzado</span>
+        </div>
+
+        <!-- Wrapper del árbol -->
+        <div class="tree-wrapper" data-aos="fade-up" data-aos-delay="50">
+          <div class="tree">
+            <!-- Nivel Básico -->
+            <div class="tree-level">
+              <div
+                class="tree-node card border-0 shadow-sm hover-lift"
+                data-level="basic"
+              >
+                <div class="card-body">
+                  <h5 class="card-title mb-2">Básico</h5>
+                  <p class="text-muted small mb-3">Fundamentos y conexión</p>
+
+                  <div class="d-flex flex-wrap gap-2">
+                    <button
+                      class="btn btn-outline-success btn-sm"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#paso-basico"
+                    >
+                      Paso básico
+                    </button>
+                    <button
+                      class="btn btn-outline-success btn-sm"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#dile-que-no"
+                    >
+                      Dile que no
+                    </button>
+                    <button
+                      class="btn btn-outline-success btn-sm"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#enchufla"
+                    >
+                      Enchufla
+                    </button>
+                  </div>
+
+                  <!-- Paso básico -->
+                  <div class="collapse mt-3" id="paso-basico">
+                    <div class="variation-head">
+                      <h6 class="mb-1">Paso básico</h6>
+                      <div class="variation-meta">
+                        <span class="badge rounded-pill text-bg-secondary"
+                          >Conteo: 1-2-3 / 5-6-7</span
+                        >
+                        <span class="badge rounded-pill text-bg-light"
+                          >Dificultad: Básico</span
+                        >
+                      </div>
+                    </div>
+
+                    <p class="variation-desc mt-2 mb-2">
+                      Patrón fundamental en dos frases de 4 tiempos (pausas en 4
+                      y 8). Clave para estabilidad y conexión.
+                    </p>
+
+                    <div class="variation-grid">
+                      <div
+                        class="ratio ratio-16x9 video-preview"
+                        data-video-id="3tUcawE0Bhs"
+                      >
+                        <img
+                          class="video-thumb"
+                          src="https://img.youtube.com/vi/3tUcawE0Bhs/hqdefault.jpg"
+                          alt="Previsualización: Paso básico de salsa"
+                        />
+                        <button
+                          class="video-play"
+                          aria-label="Reproducir vídeo"
+                        >
+                          ▶
+                        </button>
+                      </div>
+                      <div class="variation-notes">
+                        <div class="small text-muted fw-semibold mb-1">
+                          Técnica
+                        </div>
+                        <ul class="small mb-2">
+                          <li>
+                            Marca peso claro en cada paso; controla la pausa.
+                          </li>
+                          <li>
+                            Mantén el torso relajado y la conexión ligera.
+                          </li>
+                        </ul>
+                        <div class="small text-muted fw-semibold mb-1">
+                          Errores comunes
+                        </div>
+                        <ul class="small mb-2">
+                          <li>Exagerar la cadera antes de dominar el peso.</li>
+                          <li>Pisadas largas que rompen el timing.</li>
+                        </ul>
+                        <div class="alert alert-success py-2 px-3 mb-0 small">
+                          <strong>Tip:</strong> Conteo en voz alta (1‑2‑3‑pausa
+                          / 5‑6‑7‑pausa).
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Dile que no -->
+                  <div class="collapse mt-3" id="dile-que-no">
+                    <div class="variation-head">
+                      <h6 class="mb-1">Dile que no</h6>
+                      <div class="variation-meta">
+                        <span class="badge rounded-pill text-bg-secondary"
+                          >Conteo: 1-2-3 / 5-6-7</span
+                        >
+                        <span class="badge rounded-pill text-bg-light"
+                          >Dificultad: Básico</span
+                        >
+                      </div>
+                    </div>
+
+                    <p class="variation-desc mt-2 mb-2">
+                      Cambio de lugar clásico para volver a posición abierta
+                      tras una figura. Señal clara y desplazamiento fluido.
+                    </p>
+
+                    <div class="variation-grid">
+                      <div
+                        class="ratio ratio-16x9 video-preview"
+                        data-video-id="uYlHKwaAMns"
+                      >
+                        <img
+                          class="video-thumb"
+                          src="https://img.youtube.com/vi/uYlHKwaAMns/hqdefault.jpg"
+                          alt="Previsualización: Dile que no"
+                        />
+                        <button
+                          class="video-play"
+                          aria-label="Reproducir vídeo"
+                        >
+                          ▶
+                        </button>
+                      </div>
+                      <div class="variation-notes">
+                        <div class="small text-muted fw-semibold mb-1">
+                          Técnica
+                        </div>
+                        <ul class="small mb-2">
+                          <li>
+                            Indica el desplazamiento desde el centro, no con los
+                            brazos.
+                          </li>
+                          <li>Usa pasos cortos y objetivos en 5‑6‑7.</li>
+                        </ul>
+                        <div class="small text-muted fw-semibold mb-1">
+                          Errores comunes
+                        </div>
+                        <ul class="small mb-2">
+                          <li>Bloquear el camino del/la seguidor(a).</li>
+                          <li>Perder el timing en la salida.</li>
+                        </ul>
+                        <div class="alert alert-success py-2 px-3 mb-0 small">
+                          <strong>Tip:</strong> “Abre y cambia” (1‑2‑3) → “sal y
+                          ofrece” (5‑6‑7).
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Enchufla (con sus variaciones debajo) -->
+                  <div class="collapse mt-3" id="enchufla">
+                    <div class="variation-head">
+                      <h6 class="mb-1">Enchufla</h6>
+                      <div class="variation-meta">
+                        <span class="badge rounded-pill text-bg-secondary"
+                          >Conteo: 1-2-3 / 5-6-7</span
+                        >
+                        <span class="badge rounded-pill text-bg-light"
+                          >Dificultad: Básico</span
+                        >
+                      </div>
+                    </div>
+
+                    <p class="variation-desc mt-2 mb-2">
+                      Giro hacia adentro con cambio de lugar. Base de muchas
+                      combinaciones.
+                    </p>
+
+                    <div class="variation-grid mb-3">
+                      <div
+                        class="ratio ratio-16x9 video-preview"
+                        data-video-id="3tUcawE0Bhs"
+                      >
+                        <img
+                          class="video-thumb"
+                          src="https://img.youtube.com/vi/3tUcawE0Bhs/hqdefault.jpg"
+                          alt="Previsualización: Enchufla"
+                        />
+                        <button
+                          class="video-play"
+                          aria-label="Reproducir vídeo"
+                        >
+                          ▶
+                        </button>
+                      </div>
+                      <div class="variation-notes">
+                        <div class="small text-muted fw-semibold mb-1">
+                          Técnica
+                        </div>
+                        <ul class="small mb-2">
+                          <li>
+                            Prepara en 1; guía entrada en 2‑3 y cambio en 5‑6‑7.
+                          </li>
+                          <li>Conexión ligera, sin sobrecarga de agarre.</li>
+                        </ul>
+                        <div class="small text-muted fw-semibold mb-1">
+                          Errores comunes
+                        </div>
+                        <ul class="small mb-2">
+                          <li>Guiar desde el brazo en vez del cuerpo.</li>
+                          <li>Quedarse corto en 5‑6‑7.</li>
+                        </ul>
+                        <div class="alert alert-success py-2 px-3 mb-0 small">
+                          <strong>Tip:</strong> “Giro + cruce de caminos”.
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Variaciones -->
+                    <div class="d-flex flex-wrap gap-2 align-items-center mb-2">
+                      <span class="badge text-bg-light">Variaciones:</span>
+                      <button
+                        class="btn btn-outline-secondary btn-sm"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#enchufla-variaciones"
+                      >
+                        Ver variaciones
+                      </button>
+                    </div>
+
+                    <div class="collapse" id="enchufla-variaciones">
+                      <ul class="list-group list-group-flush variation-list">
+                        <!-- Enchufla doble -->
+                        <li class="list-group-item variation-item">
+                          <div class="variation-head">
+                            <h6 class="mb-1">Enchufla doble</h6>
+                            <div class="variation-meta">
+                              <span class="badge rounded-pill text-bg-secondary"
+                                >Conteo: 1-2-3 / 5-6-7</span
+                              >
+                              <span class="badge rounded-pill text-bg-light"
+                                >Dificultad: Intermedio</span
+                              >
+                            </div>
+                          </div>
+                          <p class="variation-desc mt-2 mb-2">
+                            Encadena dos enchuflas manteniendo frame y conexión.
+                            Evita “tirar” del brazo.
+                          </p>
+
+                          <div class="variation-grid">
+                            <div
+                              class="ratio ratio-16x9 video-preview"
+                              data-video-id="6OxXNbCZmpA"
+                            >
+                              <img
+                                class="video-thumb"
+                                src="https://img.youtube.com/vi/6OxXNbCZmpA/hqdefault.jpg"
+                                alt="Previsualización: Enchufla doble"
+                              />
+                              <button
+                                class="video-play"
+                                aria-label="Reproducir vídeo"
+                              >
+                                ▶
+                              </button>
+                            </div>
+                            <div class="variation-notes">
+                              <div class="small text-muted fw-semibold mb-1">
+                                Técnica
+                              </div>
+                              <ul class="small mb-2">
+                                <li>
+                                  Prepara el segundo giro ya en
+                                  <strong>3</strong>.
+                                </li>
+                                <li>Cambios de mano sin perder vertical.</li>
+                              </ul>
+                              <div class="small text-muted fw-semibold mb-1">
+                                Errores comunes
+                              </div>
+                              <ul class="small mb-2">
+                                <li>Compensar con brazos.</li>
+                                <li>Acortar 5–6–7 y perder línea.</li>
+                              </ul>
+                              <div
+                                class="alert alert-success py-2 px-3 mb-0 small"
+                              >
+                                <strong>Tip:</strong> “Giro + traslado”.
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+
+                        <!-- Enchufla con vuelta -->
+                        <li class="list-group-item variation-item">
+                          <div class="variation-head">
+                            <h6 class="mb-1">Enchufla con vuelta</h6>
+                            <div class="variation-meta">
+                              <span class="badge rounded-pill text-bg-secondary"
+                                >Conteo: 1-2-3 / 5-6-7</span
+                              >
+                              <span class="badge rounded-pill text-bg-light"
+                                >Dificultad: Intermedio</span
+                              >
+                            </div>
+                          </div>
+                          <p class="variation-desc mt-2 mb-2">
+                            Tras el enchufla añade un
+                            <em>inside turn</em> controlado.
+                          </p>
+
+                          <div class="variation-grid">
+                            <div
+                              class="ratio ratio-16x9 video-preview"
+                              data-video-id="3tUcawE0Bhs"
+                            >
+                              <img
+                                class="video-thumb"
+                                src="https://img.youtube.com/vi/3tUcawE0Bhs/hqdefault.jpg"
+                                alt="Previsualización: Enchufla base"
+                              />
+                              <button
+                                class="video-play"
+                                aria-label="Reproducir vídeo"
+                              >
+                                ▶
+                              </button>
+                            </div>
+                            <div class="variation-notes">
+                              <div class="small text-muted fw-semibold mb-1">
+                                Técnica
+                              </div>
+                              <ul class="small mb-2">
+                                <li>
+                                  Eleva la mano en <strong>3</strong> para
+                                  preparar el giro.
+                                </li>
+                                <li>Guía el eje vertical sin empujar.</li>
+                              </ul>
+                              <div class="small text-muted fw-semibold mb-1">
+                                Errores comunes
+                              </div>
+                              <ul class="small mb-2">
+                                <li>Subir tarde la mano.</li>
+                                <li>No dejar espacio en el cambio de lugar.</li>
+                              </ul>
+                              <div
+                                class="alert alert-primary py-2 px-3 mb-0 small"
+                              >
+                                <strong>Tip:</strong> Traza un “arco suave”.
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Conector -->
+            <div class="tree-connector"></div>
+
+            <!-- Nivel Intermedio -->
+            <div class="tree-level">
+              <div
+                class="tree-node card border-0 shadow-sm hover-lift"
+                data-level="intermediate"
+              >
+                <div class="card-body">
+                  <h5 class="card-title mb-2">Intermedio</h5>
+                  <p class="text-muted small mb-3">Combinaciones fluídas</p>
+
+                  <div class="d-flex flex-wrap gap-2">
+                    <button
+                      class="btn btn-outline-primary btn-sm"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#setenta"
+                    >
+                      Setenta
+                    </button>
+                    <button
+                      class="btn btn-outline-primary btn-sm"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#exhibela"
+                    >
+                      Exhibela
+                    </button>
+                  </div>
+
+                  <div class="collapse mt-3" id="setenta">
+                    <div class="variation-head">
+                      <h6 class="mb-1">Setenta</h6>
+                      <div class="variation-meta">
+                        <span class="badge rounded-pill text-bg-secondary"
+                          >Conteo: frase completa</span
+                        >
+                        <span class="badge rounded-pill text-bg-primary"
+                          >Dificultad: Intermedio</span
+                        >
+                      </div>
+                    </div>
+
+                    <p class="variation-desc mt-2 mb-2">
+                      Nudos de manos y cambios de posición. Controla trayectoria
+                      y altura de brazos.
+                    </p>
+
+                    <div class="variation-grid">
+                      <div
+                        class="ratio ratio-16x9 video-preview"
+                        data-video-id="_B55w-0o0qw"
+                      >
+                        <img
+                          class="video-thumb"
+                          src="https://img.youtube.com/vi/_B55w-0o0qw/hqdefault.jpg"
+                          alt="Previsualización: Setenta"
+                        />
+                        <button
+                          class="video-play"
+                          aria-label="Reproducir vídeo"
+                        >
+                          ▶
+                        </button>
+                      </div>
+                      <div class="variation-notes">
+                        <div class="small text-muted fw-semibold mb-1">
+                          Técnica
+                        </div>
+                        <ul class="small mb-2">
+                          <li>Señala el cambio de manos antes del nudo.</li>
+                          <li>Pasos cortos para no “tirar” de brazos.</li>
+                        </ul>
+                        <div class="small text-muted fw-semibold mb-1">
+                          Errores comunes
+                        </div>
+                        <ul class="small mb-2">
+                          <li>Alturas de brazo inconsistentes.</li>
+                          <li>Perder la línea al cambiar de lado.</li>
+                        </ul>
+                        <div class="alert alert-primary py-2 px-3 mb-0 small">
+                          <strong>Tip:</strong> “Primero camino, luego giro”.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="collapse mt-3" id="exhibela">
+                    <div class="variation-head">
+                      <h6 class="mb-1">Exhibela</h6>
+                      <div class="variation-meta">
+                        <span class="badge rounded-pill text-bg-secondary"
+                          >Conteo: 1-2-3 / 5-6-7</span
+                        >
+                        <span class="badge rounded-pill text-bg-primary"
+                          >Dificultad: Intermedio</span
+                        >
+                      </div>
+                    </div>
+
+                    <p class="variation-desc mt-2 mb-2">
+                      Giro de “exhibición” con preparación; trabaja postura, eje
+                      y presentación.
+                    </p>
+
+                    <div class="variation-grid">
+                      <div
+                        class="ratio ratio-16x9 video-preview"
+                        data-video-id="4nz6DzE7ZoU"
+                      >
+                        <img
+                          class="video-thumb"
+                          src="https://img.youtube.com/vi/4nz6DzE7ZoU/hqdefault.jpg"
+                          alt="Previsualización: Exhibela"
+                        />
+                        <button
+                          class="video-play"
+                          aria-label="Reproducir vídeo"
+                        >
+                          ▶
+                        </button>
+                      </div>
+                      <div class="variation-notes">
+                        <div class="small text-muted fw-semibold mb-1">
+                          Técnica
+                        </div>
+                        <ul class="small mb-2">
+                          <li>Abre espacio con torso antes del giro.</li>
+                          <li>“Oferta de mano” clara para enlazar salida.</li>
+                        </ul>
+                        <div class="small text-muted fw-semibold mb-1">
+                          Errores comunes
+                        </div>
+                        <ul class="small mb-2">
+                          <li>Elevar brazo tarde.</li>
+                          <li>Agarre rígido que frena.</li>
+                        </ul>
+                        <div class="alert alert-primary py-2 px-3 mb-0 small">
+                          <strong>Tip:</strong> Ensaya la forma del brazo frente
+                          al espejo.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Conector -->
+            <div class="tree-connector"></div>
+
+            <!-- Nivel Avanzado -->
+            <div class="tree-level">
+              <div
+                class="tree-node card border-0 shadow-sm hover-lift"
+                data-level="advanced"
+              >
+                <div class="card-body">
+                  <h5 class="card-title mb-2">Avanzado</h5>
+                  <p class="text-muted small mb-3">
+                    Cambios de frame, timings, musicalidad
+                  </p>
+
+                  <div class="d-flex flex-wrap gap-2">
+                    <button
+                      class="btn btn-outline-danger btn-sm"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#sombrero"
+                    >
+                      Sombrero
+                    </button>
+                    <button
+                      class="btn btn-outline-danger btn-sm"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#copa-doble"
+                    >
+                      Copa doble
+                    </button>
+                  </div>
+
+                  <div class="collapse mt-3" id="sombrero">
+                    <div class="variation-head">
+                      <h6 class="mb-1">Sombrero</h6>
+                      <div class="variation-meta">
+                        <span class="badge rounded-pill text-bg-secondary"
+                          >Conteo: frase completa</span
+                        >
+                        <span class="badge rounded-pill text-bg-danger"
+                          >Dificultad: Avanzado</span
+                        >
+                      </div>
+                    </div>
+
+                    <p class="variation-desc mt-2 mb-2">
+                      Figura icónica con “sombrero” final y salida a dile que
+                      no. Precisión en cambios de manos.
+                    </p>
+
+                    <div class="variation-grid">
+                      <div
+                        class="ratio ratio-16x9 video-preview"
+                        data-video-id="9NcluDteiXg"
+                      >
+                        <img
+                          class="video-thumb"
+                          src="https://img.youtube.com/vi/9NcluDteiXg/hqdefault.jpg"
+                          alt="Previsualización: Sombrero"
+                        />
+                        <button
+                          class="video-play"
+                          aria-label="Reproducir vídeo"
+                        >
+                          ▶
+                        </button>
+                      </div>
+                      <div class="variation-notes">
+                        <div class="small text-muted fw-semibold mb-1">
+                          Técnica
+                        </div>
+                        <ul class="small mb-2">
+                          <li>Altura de brazos constante en el “sombrero”.</li>
+                          <li>Pasos cortos y limpios en los cruces.</li>
+                        </ul>
+                        <div class="small text-muted fw-semibold mb-1">
+                          Errores comunes
+                        </div>
+                        <ul class="small mb-2">
+                          <li>Enredos por no soltar a tiempo.</li>
+                          <li>Subir demasiado los brazos (incomodidad).</li>
+                        </ul>
+                        <div class="alert alert-danger py-2 px-3 mb-0 small">
+                          <strong>Tip:</strong> Practica manos y trayectorias
+                          sin música.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="collapse mt-3" id="copa-doble">
+                    <div class="variation-head">
+                      <h6 class="mb-1">Copa doble</h6>
+                      <div class="variation-meta">
+                        <span class="badge rounded-pill text-bg-secondary"
+                          >Conteo: 1-2-3 / 5-6-7</span
+                        >
+                        <span class="badge rounded-pill text-bg-danger"
+                          >Dificultad: Avanzado</span
+                        >
+                      </div>
+                    </div>
+
+                    <p class="variation-desc mt-2 mb-2">
+                      Variación encadenada de copa con pausa y re-dirección.
+                      Control de inercia y señal.
+                    </p>
+
+                    <div class="variation-grid">
+                      <div
+                        class="ratio ratio-16x9 video-preview"
+                        data-video-id="op21_axumWQ"
+                      >
+                        <img
+                          class="video-thumb"
+                          src="https://img.youtube.com/vi/op21_axumWQ/hqdefault.jpg"
+                          alt="Previsualización: Copa (base)"
+                        />
+                        <button
+                          class="video-play"
+                          aria-label="Reproducir vídeo"
+                        >
+                          ▶
+                        </button>
+                      </div>
+                      <div class="variation-notes">
+                        <div class="small text-muted fw-semibold mb-1">
+                          Técnica
+                        </div>
+                        <ul class="small mb-2">
+                          <li>Marca “parada” nítida en la primera copa.</li>
+                          <li>Re-orienta en diagonal suave.</li>
+                        </ul>
+                        <div class="small text-muted fw-semibold mb-1">
+                          Errores comunes
+                        </div>
+                        <ul class="small mb-2">
+                          <li>Soltar la conexión en la pausa.</li>
+                          <li>Exceso de fuerza en la reentrada.</li>
+                        </ul>
+                        <div class="alert alert-danger py-2 px-3 mb-0 small">
+                          <strong>Tip:</strong> Usa la pausa para “dialogar” la
+                          siguiente intención.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /tree -->
+        </div>
+        <!-- /tree-wrapper -->
+      </div>
+    </section>
+
+    <!-- Coreografías -->
+    <section id="coreografias" class="py-5 bg-light-subtle">
+      <div class="container">
+        <div class="text-center mb-4" data-aos="fade-up">
+          <h2 class="fw-bold">Coreografías (muestras)</h2>
+          <p class="text-muted">
+            Secuencias donde verás varias figuras encadenadas.
+          </p>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-4" data-aos="zoom-in">
+            <div class="card border-0 shadow-sm h-100">
+              <div
+                class="ratio ratio-16x9 video-preview"
+                data-video-id="4nz6DzE7ZoU"
+              >
+                <img
+                  class="video-thumb"
+                  src="https://img.youtube.com/vi/4nz6DzE7ZoU/hqdefault.jpg"
+                  alt="Coreografía: de básico a intermedio"
+                />
+                <button class="video-play" aria-label="Reproducir vídeo">
+                  ▶
+                </button>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">De básico a intermedio</h5>
+                <p class="card-text small mb-0">Enchufla, exhibela y más.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4" data-aos="zoom-in" data-aos-delay="100">
+            <div class="card border-0 shadow-sm h-100">
+              <div
+                class="ratio ratio-16x9 video-preview"
+                data-video-id="w4tDX98Mt2k"
+              >
+                <img
+                  class="video-thumb"
+                  src="https://img.youtube.com/vi/w4tDX98Mt2k/hqdefault.jpg"
+                  alt="Coreografía: Sombrero+Cero+Cruzado"
+                />
+                <button class="video-play" aria-label="Reproducir vídeo">
+                  ▶
+                </button>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Sombrero + Cero + Cruzado</h5>
+                <p class="card-text small mb-0">
+                  Combinación fluida y didáctica.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
+            <div class="card border-0 shadow-sm h-100">
+              <div
+                class="ratio ratio-16x9 video-preview"
+                data-video-id="zUXyJP81PjI"
+              >
+                <img
+                  class="video-thumb"
+                  src="https://img.youtube.com/vi/zUXyJP81PjI/hqdefault.jpg"
+                  alt="Coreografía: setenta combinaciones"
+                />
+                <button class="video-play" aria-label="Reproducir vídeo">
+                  ▶
+                </button>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Setenta – combinaciones</h5>
+                <p class="card-text small mb-0">Varias entradas y salidas.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Botón Volver arriba -->
+    <button
+      id="scrollTopBtn"
+      class="scroll-top btn btn-danger btn-lg rounded-circle"
+      aria-label="Volver arriba"
+    >
+      ↑
+    </button>
+
+    <!-- Footer -->
+    <footer class="py-4 bg-dark text-white-50">
+      <div class="container text-center small">
+        © <span id="year"></span> Aprende a Bailar – Salsa
+      </div>
+    </footer>
+
+    <!-- JS de terceros -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+    <!-- JS propios -->
+    <script src="../assets/js/common.js"></script>
+    <!-- (Opcional) hooks específicos de página -->
+    <script src="../assets/js/salsa.js"></script>
+  </body>
+</html>

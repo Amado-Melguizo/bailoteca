@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title data-i18n="title.bachata">Árbol de Figuras: Bachata</title>
+
+    <!-- CSS terceros -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+    <!-- CSS propios -->
+    <link href="../assets/css/common.css" rel="stylesheet" />
+    <link href="../assets/css/bachata.css" rel="stylesheet" />
+  </head>
+  <body class="bachata-page">
+    <!-- Navbar -->
+    <nav
+      class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm"
+    >
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="../index.html" data-i18n="home.h1"
+          >Aprende a Bailar</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#nav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div id="nav" class="collapse navbar-collapse">
+          <ul class="navbar-nav ms-auto align-items-lg-center">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html" data-i18n="nav.home"
+                >Inicio</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./salsa.html" data-i18n="nav.salsa"
+                >Salsa</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                href="./bachata.html"
+                data-i18n="nav.bachata"
+                >Bachata</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#coreografias" data-i18n="nav.choreos"
+                >Coreografías</a
+              >
+            </li>
+
+            <li class="nav-item ms-lg-3">
+              <div class="toolbar d-flex align-items-center gap-2">
+                <button
+                  id="themeToggle"
+                  class="btn btn-outline-light btn-sm icon-btn"
+                  type="button"
+                  aria-label="Cambiar modo"
+                  data-i18n-attr="aria-label:theme.toggle"
+                  title="Modo oscuro/claro"
+                >
+                  <span class="theme-icon" aria-hidden="true">🌙</span>
+                </button>
+                <button
+                  class="btn btn-outline-light btn-sm icon-btn langToggle"
+                  type="button"
+                  data-lang="es"
+                  aria-label="Español"
+                  data-i18n-attr="aria-label:lang.es"
+                  title="Español"
+                >
+                  🇪🇸
+                </button>
+                <button
+                  class="btn btn-outline-light btn-sm icon-btn langToggle"
+                  type="button"
+                  data-lang="en"
+                  aria-label="English"
+                  data-i18n-attr="aria-label:lang.en"
+                  title="English"
+                >
+                  🇬🇧
+                </button>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="py-5 bg-gradient-header text-white">
+      <div class="container text-center">
+        <h1 class="fw-bold mb-2" data-i18n="title.bachata">
+          Árbol de Figuras: Bachata
+        </h1>
+        <p class="lead" data-i18n="subtitle.bachata">
+          Del básico, a intermedio y avanzado, con ejemplos en vídeo.
+        </p>
+      </div>
+    </header>
+
+    <!-- Árbol -->
+    <section class="py-5">
+      <div class="container">
+        <!-- Leyenda -->
+        <div
+          class="d-flex justify-content-center gap-3 mb-4"
+          data-aos="fade-up"
+        >
+          <span
+            class="badge rounded-pill text-bg-success"
+            data-i18n="badge.basic"
+            >Básico</span
+          >
+          <span
+            class="badge rounded-pill text-bg-primary"
+            data-i18n="badge.intermediate"
+            >Intermedio</span
+          >
+          <span
+            class="badge rounded-pill text-bg-danger"
+            data-i18n="badge.advanced"
+            >Avanzado</span
+          >
+        </div>
+
+        <div class="tree-wrapper" data-aos="fade-up" data-aos-delay="50">
+          <div class="tree">
+            <!-- Básico -->
+            <div class="tree-level">
+              <div
+                class="tree-node card border-0 shadow-sm hover-lift"
+                data-level="basic"
+              >
+                <div class="card-body">
+                  <h5 class="card-title mb-2" data-i18n="badge.basic">
+                    Básico
+                  </h5>
+                  <p
+                    class="text-muted small mb-3"
+                    data-i18n="desc.bachata.basic.short"
+                  >
+                    Fundamentos: peso, ritmo y coordinación
+                  </p>
+
+                  <div class="d-flex flex-wrap gap-2">
+                    <button
+                      class="btn btn-outline-success btn-sm"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#paso-basico-bachata"
+                      data-i18n="fig.basic"
+                    >
+                      Paso básico
+                    </button>
+                    <button
+                      class="btn btn-outline-success btn-sm"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#giro-basico"
+                      data-i18n="fig.turn"
+                    >
+                      Giro básico
+                    </button>
+                    <button
+                      class="btn btn-outline-success btn-sm"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#lateral"
+                      data-i18n="fig.lateral"
+                    >
+                      Lateral
+                    </button>
+                  </div>
+
+                  <!-- Paso básico -->
+                  <div class="collapse mt-3" id="paso-basico-bachata">
+                    <div class="variation-head">
+                      <h6 class="mb-1" data-i18n="fig.basic">Paso básico</h6>
+                      <div class="variation-meta">
+                        <span class="badge rounded-pill text-bg-secondary"
+                          >1‑2‑3‑4 / 5‑6‑7‑8</span
+                        >
+                        <span
+                          class="badge rounded-pill text-bg-light"
+                          data-i18n="badge.basic"
+                          >Básico</span
+                        >
+                      </div>
+                    </div>
+                    <p
+                      class="variation-desc mt-2 mb-2"
+                      data-i18n="desc.bachata.basic"
+                    >
+                      3 pasos + toque...
+                    </p>
+                    <div class="variation-grid">
+                      <div
+                        class="ratio ratio-16x9 video-preview"
+                        data-video-id="DcgSb1aYUO0"
+                      ></div>
+                      <div class="variation-notes">
+                        <div
+                          class="small text-muted fw-semibold mb-1"
+                          data-i18n="lbl.technique"
+                        >
+                          Técnica
+                        </div>
+                        <ul class="small mb-2">
+                          <li data-i18n="tech.bachata.basic">
+                            Toque sin golpear...
+                          </li>
+                        </ul>
+                        <div
+                          class="small text-muted fw-semibold mb-1"
+                          data-i18n="lbl.errors"
+                        >
+                          Errores comunes
+                        </div>
+                        <ul class="small mb-2">
+                          <li data-i18n="err.bachata.basic">
+                            Amplitud excesiva...
+                          </li>
+                        </ul>
+                        <div class="alert alert-success py-2 px-3 mb-0 small">
+                          <strong data-i18n="lbl.tip">Tip</strong>:
+                          <span data-i18n="tip.bachata.basic"></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Giro básico -->
+                  <div class="collapse mt-3" id="giro-basico">
+                    <div class="variation-head">
+                      <h6 class="mb-1" data-i18n="fig.turn">Giro básico</h6>
+                      <div class="variation-meta">
+                        <span class="badge rounded-pill text-bg-secondary"
+                          >1‑2‑3‑4 / 5‑6‑7‑8</span
+                        >
+                        <span
+                          class="badge rounded-pill text-bg-light"
+                          data-i18n="badge.basic"
+                          >Básico</span
+                        >
+                      </div>
+                    </div>
+                    <p
+                      class="variation-desc mt-2 mb-2"
+                      data-i18n="desc.bachata.turn"
+                    >
+                      Preparación suave...
+                    </p>
+                    <div class="variation-grid">
+                      <div
+                        class="ratio ratio-16x9 video-preview"
+                        data-video-id="qn4CuNeE90I"
+                      ></div>
+                      <div class="variation-notes">
+                        <div
+                          class="small text-muted fw-semibold mb-1"
+                          data-i18n="lbl.technique"
+                        >
+                          Técnica
+                        </div>
+                        <ul class="small mb-2">
+                          <li data-i18n="tech.bachata.turn">
+                            Anticipa el giro...
+                          </li>
+                        </ul>
+                        <div
+                          class="small text-muted fw-semibold mb-1"
+                          data-i18n="lbl.errors"
+                        >
+                          Errores comunes
+                        </div>
+                        <ul class="small mb-2">
+                          <li data-i18n="err.bachata.turn">
+                            Giro sobre planta...
+                          </li>
+                        </ul>
+                        <div class="alert alert-success py-2 px-3 mb-0 small">
+                          <strong data-i18n="lbl.tip">Tip</strong>:
+                          <span data-i18n="tip.bachata.turn"></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Lateral -->
+                  <div class="collapse mt-3" id="lateral">
+                    <div class="variation-head">
+                      <h6 class="mb-1" data-i18n="fig.lateral">Lateral</h6>
+                      <div class="variation-meta">
+                        <span class="badge rounded-pill text-bg-secondary"
+                          >1‑2‑3‑4 / 5‑6‑7‑8</span
+                        >
+                        <span
+                          class="badge rounded-pill text-bg-light"
+                          data-i18n="badge.basic"
+                          >Básico</span
+                        >
+                      </div>
+                    </div>
+                    <p
+                      class="variation-desc mt-2 mb-2"
+                      data-i18n="desc.bachata.lateral"
+                    >
+                      Paso lateral...
+                    </p>
+                    <div class="variation-grid">
+                      <div
+                        class="ratio ratio-16x9 video-preview"
+                        data-video-id="uYogZ8wGrv0"
+                      ></div>
+                      <div class="variation-notes">
+                        <div
+                          class="small text-muted fw-semibold mb-1"
+                          data-i18n="lbl.technique"
+                        >
+                          Técnica
+                        </div>
+                        <ul class="small mb-2">
+                          <li data-i18n="tech.bachata.lateral">
+                            Conduce desde el peso...
+                          </li>
+                        </ul>
+                        <div
+                          class="small text-muted fw-semibold mb-1"
+                          data-i18n="lbl.errors"
+                        >
+                          Errores comunes
+                        </div>
+                        <ul class="small mb-2">
+                          <li data-i18n="err.bachata.lateral">
+                            Separar demasiado...
+                          </li>
+                        </ul>
+                        <div class="alert alert-success py-2 px-3 mb-0 small">
+                          <strong data-i18n="lbl.tip">Tip</strong>:
+                          <span data-i18n="tip.bachata.lateral"></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="tree-connector"></div>
+
+            <!-- Intermedio -->
+            <div class="tree-level">
+              <div
+                class="tree-node card border-0 shadow-sm hover-lift"
+                data-level="intermediate"
+              >
+                <div class="card-body">
+                  <h5 class="card-title mb-2" data-i18n="badge.intermediate">
+                    Intermedio
+                  </h5>
+                  <p
+                    class="text-muted small mb-3"
+                    data-i18n="desc.bachata.intermediate.short"
+                  >
+                    Movimientos fluidos y body movement
+                  </p>
+
+                  <div class="d-flex flex-wrap gap-2">
+                    <button
+                      class="btn btn-outline-primary btn-sm"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#onda"
+                      data-i18n="fig.onda"
+                    >
+                      Onda (Sensual)
+                    </button>
+                    <button
+                      class="btn btn-outline-primary btn-sm"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#ochos"
+                      data-i18n="fig.ochos"
+                    >
+                      Ochos
+                    </button>
+                  </div>
+
+                  <div class="collapse mt-3" id="onda">
+                    <div class="variation-head">
+                      <h6 class="mb-1" data-i18n="fig.onda">Onda (Sensual)</h6>
+                      <div class="variation-meta">
+                        <span class="badge rounded-pill text-bg-secondary"
+                          >1→8</span
+                        >
+                        <span
+                          class="badge rounded-pill text-bg-light"
+                          data-i18n="badge.intermediate"
+                          >Intermedio</span
+                        >
+                      </div>
+                    </div>
+                    <p
+                      class="variation-desc mt-2 mb-2"
+                      data-i18n="desc.bachata.onda"
+                    >
+                      Secuencia pecho→...
+                    </p>
+                    <div class="variation-grid">
+                      <div
+                        class="ratio ratio-16x9 video-preview"
+                        data-video-id="SX0GC7sJZc0"
+                      ></div>
+                      <div class="variation-notes">
+                        <div
+                          class="small text-muted fw-semibold mb-1"
+                          data-i18n="lbl.technique"
+                        >
+                          Técnica
+                        </div>
+                        <ul class="small mb-2">
+                          <li data-i18n="tech.bachata.onda">
+                            Respiración y secuencia...
+                          </li>
+                        </ul>
+                        <div
+                          class="small text-muted fw-semibold mb-1"
+                          data-i18n="lbl.errors"
+                        >
+                          Errores comunes
+                        </div>
+                        <ul class="small mb-2">
+                          <li data-i18n="err.bachata.onda">
+                            Hacer onda solo...
+                          </li>
+                        </ul>
+                        <div class="alert alert-primary py-2 px-3 mb-0 small">
+                          <strong data-i18n="lbl.tip">Tip</strong>:
+                          <span data-i18n="tip.bachata.onda"></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="collapse mt-3" id="ochos">
+                    <div class="variation-head">
+                      <h6 class="mb-1" data-i18n="fig.ochos">Ochos</h6>
+                      <div class="variation-meta">
+                        <span class="badge rounded-pill text-bg-secondary"
+                          >1→8</span
+                        >
+                        <span
+                          class="badge rounded-pill text-bg-light"
+                          data-i18n="badge.intermediate"
+                          >Intermedio</span
+                        >
+                      </div>
+                    </div>
+                    <p
+                      class="variation-desc mt-2 mb-2"
+                      data-i18n="desc.bachata.ochos"
+                    >
+                      “∞” de cadera/torso...
+                    </p>
+                    <div class="variation-grid">
+                      <div
+                        class="ratio ratio-16x9 video-preview"
+                        data-video-id="qURP2A36Eak"
+                      ></div>
+                      <div class="variation-notes">
+                        <div
+                          class="small text-muted fw-semibold mb-1"
+                          data-i18n="lbl.technique"
+                        >
+                          Técnica
+                        </div>
+                        <ul class="small mb-2">
+                          <li data-i18n="tech.bachata.ochos">
+                            Traslado + giro...
+                          </li>
+                        </ul>
+                        <div
+                          class="small text-muted fw-semibold mb-1"
+                          data-i18n="lbl.errors"
+                        >
+                          Errores comunes
+                        </div>
+                        <ul class="small mb-2">
+                          <li data-i18n="err.bachata.ochos">
+                            Romper el tiempo...
+                          </li>
+                        </ul>
+                        <div class="alert alert-primary py-2 px-3 mb-0 small">
+                          <strong data-i18n="lbl.tip">Tip</strong>:
+                          <span data-i18n="tip.bachata.ochos"></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="tree-connector"></div>
+
+            <!-- Avanzado -->
+            <div class="tree-level">
+              <div
+                class="tree-node card border-0 shadow-sm hover-lift"
+                data-level="advanced"
+              >
+                <div class="card-body">
+                  <h5 class="card-title mb-2" data-i18n="badge.advanced">
+                    Avanzado
+                  </h5>
+                  <p
+                    class="text-muted small mb-3"
+                    data-i18n="desc.bachata.advanced.short"
+                  >
+                    Musicalidad y footwork
+                  </p>
+
+                  <div class="d-flex flex-wrap gap-2">
+                    <button
+                      class="btn btn-outline-danger btn-sm"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#footwork"
+                      data-i18n="fig.footwork"
+                    >
+                      Footwork avanzado
+                    </button>
+                    <button
+                      class="btn btn-outline-danger btn-sm"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#fusion"
+                      data-i18n="fig.fusion"
+                    >
+                      Fusión Sensual/Dominicana
+                    </button>
+                  </div>
+
+                  <div class="collapse mt-3" id="footwork">
+                    <div class="variation-head">
+                      <h6 class="mb-1" data-i18n="fig.footwork">
+                        Footwork avanzado
+                      </h6>
+                      <div class="variation-meta">
+                        <span class="badge rounded-pill text-bg-secondary"
+                          >syncopated</span
+                        >
+                        <span
+                          class="badge rounded-pill text-bg-light"
+                          data-i18n="badge.advanced"
+                          >Avanzado</span
+                        >
+                      </div>
+                    </div>
+                    <p
+                      class="variation-desc mt-2 mb-2"
+                      data-i18n="desc.bachata.footwork"
+                    >
+                      Patrones sincopados...
+                    </p>
+                    <div class="variation-grid">
+                      <div
+                        class="ratio ratio-16x9 video-preview"
+                        data-video-id="MvlgXMlGdz0"
+                      ></div>
+                      <div class="variation-notes">
+                        <div
+                          class="small text-muted fw-semibold mb-1"
+                          data-i18n="lbl.technique"
+                        >
+                          Técnica
+                        </div>
+                        <ul class="small mb-2">
+                          <li data-i18n="tech.bachata.footwork">
+                            Divide en bloques...
+                          </li>
+                        </ul>
+                        <div
+                          class="small text-muted fw-semibold mb-1"
+                          data-i18n="lbl.errors"
+                        >
+                          Errores comunes
+                        </div>
+                        <ul class="small mb-2">
+                          <li data-i18n="err.bachata.footwork">
+                            Tap donde debe ir paso...
+                          </li>
+                        </ul>
+                        <div class="alert alert-danger py-2 px-3 mb-0 small">
+                          <strong data-i18n="lbl.tip">Tip</strong>:
+                          <span data-i18n="tip.bachata.footwork"></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="collapse mt-3" id="fusion">
+                    <div class="variation-head">
+                      <h6 class="mb-1" data-i18n="fig.fusion">
+                        Fusión Sensual/Dominicana
+                      </h6>
+                      <div class="variation-meta">
+                        <span class="badge rounded-pill text-bg-secondary"
+                          >phrase</span
+                        >
+                        <span
+                          class="badge rounded-pill text-bg-light"
+                          data-i18n="badge.advanced"
+                          >Avanzado</span
+                        >
+                      </div>
+                    </div>
+                    <p
+                      class="variation-desc mt-2 mb-2"
+                      data-i18n="desc.bachata.fusion"
+                    >
+                      Integra ondas y giros...
+                    </p>
+                    <div class="variation-grid">
+                      <div
+                        class="ratio ratio-16x9 video-preview"
+                        data-video-id="Vx3AWpgnoVQ"
+                      ></div>
+                      <div class="variation-notes">
+                        <div
+                          class="small text-muted fw-semibold mb-1"
+                          data-i18n="lbl.technique"
+                        >
+                          Técnica
+                        </div>
+                        <ul class="small mb-2">
+                          <li data-i18n="tech.bachata.fusion">
+                            Control de frame...
+                          </li>
+                        </ul>
+                        <div
+                          class="small text-muted fw-semibold mb-1"
+                          data-i18n="lbl.errors"
+                        >
+                          Errores comunes
+                        </div>
+                        <ul class="small mb-2">
+                          <li data-i18n="err.bachata.fusion">
+                            Mezcla sin coherencia...
+                          </li>
+                        </ul>
+                        <div class="alert alert-danger py-2 px-3 mb-0 small">
+                          <strong data-i18n="lbl.tip">Tip</strong>:
+                          <span data-i18n="tip.bachata.fusion"></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- tree -->
+        </div>
+        <!-- wrapper -->
+      </div>
+    </section>
+
+    <!-- Coreografías -->
+    <section id="coreografias" class="py-5 bg-light-subtle">
+      <div class="container">
+        <div class="text-center mb-4" data-aos="fade-up">
+          <h2 class="fw-bold" data-i18n="choreos.title">
+            Coreografías (muestras)
+          </h2>
+          <p class="text-muted" data-i18n="choreos.subtitle">
+            Secuencias donde se encadenan varias figuras.
+          </p>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-4" data-aos="zoom-in">
+            <div class="card border-0 shadow-sm h-100">
+              <div
+                class="ratio ratio-16x9 video-preview"
+                data-video-id="uYogZ8wGrv0"
+              ></div>
+              <div class="card-body">
+                <h5 class="card-title" data-i18n="choreos.bachata.card1.title">
+                  Básicos encadenados
+                </h5>
+                <p
+                  class="card-text small mb-0"
+                  data-i18n="choreos.bachata.card1.text"
+                >
+                  Varias entradas útiles para social.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4" data-aos="zoom-in" data-aos-delay="100">
+            <div class="card border-0 shadow-sm h-100">
+              <div
+                class="ratio ratio-16x9 video-preview"
+                data-video-id="0L7vFzSphXA"
+              ></div>
+              <div class="card-body">
+                <h5 class="card-title" data-i18n="choreos.bachata.card2.title">
+                  Clase completa
+                </h5>
+                <p
+                  class="card-text small mb-0"
+                  data-i18n="choreos.bachata.card2.text"
+                >
+                  Figuras elegantes y fáciles de hilar.
+                </p>
+                <p
+                  class="card-text small mb-0"
+                  data-i18n="choreos.bachata.card3.text"
+                >
+                  Sincopaciones y musicalidad.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <button
+      id="scrollTopBtn"
+      class="scroll-top btn btn-danger btn-lg rounded-circle"
+      aria-label="Volver arriba"
+    >
+      ↑
+    </button>
+
+    <footer class="py-4 bg-dark text-white-50">
+      <div class="container text-center small">
+        © <span id="year"></span>
+        <span data-i18n="footer.bachata">Aprende a Bailar – Bachata</span>
+      </div>
+    </footer>
+
+    <!-- JS de terceros -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+    <!-- JS propio -->
+    <script src="../assets/js/common.js"></script>
+  </body>
+</html>
