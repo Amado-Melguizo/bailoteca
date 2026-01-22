@@ -1,0 +1,147 @@
+
+{
+  "nav.home": "Inicio",
+  "nav.salsa": "Salsa",
+  "nav.bachata": "Bachata",
+  "nav.choreos": "Coreografías",
+  "theme.toggle": "Cambiar modo",
+  "lang.es": "Español",
+  "lang.en": "Inglés",
+
+  "title.bachata": "Árbol de Figuras: Bachata",
+  "subtitle.bachata": "Del básico, a intermedio y avanzado, con ejemplos en vídeo.",
+  "footer.bachata": "Aprende a Bailar – Bachata",
+
+  "badge.basic": "Básico",
+  "badge.intermediate": "Intermedio",
+  "badge.advanced": "Avanzado",
+
+  "variations.show": "Variaciones",
+  "variations.button": "Ver variaciones",
+  "lbl.technique": "Técnica",
+  "lbl.errors": "Errores comunes",
+  "lbl.tip": "Tip",
+
+  "desc.bachata.basic.short": "Fundamentos: peso, ritmo y coordinación.",
+  "desc.bachata.intermediate.short": "Movimientos fluidos y body movement.",
+  "desc.bachata.advanced.short": "Musicalidad, control y footwork avanzado.",
+
+  "fig.basic.lateral": "Paso básico lateral",
+  "desc.bachata.basic.lateral": "Paso lateral con toque; torso relajado y conexión cómoda.",
+
+  "fig.basic.forwardback": "Paso básico adelante-atrás",
+  "desc.bachata.basic.forwardback": "Adelante‑atrás con toque; cuida eje y transferencia suave del peso.",
+
+  "fig.basic.inplace": "Paso básico en el sitio",
+  "desc.bachata.basic.inplace": "3 pasos + toque en el sitio; ideal para controlar el peso y el ritmo.",
+
+  "fig.basic.box": "Caja (Box step)",
+  "desc.bachata.box": "Patrón en forma de caja; pasos cortos y frame estable.",
+
+  "fig.basic.turnR": "Giro derecha de follower",
+  "fig.basic.turnL": "Giro izquierda de leader",
+  "desc.bachata.turn": "Preparación suave, señal clara y eje estable.",
+
+  "fig.basic.hands": "Cambios de manos / Doble mano",
+  "desc.bachata.hands": "Agarres abierto/cerrado y cambios de mano; base de sombrero y pasadas.",
+
+  "fig.basic.wrap": "Vuelta envolvente simple (Wrap)",
+  "desc.bachata.wrap": "Envolvente (wrap/unwrap) con trayectorias claras y cómodas.",
+
+  "fig.basic.cbl": "Cross body básico",
+  "desc.bachata.cbl": "Entrada/salida frontal tipo cross body; controla orientación y trayectoria.",
+
+  "fig.basic.shines": "Shines básicos",
+  "desc.bachata.shines.basic": "Punta‑talón, V‑step y Suzy Q con acentos suaves.",
+
+  "tech.bachata.basic": "Tap sin golpear; pasos cortos y peso claro.",
+  "err.bachata.basic": "Confundir paso y toque; amplitud excesiva.",
+  "tip.bachata.basic": "Metrónomo 85–95 BPM para consolidar timing.",
+
+  "tech.bachata.turn": "Anticipa el giro desde el centro; mano ligera.",
+  "err.bachata.turn": "Giro sobre planta completa; brazos rígidos.",
+  "tip.bachata.turn": "Spotting hacia un punto fijo.",
+
+  "tech.bachata.lateral": "Conduce con el peso; evita rebote en el toque.",
+  "err.bachata.lateral": "Separar demasiado la pareja; toque fuera de tiempo.",
+  "tip.bachata.lateral": "Mantén centros alineados.",
+
+  "fig.onda": "Onda (Sensual)",
+  "desc.bachata.onda": "Secuencia pecho → abdomen → cadera → rodillas; disociación y control.",
+
+  "fig.ochos": "Ochos",
+  "desc.bachata.ochos": "Figura “∞” de cadera/torso integrada en lateral o en sitio.",
+
+  "fig.inter.doubleturn": "Doble giro de follower",
+  "fig.inter.shadow": "Entrada por sombra",
+  "desc.bachata.shadow": "Entrada a posición sombra; líneas paralelas; salida a wrap o free spin.",
+
+  "fig.inter.syncop": "Footwork sincopado dominicano",
+
+  "tech.bachata.onda": "Respiración y secuencia descendente; amplitud controlada.",
+  "err.bachata.onda": "Solo cadera; no volver a neutro.",
+  "tip.bachata.onda": "Empieza lento y acelera gradualmente.",
+
+  "tech.bachata.ochos": "Traslado + giro de cadera; hombros neutrales.",
+  "err.bachata.ochos": "Perder tiempo por amplitud; hombros arriba.",
+  "tip.bachata.ochos": "Practica frente a pared para control de eje.",
+
+  "fig.footwork": "Footwork avanzado",
+  "desc.bachata.footwork": "Patrones sincopados, control de peso, acentos y cortes.",
+
+  "fig.fusion": "Fusión Sensual/Dominicana",
+  "desc.bachata.fusion": "Integra ondas y giros con patrones dominicanos; transiciones suaves.",
+
+  "fig.adv.multiturn": "Combo de giros múltiples",
+  "fig.adv.dip": "Cambré avanzado (Deep dip seguro)",
+  "desc.bachata.dip": "Cambré seguro con soporte pélvico/espalda y preparación clara.",
+  "fig.adv.isos": "Isolaciones multilínea",
+
+  "tech.bachata.footwork": "Construye bloques de 8 y añade acentos después.",
+  "err.bachata.footwork": "Tap donde debe ir paso; perder el 1 al reconectar.",
+  "tip.bachata.footwork": "Acentúa contratiempos con palmas.",
+
+  "tech.bachata.fusion": "Frame controlado; respira la onda antes del giro.",
+  "err.bachata.fusion": "Mezclar sin lógica musical; olvidar reconectar.",
+  "tip.bachata.fusion": "Define un tema: ondas en A, dominicana en B.",
+
+  "variations.title": "Variaciones",
+  "fig.wrap.turnexit": "Wrap con giro y salida",
+  "desc.wrap.turnexit": "Tras el wrap, añade un inside turn y libera hacia lateral.",
+  "tech.wrap.turnexit": "Guía rotación desde el centro con muñeca relajada.",
+  "err.wrap.turnexit": "Exceso de fuerza al liberar.",
+  "tip.wrap.turnexit": "Mantén trayectoria circular suave.",
+
+  "fig.wrap.shoulder": "Wrap con salida por hombro",
+  "desc.wrap.shoulder": "Salida cómoda por encima del hombro con altura media.",
+  "tech.wrap.shoulder": "Altura correcta y muñeca libre; evita ángulos incómodos.",
+  "err.wrap.shoulder": "Cruces tensos por mala altura.",
+  "tip.wrap.shoulder": "Piensa “altura media, muñeca suelta”.",
+
+  "fig.wave.lateral": "Onda lateral",
+  "desc.wave.lateral": "Onda desplazando el centro hacia un lateral; amplitud controlada.",
+
+  "fig.wave.inverted": "Onda invertida",
+  "desc.wave.inverted": "Secuencia ascendente (cadera → abdomen → pecho); guía suave.",
+
+  "fig.ochos.bothhands": "Ochos con ambas manos",
+  "desc.ochos.bothhands": "Control extra desde ambas manos; cuida no bloquear hombros.",
+
+  "fig.ochos.intowrap": "Ochos hacia wrap",
+  "desc.ochos.intowrap": "Conecta ochos con envolvente; marca la transición en 7‑8.",
+
+  "fig.double.handchange": "Doble giro con cambio de manos",
+  "desc.double.handchange": "Encadena el segundo giro con cambio de manos limpio y altura correcta.",
+
+  "fig.double.sync": "Doble giro sincronizado (pareja)",
+  "desc.double.sync": "Ambos giran coordinados; mantiene el frame elástico y el eje vertical.",
+
+  "fig.adv.tornado360": "Tornado / 360 extendido",
+  "desc.tornado360": "Giro continuo con control de velocidad y salida definida.",
+
+  "fig.adv.counterturn.handchange": "Contra‑giro con cambio de manos",
+  "desc.counterturn.handchange": "Invierte la dirección tras un primer giro; evita tirones de brazo.",
+
+  "fig.adv.combo.shadowwrap360dip": "Sombra → wrap → 360 → dip (combo)",
+  "desc.combo.shadowwrap360dip": "Secuencia enlazada que combina posiciones y dinámicas de pareja."
+}

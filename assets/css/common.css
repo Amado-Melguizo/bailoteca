@@ -6,7 +6,7 @@
   --intermediate: #0d6efd;
   --advanced: #dc3545;
 
-  /* Tokens del tema */
+  /* Tokens del tema (LIGHT) */
   --bs-body-bg: #ffffff;
   --bs-body-color: #212529;
   --card-bg: #ffffff;
@@ -14,19 +14,47 @@
   --muted: #6c757d;
   --surface-subtle: #f7f7fa;
   --video-play-bg: rgba(255, 255, 255, 0.9);
-  --video-play-color: #e53935;
+  --video-play-color: var(--salsa);
+
+  /* NUEVO: tokens comunes para estados/hover/efectos */
+  --elevation-shadow: 0 0.75rem 1.5rem rgba(0, 0, 0, 0.12);
+  --hover-shadow: 0 0.75rem 1.5rem rgba(0, 0, 0, 0.14);
+  --connector-grad: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.05),
+    rgba(0, 0, 0, 0.15)
+  );
+  --inverse-on-accent: #fff; /* lo que en claro se vuelve blanco al resaltar */
+  --accent-on-inverse: currentColor; /* helper */
 }
 
-/* Dark mode (html[data-theme="dark"]) */
+/* ===========================================
+   MODO OSCURO (ACTUALIZADO: grises + inversión)
+=========================================== */
 html[data-theme="dark"] {
-  --bs-body-bg: #0e0f12;
-  --bs-body-color: #e6e6e6;
-  --card-bg: #17181d;
-  --card-border: #262831;
-  --muted: #a6a7ab;
-  --surface-subtle: #15171b;
-  --video-play-bg: rgba(255, 255, 255, 0.92);
+  /* Grises: nada de negro puro */
+  --bs-body-bg: #1e2024; /* fondo general */
+  --bs-body-color: #e6e6e6; /* texto */
+  --card-bg: #262932; /* tarjetas/paneles */
+  --card-border: #323544; /* bordes suaves */
+  --muted: #aeb1b8; /* texto atenuado */
+  --surface-subtle: #2b2f39; /* equivalentes a 'light-subtle' pero en gris */
+  /* Inversión play vídeo: en oscuro la burbuja es oscura y el hover aclara menos */
+  --video-play-bg: rgba(0, 0, 0, 0.82);
   --video-play-color: #f9d15b;
+
+  /* Sombras y conectores invertidos (sombras claras) */
+  --elevation-shadow: 0 0.75rem 1.5rem rgba(255, 255, 255, 0.06);
+  --hover-shadow: 0 0.75rem 1.5rem rgba(255, 255, 255, 0.09);
+  --connector-grad: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.08),
+    rgba(255, 255, 255, 0.16)
+  );
+
+  /* Inversión de “color → blanco” (ahora “blanco → color”) */
+  --inverse-on-accent: currentColor; /* en dark, al resaltar, usamos el color del elemento */
+  --accent-on-inverse: #fff; /* el inverso pasa a blanco cuando sea necesario */
 }
 
 /* Aplicación de tokens */
@@ -41,14 +69,58 @@ body {
   background: var(--card-bg);
   border-color: var(--card-border);
 }
+
+/* ===========================================
+   CARD-BODY POR NIVEL (fondo claro + borde)
+   En DARK: invertimos (oscurecer hacia card-bg)
+=========================================== */
+
+/* ----- BÁSICO (verde) ----- */
+.tree-node[data-level="basic"] .card-body {
+  background: color-mix(in srgb, var(--basic) 12%, white);
+  border: 1px solid color-mix(in srgb, var(--basic) 65%, black);
+}
+html[data-theme="dark"] .tree-node[data-level="basic"] .card-body {
+  background: color-mix(in srgb, var(--basic) 16%, var(--card-bg));
+  border: 1px solid color-mix(in srgb, var(--basic) 45%, #121317);
+}
+
+/* ----- INTERMEDIO (azul) ----- */
+.tree-node[data-level="intermediate"] .card-body {
+  background: color-mix(in srgb, var(--intermediate) 12%, white);
+  border: 1px solid color-mix(in srgb, var(--intermediate) 65%, black);
+}
+html[data-theme="dark"] .tree-node[data-level="intermediate"] .card-body {
+  background: color-mix(in srgb, var(--intermediate) 16%, var(--card-bg));
+  border: 1px solid color-mix(in srgb, var(--intermediate) 45%, #121317);
+}
+
+/* ----- AVANZADO (rojo) ----- */
+.tree-node[data-level="advanced"] .card-body {
+  background: color-mix(in srgb, var(--advanced) 12%, white);
+  border: 1px solid color-mix(in srgb, var(--advanced) 65%, black);
+}
+html[data-theme="dark"] .tree-node[data-level="advanced"] .card-body {
+  background: color-mix(in srgb, var(--advanced) 16%, var(--card-bg));
+  border: 1px solid color-mix(in srgb, var(--advanced) 45%, #121317);
+}
+
+/* Redondeo */
+.tree-node .card-body {
+  border-radius: 0.75rem;
+}
+
+/* Superficies sutiles */
 .bg-light-subtle {
   background: var(--surface-subtle) !important;
 }
+
+/* Navbar, badge: ajustes dark */
 html[data-theme="dark"] .navbar.bg-dark {
-  background-color: #0b0c0e !important;
+  background-color: #191b20 !important; /* más gris, menos negro */
 }
 html[data-theme="dark"] .badge.text-bg-light {
-  background-color: #2b2d34 !important;
+  background-color: #2f3340 !important;
   color: #e6e6e6 !important;
 }
 
@@ -81,7 +153,7 @@ html[data-theme="dark"] .badge.text-bg-light {
   transform: translateX(-50%);
   width: 2px;
   height: 100%;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.15));
+  background: var(--connector-grad);
   border-radius: 1px;
 }
 .tree-node[data-level="basic"] {
@@ -93,12 +165,17 @@ html[data-theme="dark"] .badge.text-bg-light {
 .tree-node[data-level="advanced"] {
   border-left: 6px solid var(--advanced);
 }
+
+/* Hover lift: invertido en dark (sombras claras) */
 .hover-lift {
-  transition: transform 0.2s, box-shadow 0.2s;
+  transition:
+    transform 0.2s,
+    box-shadow 0.2s;
+  box-shadow: var(--elevation-shadow) !important;
 }
 .hover-lift:hover {
   transform: translateY(-3px);
-  box-shadow: 0 0.75rem 1.5rem rgba(0, 0, 0, 0.12) !important;
+  box-shadow: var(--hover-shadow) !important;
 }
 
 /* Variaciones / Pases principales */
@@ -137,9 +214,12 @@ html[data-theme="dark"] .badge.text-bg-light {
 .video-preview {
   position: relative;
   cursor: pointer;
-  background: #000;
+  background: #000; /* En light conviene mantener negro para contraste del thumb */
   border-radius: 0.5rem;
   overflow: hidden;
+}
+html[data-theme="dark"] .video-preview {
+  background: #252831; /* gris oscuro en dark */
 }
 .video-thumb {
   width: 100%;
@@ -147,7 +227,14 @@ html[data-theme="dark"] .badge.text-bg-light {
   object-fit: cover;
   display: block;
   filter: brightness(0.92);
-  transition: filter 0.2s, transform 0.2s;
+  transition:
+    filter 0.2s,
+    transform 0.2s;
+}
+html[data-theme="dark"] .video-thumb {
+  filter: brightness(
+    0.98
+  ); /* un pelín más brillante para compensar el fondo gris */
 }
 .video-preview:hover .video-thumb {
   filter: brightness(1);
@@ -167,11 +254,22 @@ html[data-theme="dark"] .badge.text-bg-light {
   display: grid;
   place-items: center;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.25);
-  transition: transform 0.15s, background 0.2s;
+  transition:
+    transform 0.15s,
+    background 0.2s,
+    color 0.2s;
 }
 .video-play:hover {
   transform: scale(1.05);
   background: #fff;
+  color: var(--salsa);
+}
+html[data-theme="dark"] .video-play {
+  box-shadow: 0 0.5rem 1rem rgba(255, 255, 255, 0.12); /* sombra clara en dark */
+}
+html[data-theme="dark"] .video-play:hover {
+  background: #0d0f14; /* inverso del hover claro */
+  color: #f9d15b; /* mantenemos contraste cálido en dark */
 }
 .video-preview.is-playing .video-play,
 .video-preview.is-playing .video-thumb {
@@ -191,7 +289,10 @@ html[data-theme="dark"] .badge.text-bg-light {
   opacity: 0;
   visibility: hidden;
   transform: scale(0.9);
-  transition: opacity 0.2s, transform 0.2s, visibility 0.2s;
+  transition:
+    opacity 0.2s,
+    transform 0.2s,
+    visibility 0.2s;
 }
 .scroll-top.show {
   opacity: 1;
@@ -206,12 +307,53 @@ html[data-theme="dark"] .badge.text-bg-light {
   width: 36px;
   height: 36px;
   padding: 0;
-  border-color: rgba(255, 255, 255, 0.4) !important;
+  border-color: rgba(0, 0, 0, 0.25) !important; /* más oscuro en light */
 }
 .toolbar .icon-btn:hover {
-  border-color: #fff !important;
+  border-color: rgba(0, 0, 0, 0.45) !important;
+}
+html[data-theme="dark"] .toolbar .icon-btn {
+  border-color: rgba(255, 255, 255, 0.25) !important; /* más claro en dark */
+}
+html[data-theme="dark"] .toolbar .icon-btn:hover {
+  border-color: rgba(255, 255, 255, 0.5) !important;
 }
 .theme-icon {
   font-size: 18px;
   line-height: 1;
+}
+
+/* ===========================================
+   VARIACIONES — Fondo según nivel
+   En DARK: oscurecer hacia card-bg (inversión)
+=========================================== */
+
+/* Básico → verde muy suave */
+.tree-node[data-level="basic"] .variation-item {
+  background: color-mix(in srgb, var(--basic) 12%, white);
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+html[data-theme="dark"] .tree-node[data-level="basic"] .variation-item {
+  background: color-mix(in srgb, var(--basic) 16%, var(--card-bg));
+}
+
+/* Intermedio → azul suave */
+.tree-node[data-level="intermediate"] .variation-item {
+  background: color-mix(in srgb, var(--intermediate) 12%, white);
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+html[data-theme="dark"] .tree-node[data-level="intermediate"] .variation-item {
+  background: color-mix(in srgb, var(--intermediate) 16%, var(--card-bg));
+}
+
+/* Avanzado → rojo suave */
+.tree-node[data-level="advanced"] .variation-item {
+  background: color-mix(in srgb, var(--advanced) 12%, white);
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+html[data-theme="dark"] .tree-node[data-level="advanced"] .variation-item {
+  background: color-mix(in srgb, var(--advanced) 16%, var(--card-bg));
 }
