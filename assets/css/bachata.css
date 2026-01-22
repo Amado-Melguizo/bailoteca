@@ -1,0 +1,5 @@
+/* Header gradiente para BACHATA */
+body.bachata-page .bg-gradient-header {
+  background: linear-gradient(135deg, var(--bachata), #8e24aa);
+  color: #fff;
+}
