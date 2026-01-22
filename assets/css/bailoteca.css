@@ -1,0 +1,36 @@
+/* assets/css/bailoteca.css */
+:root {
+  --bailoteca-primary: #ff5a5f; /* coral */
+  --bailoteca-secondary: #2a2d5a; /* índigo */
+}
+
+/* Header degradado de marca */
+.bg-gradient-bailoteca {
+  background: linear-gradient(
+    135deg,
+    var(--bailoteca-primary),
+    var(--bailoteca-secondary)
+  );
+  color: #fff;
+}
+
+/* Botones acorde a marca (sin romper Bootstrap) */
+.btn-outline-danger {
+  --bs-btn-color: var(--bailoteca-primary);
+  --bs-btn-border-color: var(--bailoteca-primary);
+}
+.btn-outline-danger:hover {
+  background: var(--bailoteca-primary);
+  border-color: var(--bailoteca-primary);
+  color: #fff;
+}
+
+.btn-outline-warning {
+  --bs-btn-color: #f0b429;
+  --bs-btn-border-color: #f0b429;
+}
+.btn-outline-warning:hover {
+  background: #f0b429;
+  border-color: #f0b429;
+  color: #222;
+}
