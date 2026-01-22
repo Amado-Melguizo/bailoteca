@@ -1,9 +1,0 @@
-
-/* Header gradiente para SALSA */
-body.salsa-page .bg-gradient-header{
-  background: linear-gradient(135deg, var(--salsa), #9c27b0);
-  color:#fff;
-}
-
-/* Negrita global solo para SALSA (tu requisito) */
-body.salsa-page *{ font-weight: bold; }
