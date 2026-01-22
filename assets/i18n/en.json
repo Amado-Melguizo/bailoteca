@@ -1,0 +1,147 @@
+
+{
+  "nav.home": "Home",
+  "nav.salsa": "Salsa",
+  "nav.bachata": "Bachata",
+  "nav.choreos": "Choreographies",
+  "theme.toggle": "Toggle theme",
+  "lang.es": "Spanish",
+  "lang.en": "English",
+
+  "title.bachata": "Figure Tree: Bachata",
+  "subtitle.bachata": "From basic to intermediate and advanced, with video examples.",
+  "footer.bachata": "Learn to Dance – Bachata",
+
+  "badge.basic": "Beginner",
+  "badge.intermediate": "Intermediate",
+  "badge.advanced": "Advanced",
+
+  "variations.show": "Variations",
+  "variations.button": "See variations",
+  "lbl.technique": "Technique",
+  "lbl.errors": "Common mistakes",
+  "lbl.tip": "Tip",
+
+  "desc.bachata.basic.short": "Fundamentals: weight, timing and coordination.",
+  "desc.bachata.intermediate.short": "Fluid movements and body movement.",
+  "desc.bachata.advanced.short": "Musicality, control and advanced footwork.",
+
+  "fig.basic.lateral": "Side basic step",
+  "desc.bachata.basic.lateral": "Side step with tap; relaxed torso and comfortable connection.",
+
+  "fig.basic.forwardback": "Forward & Back basic",
+  "desc.bachata.basic.forwardback": "Forward‑back with tap; keep axis and smooth weight transfer.",
+
+  "fig.basic.inplace": "In-place basic",
+  "desc.bachata.basic.inplace": "3 steps + tap in place; great for weight control and timing.",
+
+  "fig.basic.box": "Box step",
+  "desc.bachata.box": "Box‑shaped pattern; short steps and a stable frame.",
+
+  "fig.basic.turnR": "Follower right turn",
+  "fig.basic.turnL": "Leader left turn",
+  "desc.bachata.turn": "Soft prep, clear signal and stable axis.",
+
+  "fig.basic.hands": "Hand changes / Double hand",
+  "desc.bachata.hands": "Open/closed holds and hand changes; basis for sombrero and pasadas.",
+
+  "fig.basic.wrap": "Simple wrap (envolvente)",
+  "desc.bachata.wrap": "Wrap/unwrap with clear, comfortable hand paths.",
+
+  "fig.basic.cbl": "Basic cross body",
+  "desc.bachata.cbl": "Cross‑body style entry/exit; control facing and path.",
+
+  "fig.basic.shines": "Basic shines",
+  "desc.bachata.shines.basic": "Heel‑toe, V‑step and Suzy Q with soft accents.",
+
+  "tech.bachata.basic": "Tap without stomping; short steps, clear weight.",
+  "err.bachata.basic": "Mixing step and tap; steps too wide.",
+  "tip.bachata.basic": "Use a metronome at 85–95 BPM.",
+
+  "tech.bachata.turn": "Anticipate from your core; keep a light hand.",
+  "err.bachata.turn": "Flat‑foot turns; rigid arms.",
+  "tip.bachata.turn": "Spot a fixed point.",
+
+  "tech.bachata.lateral": "Lead with body weight; avoid bouncing on the tap.",
+  "err.bachata.lateral": "Excess partner distance; off‑time tap.",
+  "tip.bachata.lateral": "Keep centers aligned.",
+
+  "fig.onda": "Wave (Sensual)",
+  "desc.bachata.onda": "Chest → abs → hips → knees; dissociation and control.",
+
+  "fig.ochos": "Ochos",
+  "desc.bachata.ochos": "Figure 8 (∞) hips/torso integrated in side basic or in place.",
+
+  "fig.inter.doubleturn": "Follower double turn",
+  "fig.inter.shadow": "Shadow entry",
+  "desc.bachata.shadow": "Enter shadow position; parallel lines; exits to wrap or free spin.",
+
+  "fig.inter.syncop": "Dominican syncopated footwork",
+
+  "tech.bachata.onda": "Breathing and downward sequence; manage amplitude.",
+  "err.bachata.onda": "Only hips; no return to neutral.",
+  "tip.bachata.onda": "Start slow and increase gradually.",
+
+  "tech.bachata.ochos": "Travel + rotate hips; neutral shoulders.",
+  "err.bachata.ochos": "Timing loss due to amplitude; lifted shoulders.",
+  "tip.bachata.ochos": "Practice against a wall for axis control.",
+
+  "fig.footwork": "Advanced footwork",
+  "desc.bachata.footwork": "Syncopations, weight control, accents and cuts.",
+
+  "fig.fusion": "Sensual/Dominican Fusion",
+  "desc.bachata.fusion": "Blend waves and turns with Dominican patterns; smooth transitions.",
+
+  "fig.adv.multiturn": "Multiple‑turn combo",
+  "fig.adv.dip": "Advanced dip (safe deep dip)",
+  "desc.bachata.dip": "Safe dip with pelvic/back support and a clear preparation.",
+  "fig.adv.isos": "Multi‑line isolations",
+
+  "tech.bachata.footwork": "Build 8‑count blocks and add accents later.",
+  "err.bachata.footwork": "Tap instead of step; losing the 1 when reconnecting.",
+  "tip.bachata.footwork": "Clap off‑beats for accents.",
+
+  "tech.bachata.fusion": "Controlled frame; breathe the wave before turning.",
+  "err.bachata.fusion": "Style mixing with no musical logic; forgetting to reconnect.",
+  "tip.bachata.fusion": "Define a theme: waves on A, Dominican on B.",
+
+  "variations.title": "Variations",
+  "fig.wrap.turnexit": "Wrap + turn exit",
+  "desc.wrap.turnexit": "After the wrap, add an inside turn and release to a side step.",
+  "tech.wrap.turnexit": "Guide rotation from your core with a relaxed wrist.",
+  "err.wrap.turnexit": "Too much force on the release.",
+  "tip.wrap.turnexit": "Keep a smooth circular trajectory.",
+
+  "fig.wrap.shoulder": "Wrap shoulder release",
+  "desc.wrap.shoulder": "Comfortable release over the partner’s shoulder at mid height.",
+  "tech.wrap.shoulder": "Correct height and relaxed wrist; avoid awkward angles.",
+  "err.wrap.shoulder": "Tense crosses due to bad height.",
+  "tip.wrap.shoulder": "Think “mid height, free wrist”.",
+
+  "fig.wave.lateral": "Lateral wave",
+  "desc.wave.lateral": "Wave shifting the center laterally; keep amplitude controlled.",
+
+  "fig.wave.inverted": "Inverted wave",
+  "desc.wave.inverted": "Ascending sequence (hips → abs → chest); gentle lead.",
+
+  "fig.ochos.bothhands": "Ochos with both hands",
+  "desc.ochos.bothhands": "Extra control from both hands; avoid blocking shoulders.",
+
+  "fig.ochos.intowrap": "Ochos into wrap",
+  "desc.ochos.intowrap": "Connect figure‑8 with a wrap; cue the transition on 7‑8.",
+
+  "fig.double.handchange": "Double turn with hand change",
+  "desc.double.handchange": "Chain the second turn with a clean hand change at proper height.",
+
+  "fig.double.sync": "Synchronized double turn (couple)",
+  "desc.double.sync": "Both spin together; keep elastic frame and vertical axis.",
+
+  "fig.adv.tornado360": "Tornado / extended 360",
+  "desc.tornado360": "Continuous turn with speed control and a defined exit.",
+
+  "fig.adv.counterturn.handchange": "Counter‑turn with hand change",
+  "desc.counterturn.handchange": "Reverse direction after the first turn; avoid arm pulling.",
+
+  "fig.adv.combo.shadowwrap360dip": "Shadow → wrap → 360 → dip (combo)",
+  "desc.combo.shadowwrap360dip": "Linked sequence combining positions and couple dynamics."
+}
