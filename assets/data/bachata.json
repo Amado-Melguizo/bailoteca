@@ -1,8 +1,8 @@
 
 {
-  "basic": {
-    "title": "badge.basic",
-    "description": "desc.bachata.basic.short",
+  "foundation": {
+    "title": "badge.foundation",
+    "description": "desc.bachata.foundation.short",
     "items": [
       {
         "id": "basic-lateral",
@@ -14,19 +14,19 @@
         "tip": "tip.bachata.lateral"
       },
       {
-        "id": "basic-forward-back",
-        "name": "fig.basic.forwardback",
+        "id": "basic-in-place",
+        "name": "fig.basic.inplace",
         "video": "DcgSb1aYUO0",
-        "desc": "desc.bachata.basic.forwardback",
+        "desc": "desc.bachata.basic.inplace",
         "tech": "tech.bachata.basic",
         "err": "err.bachata.basic",
         "tip": "tip.bachata.basic"
       },
       {
-        "id": "basic-in-place",
-        "name": "fig.basic.inplace",
+        "id": "basic-forward-back",
+        "name": "fig.basic.forwardback",
         "video": "DcgSb1aYUO0",
-        "desc": "desc.bachata.basic.inplace",
+        "desc": "desc.bachata.basic.forwardback",
         "tech": "tech.bachata.basic",
         "err": "err.bachata.basic",
         "tip": "tip.bachata.basic"
@@ -40,6 +40,22 @@
         "err": "err.bachata.basic",
         "tip": "tip.bachata.basic"
       },
+      {
+        "id": "hand-changes",
+        "name": "fig.basic.hands",
+        "video": "5z9uYfPUeZY",
+        "desc": "desc.bachata.hands",
+        "tech": "tech.bachata.basic",
+        "err": "err.bachata.basic",
+        "tip": "tip.bachata.basic"
+      }
+    ]
+  },
+
+  "beginner": {
+    "title": "badge.beginner",
+    "description": "desc.bachata.beginner.short",
+    "items": [
       {
         "id": "basic-turn-follower-r",
         "name": "fig.basic.turnR",
@@ -57,15 +73,6 @@
         "tech": "tech.bachata.turn",
         "err": "err.bachata.turn",
         "tip": "tip.bachata.turn"
-      },
-      {
-        "id": "hand-changes",
-        "name": "fig.basic.hands",
-        "video": "5z9uYfPUeZY",
-        "desc": "desc.bachata.hands",
-        "tech": "tech.bachata.basic",
-        "err": "err.bachata.basic",
-        "tip": "tip.bachata.basic"
       },
       {
         "id": "wrap-simple",
@@ -110,6 +117,60 @@
         "name": "fig.basic.shines",
         "video": "8SGd3za49B8",
         "desc": "desc.bachata.shines.basic",
+        "tech": "tech.bachata.footwork",
+        "err": "err.bachata.footwork",
+        "tip": "tip.bachata.footwork"
+      }
+    ]
+  },
+
+  "improver": {
+    "title": "badge.improver",
+    "description": "desc.bachata.improver.short",
+    "items": [
+      {
+        "id": "double-turn-follower",
+        "name": "fig.inter.doubleturn",
+        "video": "PlMkAOYXIbY",
+        "desc": "desc.bachata.turn",
+        "tech": "tech.bachata.turn",
+        "err": "err.bachata.turn",
+        "tip": "tip.bachata.turn",
+        "variations": [
+          {
+            "id": "double-with-hand-change",
+            "name": "fig.double.handchange",
+            "video": "PlMkAOYXIbY",
+            "desc": "desc.double.handchange",
+            "tech": "tech.bachata.turn",
+            "err": "err.bachata.turn",
+            "tip": "tip.bachata.turn"
+          },
+          {
+            "id": "double-sync",
+            "name": "fig.double.sync",
+            "video": "PlMkAOYXIbY",
+            "desc": "desc.double.sync",
+            "tech": "tech.bachata.turn",
+            "err": "err.bachata.turn",
+            "tip": "tip.bachata.turn"
+          }
+        ]
+      },
+      {
+        "id": "shadow-entry",
+        "name": "fig.inter.shadow",
+        "video": "mLIT9UaZ_4w",
+        "desc": "desc.bachata.shadow",
+        "tech": "tech.bachata.basic",
+        "err": "err.bachata.basic",
+        "tip": "tip.bachata.basic"
+      },
+      {
+        "id": "dom-syncop",
+        "name": "fig.inter.syncop",
+        "video": "8SGd3za49B8",
+        "desc": "desc.bachata.footwork",
         "tech": "tech.bachata.footwork",
         "err": "err.bachata.footwork",
         "tip": "tip.bachata.footwork"
@@ -180,44 +241,6 @@
         ]
       },
       {
-        "id": "double-turn-follower",
-        "name": "fig.inter.doubleturn",
-        "video": "PlMkAOYXIbY",
-        "desc": "desc.bachata.turn",
-        "tech": "tech.bachata.turn",
-        "err": "err.bachata.turn",
-        "tip": "tip.bachata.turn",
-        "variations": [
-          {
-            "id": "double-with-hand-change",
-            "name": "fig.double.handchange",
-            "video": "PlMkAOYXIbY",
-            "desc": "desc.double.handchange",
-            "tech": "tech.bachata.turn",
-            "err": "err.bachata.turn",
-            "tip": "tip.bachata.turn"
-          },
-          {
-            "id": "double-sync",
-            "name": "fig.double.sync",
-            "video": "PlMkAOYXIbY",
-            "desc": "desc.double.sync",
-            "tech": "tech.bachata.turn",
-            "err": "err.bachata.turn",
-            "tip": "tip.bachata.turn"
-          }
-        ]
-      },
-      {
-        "id": "shadow-entry",
-        "name": "fig.inter.shadow",
-        "video": "mLIT9UaZ_4w",
-        "desc": "desc.bachata.shadow",
-        "tech": "tech.bachata.basic",
-        "err": "err.bachata.basic",
-        "tip": "tip.bachata.basic"
-      },
-      {
         "id": "dip-basic",
         "name": "fig.dip.basic",
         "video": "mLIT9UaZ_4w",
@@ -225,15 +248,6 @@
         "tech": "tech.bachata.onda",
         "err": "err.bachata.onda",
         "tip": "tip.bachata.onda"
-      },
-      {
-        "id": "dom-syncop",
-        "name": "fig.inter.syncop",
-        "video": "8SGd3za49B8",
-        "desc": "desc.bachata.footwork",
-        "tech": "tech.bachata.footwork",
-        "err": "err.bachata.footwork",
-        "tip": "tip.bachata.footwork"
       }
     ]
   },
