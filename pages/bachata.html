@@ -23,7 +23,7 @@
     <!-- Navbar -->
     <div id="app-nav"></div>
     <!-- Header -->
-    <header class="py-5 bg-gradient-header text-white">
+    <header class="hero-bachata text-white d-flex align-items-center">
       <div class="container text-center">
         <h1 class="fw-bold mb-2" data-i18n="title.bachata">
           Árbol de Figuras: Bachata
@@ -38,36 +38,49 @@
     <section class="py-5">
       <div class="container">
         <!-- Leyenda -->
-
-        <div
-          class="d-flex justify-content-center gap-3 mb-4"
-          data-aos="fade-up"
-        >
-          <span
-            class="badge rounded-pill text-bg-success"
-            data-i18n="badge.foundation"
-            >Fundamentos</span
-          >
-          <span
-            class="badge rounded-pill text-bg-success"
-            data-i18n="badge.beginner"
-            >Principiante</span
-          >
-          <span
-            class="badge rounded-pill text-bg-primary"
-            data-i18n="badge.improver"
-            >Mejorador</span
-          >
-          <span
-            class="badge rounded-pill text-bg-primary"
-            data-i18n="badge.intermediate"
-            >Intermedio</span
-          >
-          <span
-            class="badge rounded-pill text-bg-danger"
-            data-i18n="badge.advanced"
-            >Avanzado</span
-          >
+        <div class="container mb-4" data-aos="fade-up">
+          <div class="row justify-content-center g-2 text-center legend-links">
+            <div class="col-4 col-md-auto">
+              <a
+                class="badge rounded-pill text-bg-success legend-link"
+                data-target-level="foundation"
+                data-i18n="badge.foundation"
+                >Fundamentos</a
+              >
+            </div>
+            <div class="col-4 col-md-auto">
+              <a
+                class="badge rounded-pill text-bg-success legend-link"
+                data-target-level="beginner"
+                data-i18n="badge.beginner"
+                >Principiante</a
+              >
+            </div>
+            <div class="col-6 col-md-auto">
+              <a
+                class="badge rounded-pill text-bg-primary legend-link"
+                data-target-level="improver"
+                data-i18n="badge.improver"
+                >Mejorador</a
+              >
+            </div>
+            <div class="col-6 col-md-auto">
+              <a
+                class="badge rounded-pill text-bg-primary legend-link"
+                data-target-level="intermediate"
+                data-i18n="badge.intermediate"
+                >Intermedio</a
+              >
+            </div>
+            <div class="col-6 col-md-auto">
+              <a
+                class="badge rounded-pill text-bg-danger legend-link"
+                data-target-level="advanced"
+                data-i18n="badge.advanced"
+                >Avanzado</a
+              >
+            </div>
+          </div>
         </div>
 
         <div class="tree-wrapper" data-aos="fade-up" data-aos-delay="50">

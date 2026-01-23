@@ -170,6 +170,19 @@ html[data-theme="dark"] .tree-node[data-level="advanced"] .variation-item {
   background: color-mix(in srgb, var(--advanced) 16%, var(--card-bg));
 }
 
+/* ============================================================
+   🔥 AÑADIDO POR TU PETICIÓN: Badge sin subrayado en leyenda
+============================================================== */
+.legend-link {
+  text-decoration: none !important;
+  color: inherit !important;
+  cursor: pointer;
+}
+
+.legend-link:hover {
+  text-decoration: none !important;
+}
+
 /* ===== Footer stick-to-bottom (global) ===== */
 html, body { height: 100%; }
 body { display: flex; flex-direction: column; min-height: 100vh; }
@@ -178,7 +191,7 @@ footer { margin-top: auto !important; }
 
 /* ============================================================
    Alias visual para niveles nuevos (5 → 3 tiers)
-============================================================ */
+============================================================== */
 .tree-node[data-level="foundation"] .card-body,
 .tree-node[data-level="beginner"] .card-body {
   background: color-mix(in srgb, var(--basic) 12%, white);
@@ -206,4 +219,180 @@ html[data-theme="dark"] .tree-node[data-level="intermediate"] .card-body {
 html[data-theme="dark"] .tree-node[data-level="advanced"] .card-body {
   background: color-mix(in srgb, var(--advanced) 16%, var(--card-bg));
   border: 1px solid color-mix(in srgb, var(--advanced) 45%, #121317);
+}
+
+/* ============================================================
+   FIGURES PAGES — HERO UNIFICADO PARA BACHATA / SALSA
+============================================================ */
+
+/* ----- HERO GENERAL (estructura) ----- */
+[class^="hero-"] {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 140px 0;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+[class^="hero-"]::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    circle at center,
+    rgba(0,0,0,0.55) 0%,
+    rgba(0,0,0,0.70) 45%,
+    rgba(0,0,0,0.82) 80%
+  );
+  z-index: 1;
+}
+
+[class^="hero-"] .container {
+  position: relative;
+  z-index: 2;
+}
+
+[class^="hero-"] h1 {
+  font-size: 3rem;
+  letter-spacing: 1px;
+  text-shadow:
+    0 0 10px rgba(0,0,0,0.7),
+    0 3px 8px rgba(0,0,0,0.6);
+}
+
+[class^="hero-"] p {
+  opacity: 0.95;
+  text-shadow: 0 0 8px rgba(0,0,0,0.6);
+}
+
+/* ----- HERO ESPECÍFICOS ----- */
+
+/* Bachata */
+.hero-bachata {
+  background-image: url('https://images.unsplash.com/photo-1532074205216-d0e1f4b87368?q=80');
+}
+/* Salsa Cubana */
+.hero-salsa-cubana {
+  background-image: url('https://images.unsplash.com/photo-1508804185872-d7badad00f7d?q=80');
+}
+/* Salsa en Línea */
+.hero-salsa-linea {
+  background-image: url('https://images.unsplash.com/photo-1517849845537-4d257902454a?q=80');
+}
+
+
+/* ============================================================
+   LEYENDA (UNIFICADA PARA LOS 3 ESTILOS)
+============================================================ */
+.legend-links a {
+  text-decoration: none !important;
+  color: #fff !important;
+  padding: 8px 14px;
+  font-weight: 600;
+  border-radius: 50px;
+  transition: transform .20s ease, opacity .20s ease, box-shadow .20s ease;
+}
+
+.legend-links a:hover {
+  transform: translateY(-3px);
+  opacity: .9;
+  box-shadow: 0 6px 14px rgba(0,0,0,.2);
+}
+
+/* Colores: Tier = Nivel */
+.legend-links .text-bg-success { background-color: var(--basic) !important; }
+.legend-links .text-bg-primary { background-color: var(--intermediate) !important; }
+.legend-links .text-bg-danger  { background-color: var(--advanced) !important; }
+
+
+/* ============================================================
+   ÁRBOL — Tarjetas premium unificadas
+============================================================ */
+
+.tree-node {
+  transition: transform .25s ease, box-shadow .25s ease !important;
+}
+
+.tree-node:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 1rem 2rem rgba(0,0,0,.15) !important;
+}
+
+.tree-node .card-body {
+  padding: 2rem !important;
+  border-radius: 1rem !important;
+}
+
+.tree-connector::before {
+  opacity: .35 !important;
+}
+
+/* Animación suave del collapse */
+.collapse {
+  transition: all .25s ease !important;
+}
+
+
+/* ============================================================
+   COREOGRAFÍAS — Tarjetas mejoradas
+============================================================ */
+
+#coreografias .card {
+  border-radius: 14px !important;
+  overflow: hidden;
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+
+#coreografias .card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 1rem 2rem rgba(0,0,0,.18);
+}
+
+#coreografias .video-preview img {
+  transition: transform .25s ease;
+}
+
+#coreografias .card:hover .video-preview img {
+  transform: scale(1.04);
+}
+
+/* Divider opcional */
+.bachata-divider,
+.salsa-divider {
+  background: rgba(0,0,0,0.05);
+  font-weight: 600;
+  letter-spacing: .4px;
+  padding: 14px 0;
+  text-align: center;
+}
+
+/* ===== Legend: distribución consistente en móvil ===== */
+@media (max-width: 576px) {
+  /* Convierto el contenedor en un flex-wrap con gap */
+  .legend-links .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px 14px;          /* vertical / horizontal */
+    margin-left: 0;          /* neutraliza gutters negativos del row */
+    margin-right: 0;
+  }
+
+  /* Los "col-*" pasan a auto-width en XS para que no fuercen 33%/50% */
+  .legend-links .col-4,
+  .legend-links .col-6,
+  .legend-links .col-md-auto {
+    flex: 0 0 auto;
+    width: auto;             /* clave para que cada badge ocupe su contenido */
+    padding-left: 0;         /* quitamos gutters internos */
+    padding-right: 0;
+  }
+
+  /* El propio badge no necesita margen; el spacing lo da "gap" */
+  .legend-links a {
+    margin: 0 !important;
+  }
 }

@@ -1,4 +1,3 @@
-
 {
   "nav.home": "Home",
   "nav.salsa": "Salsa",
@@ -7,6 +6,26 @@
   "theme.toggle": "Toggle theme",
   "lang.es": "Spanish",
   "lang.en": "English",
+
+  "home.h1": "Bailoteca",
+  "home.lead": "The platform to learn Salsa and Bachata with clarity.",
+  "home.hero.prefix": "Your modern dance library —",
+  "home.hero.words": ["Learn", "Practice", "Improve", "Progress", "Master", "Dance"],
+  "home.hero.suffix": "—",
+
+
+  "home.card.salsa.title": "Salsa",
+  "home.card.salsa.text": "Explore figures, technique, and guided pathways.",
+  "home.cta.salsa.cubana": "Cuban Salsa",
+  "home.cta.salsa.linea": "Linear Salsa",
+
+  "home.card.bachata.title": "Bachata",
+  "home.card.bachata.text": "Learn steps, styling, and sequences ready for social dancing.",
+  "home.cta.bachata": "Enter Bachata",
+
+  "footer.home": "Bailoteca – Your space to learn",
+
+  "ui.backToTop": "Back to top",
 
   "title.bachata": "Figure Tree: Bachata",
   "subtitle.bachata": "From basic to intermediate and advanced, with video examples.",
@@ -19,7 +38,6 @@
   "badge.intermediate": "Intermediate",
   "badge.advanced": "Advanced",
 
-  
   "variations.show": "Variations",
   "variations.button": "See variations",
   "lbl.technique": "Technique",
@@ -148,9 +166,6 @@
 
   "fig.adv.combo.shadowwrap360dip": "Shadow → wrap → 360 → dip (combo)",
   "desc.combo.shadowwrap360dip": "Linked sequence combining positions and couple dynamics.",
-
-
-
 
   "nav.salsa.cubana": "Cuban Salsa",
   "nav.salsa.linea": "Salsa On Line",
@@ -471,5 +486,3 @@
   "fig.linea.pachanga.adv": "Pachanga (advanced)",
   "desc.linea.pachanga.adv": "Bounces, slides and torso control."
 }
-
-

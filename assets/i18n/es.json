@@ -23,12 +23,30 @@
   "lbl.errors": "Errores comunes",
   "lbl.tip": "Tip",
 
+  "home.h1": "Bailoteca",
+  "home.lead": "La plataforma para aprender Salsa y Bachata con claridad.",
+  "home.hero.prefix": "Tu biblioteca de baile moderna —",
+"home.hero.words": ["Aprende", "Practica", "Mejora", "Progresa", "Domina", "Baila"],
+  "home.hero.suffix": "—",
+
+  "home.card.salsa.title": "Salsa",
+  "home.card.salsa.text": "Explora figuras, técnica y rutas guiadas.",
+  "home.cta.salsa.cubana": "Salsa Cubana",
+  "home.cta.salsa.linea": "Salsa en Línea",
+
+  "home.card.bachata.title": "Bachata",
+  "home.card.bachata.text": "Aprende pasos, estilo y secuencias listas para el social.",
+  "home.cta.bachata": "Entrar en Bachata",
+
+  "footer.home": "Bailoteca – Tu espacio para aprender",
+
+  "ui.backToTop": "Volver arriba",
+
   "desc.bachata.foundation.short": "Ritmo, pasos base y coordinación inicial.",
   "desc.bachata.improver.short": "Conexión y fluidez: dobles giros, sombra y footwork dominicano.",
   "desc.bachata.beginner.short": "Giros básicos, envolventes y entradas sencillas.",
   "desc.bachata.intermediate.short": "Movimientos fluidos y body movement.",
   "desc.bachata.advanced.short": "Musicalidad, control y footwork avanzado.",
-
 
   "fig.basic.lateral": "Paso básico lateral",
   "desc.bachata.basic.lateral": "Paso lateral con toque; torso relajado y conexión cómoda.",
@@ -361,8 +379,6 @@
   "err.cubana.combo": "Encadenar sin respirar; perder conexión.",
   "tip.cubana.combo": "Ancla cada transición en 7‑8 con mirada.",
 
-  
-
   "fig.linea.basic.on1": "Paso básico On1",
   "desc.linea.basic.on1": "Paso base marcando 1‑2‑3 / 5‑6‑7, pausas en 4 y 8.",
 
@@ -373,13 +389,11 @@
   "err.linea.basic": "Pisadas largas; perder la pausa.",
   "tip.linea.basic": "Cuenta en voz alta y usa metrónomo.",
 
-
   "fig.linea.openbreak": "Ruptura abierta",
   "desc.linea.openbreak": "Apertura hacia atrás para preparar giros y el CBL.",
   "tech.linea.openbreak": "Marca leve hacia atrás sin tirar de brazos.",
   "err.linea.openbreak": "Exceso de amplitud; rigidez de hombros.",
   "tip.linea.openbreak": "Piensa 'elástico', no rígido.",
-
 
   "fig.linea.spotturn": "Giro en el sitio",
   "desc.linea.spotturn": "Giro en el sitio con spotting y preparación clara.",
@@ -387,13 +401,11 @@
   "err.linea.spotturn": "Girar con planta completa; perder eje.",
   "tip.linea.spotturn": "Activa el core para iniciar.",
 
-
   "fig.linea.backspotturn": "Giro hacia atrás",
   "desc.linea.backspotturn": "Giro hacia atrás manteniendo una línea estable.",
   "tech.linea.backspotturn": "Paso atrás corto y torso controlado.",
   "err.linea.backspotturn": "Abrir demasiado la cadera.",
   "tip.linea.backspotturn": "Mantén hombros neutrales.",
-
 
   "fig.linea.rightturn": "Giro a la derecha",
   "desc.linea.rightturn": "Giro a la derecha con guía clara y altura correcta.",
@@ -405,13 +417,11 @@
   "err.linea.turns": "Brazos rígidos; elevar tarde.",
   "tip.linea.turns": "Spotting hacia un punto fijo.",
 
-
   "fig.linea.cbl": "Cross Body Lead (CBL)",
   "desc.linea.cbl": "Cambio de línea con trayectoria limpia y frame estable.",
   "tech.linea.cbl": "Abre sendero con torso; marca en diagonal.",
   "err.linea.cbl": "Cruzar tarde; bloquear la salida.",
   "tip.linea.cbl": "Piensa 'pista' y 'paso corto'.",
-
 
   "fig.linea.cbl.inside": "CBL con giro interior",
   "desc.linea.cbl.inside": "Giro hacia dentro durante el CBL.",
@@ -419,13 +429,11 @@
   "fig.linea.cbl.outside": "CBL con giro exterior",
   "desc.linea.cbl.outside": "Giro hacia fuera sobre el CBL.",
 
-
   "fig.linea.suzyq.basic": "Suzy Q (básico)",
   "desc.linea.suzyq.basic": "Footwork básico trenzado.",
   "tech.linea.suzyq": "Pies paralelos, pasos cortos, torso neutro.",
   "err.linea.suzyq": "Cruzar demasiado; perder el 1.",
   "tip.linea.suzyq": "Empieza lento y acelera después.",
-
 
   "fig.linea.double.right": "Doble giro derecha",
   "desc.linea.double.right": "Doble giro con preparación clara.",
@@ -433,13 +441,11 @@
   "err.linea.doubleturn": "Falta de preparación; exceso de brazo.",
   "tip.linea.doubleturn": "Piensa 'preparar‑girar‑cerrar'.",
 
-
   "fig.linea.freespin": "Giro libre",
   "desc.linea.freespin": "Giro sin agarre con control del eje.",
   "tech.linea.freespin": "Usa mirada/mano para comunicar.",
   "err.linea.freespin": "Empujar/tirar; perder balance.",
   "tip.linea.freespin": "Eleva, suelta y recibe.",
-
 
   "fig.linea.hammerlock": "Enganche atrás (Hammerlock)",
   "desc.linea.hammerlock": "Agarre detrás de la espalda con salida cómoda.",
@@ -447,13 +453,11 @@
   "err.linea.hammerlock": "Ángulos incómodos por mala altura.",
   "tip.linea.hammerlock": "Mantén línea corta y limpia.",
 
-
   "fig.linea.copa.basic": "Copa (básica)",
   "desc.linea.copa.basic": "Parada con copa y reorientación.",
   "tech.linea.copa": "Pausa nítida y re‑dirección suave.",
   "err.linea.copa": "Forzar retorno; perder conexión.",
   "tip.linea.copa": "Usa la pausa para comunicar.",
-
 
   "fig.linea.titanic": "Titanic",
   "desc.linea.titanic": "Posición abierta estilo 'crucifix' con salida suave.",
@@ -461,10 +465,8 @@
   "err.linea.titanic": "Rigidez excesiva.",
   "tip.linea.titanic": "Mantén codos suaves.",
 
-
   "fig.linea.reverse.cbl": "CBL invertido",
   "desc.linea.reverse.cbl": "Cambio de línea invertido con guía del torso.",
-
 
   "fig.linea.wrapturn": "Vuelta envolvente",
   "desc.linea.wrapturn": "Envolvente con salida controlada.",
@@ -472,17 +474,14 @@
   "err.linea.wrapturn": "Cerrar demasiado el círculo.",
   "tip.linea.wrapturn": "Dibuja un círculo cómodo.",
 
-
   "fig.linea.cbl360": "CBL 360°",
   "desc.linea.cbl360": "Entrada/salida del CBL con giro completo.",
   "tech.linea.cbl360": "Mantén eje y timing.",
   "err.linea.cbl360": "Perder centro; salir tarde.",
   "tip.linea.cbl360": "Piensa 'giro, trazo, salida'.",
 
-
   "fig.linea.double.left": "Doble giro izquierda",
   "desc.linea.double.left": "Doble giro controlado hacia la izquierda.",
-
 
   "fig.linea.checkturn": "Giro con parada (Check turn)",
   "desc.linea.checkturn": "Chequeo con re‑dirección.",
@@ -490,10 +489,8 @@
   "err.linea.checkturn": "Lanzar sin chequear.",
   "tip.linea.checkturn": "Check corto y elástico.",
 
-
   "fig.linea.freespins.io": "Giros Inside/Outside",
   "desc.linea.freespins.io": "Secuencia de giros libres dentro/fuera.",
-
 
   "fig.linea.shadow": "Posición sombra",
   "desc.linea.shadow": "Posición paralela con desplazamiento lateral.",
@@ -501,17 +498,14 @@
   "err.linea.shadow": "Hombros arriba; cerrar salida.",
   "tip.linea.shadow": "Deja espacio para respirar.",
 
-
   "fig.linea.handtoss": "Lanzamiento de mano",
   "desc.linea.handtoss": "Lanzamiento suave de mano con recepción limpia.",
   "tech.linea.handtoss": "Altura media; trayectoria definida.",
   "err.linea.handtoss": "Tirar fuerte; perder timing.",
   "tip.linea.handtoss": "Piensa 'soltar', no 'lanzar'.",
 
-
   "fig.linea.cbldouble": "CBL + doble giro",
   "desc.linea.cbldouble": "CBL enlazado con doble giro fluido.",
-
 
   "fig.linea.triple.right": "Triple giro derecha",
   "desc.linea.triple.right": "Triple giro con control y buen spotting.",
@@ -522,17 +516,14 @@
   "err.linea.spin": "Cargar con brazos; perder mirada.",
   "tip.linea.spin": "Divide: preparación, giro, cierre.",
 
-
   "fig.linea.copa.adv": "Copa avanzada",
   "desc.linea.copa.adv": "Copa con pausa, giro y re‑dirección.",
-
 
   "fig.linea.barrel": "Giro barril",
   "desc.linea.barrel": "Giro estilo barril con cambios de nivel.",
   "tech.linea.barrel": "Centro bajo; trayectorias paralelas.",
   "err.linea.barrel": "Subir/bajar bruscamente; mareo.",
   "tip.linea.barrel": "Aumenta el nivel gradualmente.",
-
 
   "fig.linea.whip.inside": "Whip interior",
   "desc.linea.whip.inside": "Latigazo hacia dentro con salida fluida.",
@@ -544,21 +535,17 @@
   "err.linea.whip": "Tirar fuerte; perder centro.",
   "tip.linea.whip": "Piensa en un resorte controlado.",
 
-
   "fig.linea.multiwraps": "Envolventes múltiples",
   "desc.linea.multiwraps": "Cadena de envolventes con salidas limpias.",
   "tech.linea.multiwraps": "Altura constante y muñeca suelta.",
   "err.linea.multiwraps": "Ángulos incómodos; enredos.",
   "tip.linea.multiwraps": "Trazo circular uniforme.",
 
-
   "fig.linea.copa.360wrap": "Copa → 360 → salida envolvente",
   "desc.linea.copa.360wrap": "Copa, giro completo y salida envolvente.",
 
-
   "fig.linea.cbl.3spins": "CBL + triple giro",
   "desc.linea.cbl.3spins": "CBL enlazado con tres giros controlados.",
-
 
   "fig.linea.pachanga.adv": "Pachanga avanzada",
   "desc.linea.pachanga.adv": "Patrón de pachanga con rebotes y desplazamientos."

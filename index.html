@@ -1,5 +1,5 @@
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
@@ -19,15 +19,20 @@
   <body class="d-flex flex-column min-vh-100 common-page">
     <!-- NAVBAR (parcial) -->
     <div id="app-nav"></div>
+
     <!-- HERO -->
-    <header class="py-5 bg-gradient-header text-white">
-      <div class="container text-center">
-        <h1 class="fw-bold mb-3" data-i18n="home.h1">Bienvenido a Bailoteca</h1>
-        <p class="lead mb-4" data-i18n="home.lead">
-          La plataforma para aprender Salsa y Bachata con claridad: niveles, rutas y vídeos explicados paso a paso.
+    <header class="hero-dance-section text-white d-flex align-items-center">
+      <div class="container text-center hero-content">
+        <h1 class="fw-bold mb-3 hero-title" data-i18n="home.h1">Bailoteca</h1>
+
+        <p class="lead mb-4 hero-subtitle" data-i18n="home.lead">
+          La plataforma para aprender Salsa y Bachata con claridad.
         </p>
-        <p class="text-white-50 small mb-0">
-          Tu biblioteca de baile moderna — aprende, practica y mejora.
+
+        <p>
+          <span data-i18n="home.hero.prefix">Tu biblioteca de baile moderna —</span>
+          <span id="dynamicWords"></span>
+          <span data-i18n="home.hero.suffix"> —</span>
         </p>
       </div>
     </header>
@@ -36,17 +41,19 @@
     <section class="py-5">
       <div class="container">
         <div class="row g-4">
-          <!-- SALSA: ahora con selección Cubana / En Línea -->
+
+          <!-- SALSA -->
           <div class="col-md-6" data-aos="fade-up">
-            <div class="card border-0 shadow-sm h-100">
+            <div
+              class="card card-dance h-100"
+              style="background-image:url('https://images.unsplash.com/photo-1508804185872-d7badad00f7d?auto=format&fit=crop&w=1200&q=80');">
               <div class="card-body">
                 <h5 class="card-title" data-i18n="home.card.salsa.title">Salsa</h5>
                 <p class="card-text" data-i18n="home.card.salsa.text">
-                  Explora el árbol de figuras, aprende desde cero y avanza con técnica, variaciones y rutas guiadas.
+                  Explora figuras, técnica y rutas guiadas.
                 </p>
-
                 <div class="d-flex flex-wrap gap-2">
-                  <a class="btn btn-outline-danger" href="./pages/salsa-cubana.html" data-i18n="home.cta.salsa.cubana">
+                  <a class="btn btn-outline-light" href="./pages/salsa-cubana.html" data-i18n="home.cta.salsa.cubana">
                     Salsa Cubana
                   </a>
                   <a class="btn btn-danger" href="./pages/salsa-linea.html" data-i18n="home.cta.salsa.linea">
@@ -59,24 +66,33 @@
 
           <!-- BACHATA -->
           <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="card border-0 shadow-sm h-100">
+            <div
+              class="card card-dance h-100"
+              style="background-image:url('https://images.unsplash.com/photo-1532074205216-d0e1f4b87368?auto=format&fit=crop&w=1200&q=80');">
               <div class="card-body">
                 <h5 class="card-title" data-i18n="home.card.bachata.title">Bachata</h5>
                 <p class="card-text" data-i18n="home.card.bachata.text">
-                  Aprende pasos, figuras, body movement y secuencias listas para llevar al social.
+                  Aprende pasos, estilo y secuencias listas para el social.
                 </p>
-                <a class="btn btn-outline-warning" href="./pages/bachata.html" data-i18n="home.cta.bachata">
+                <a class="btn btn-warning" href="./pages/bachata.html" data-i18n="home.cta.bachata">
                   Entrar en Bachata
                 </a>
               </div>
             </div>
           </div>
+
         </div><!-- /row -->
       </div>
     </section>
 
     <!-- BOTÓN VOLVER ARRIBA -->
-    <button id="scrollTopBtn" class="scroll-top btn btn-danger btn-lg rounded-circle" aria-label="Volver arriba">↑</button>
+    <button
+      id="scrollTopBtn"
+      class="scroll-top btn btn-danger btn-lg rounded-circle"
+      data-i18n-attr="aria-label:ui.backToTop"
+      aria-label="Volver arriba">
+      ↑
+    </button>
 
     <!-- FOOTER (parcial) -->
     <div id="app-footer"></div>

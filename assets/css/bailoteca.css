@@ -1,20 +1,79 @@
-/* assets/css/bailoteca.css */
+
+/* ============================================================
+   BAILOTECA — Estilos de marca + nuevo diseño moderno
+============================================================ */
+
+/* PALETA BASE DE BAILOTECA */
 :root {
-  --bailoteca-primary: #ff5a5f; /* coral */
-  --bailoteca-secondary: #2a2d5a; /* índigo */
+  --bailoteca-primary: #ff5a5f;      /* Coral */
+  --bailoteca-secondary: #2a2d5a;    /* Índigo */
+  --bailoteca-yellow: #f0b429;       /* Amarillo bachata */
+  --bailoteca-dark-overlay: rgba(0,0,0,0.55);
 }
 
-/* Header degradado de marca */
-.bg-gradient-bailoteca {
-  background: linear-gradient(
-    135deg,
-    var(--bailoteca-primary),
-    var(--bailoteca-secondary)
-  );
-  color: #fff;
+/* ============================================================
+   HERO PROFESIONAL CON GIF + OVERLAY RADIAL (Opción 2)
+============================================================ */
+
+.hero-dance-section {
+  background-image: url('https://media1.tenor.com/images/614ee6d0770138b76547b448c210dc2f/tenor.gif?itemid=16485464');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 140px 0;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 65vh;
 }
 
-/* Botones acorde a marca (sin romper Bootstrap) */
+/* Oscurece solo el centro para máxima legibilidad del texto */
+.hero-title,
+.hero-subtitle,
+.hero-dynamic-text {
+  position: relative;
+  z-index: 2;
+  text-shadow: 0 0 6px rgba(0,0,0,0.6);
+}
+
+.hero-title {
+  font-size: 3rem;
+  letter-spacing: 1px;
+  text-shadow: 
+    0 0 10px rgba(0,0,0,0.75),
+    0 3px 8px rgba(0,0,0,0.6);
+}
+
+.hero-subtitle {
+  font-size: 1.25rem;
+  opacity: 0.95;
+}
+
+.hero-dynamic-text {
+  margin-top: 1rem;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+/* Animación de texto tipo “aprende, practica, mejora” */
+#dynamicWords {
+  font-weight: 800;
+  color: var(--bailoteca-yellow);
+  animation: fadeWord 1.6s ease-in-out infinite;
+}
+
+@keyframes fadeWord {
+  0%   { opacity: 0; transform: translateY(10px); }
+  20%  { opacity: 1; transform: translateY(0); }
+  80%  { opacity: 1; transform: translateY(0); }
+  100% { opacity: 0; transform: translateY(-10px); }
+}
+
+/* ============================================================
+   BOTONES DE MARCA
+============================================================ */
+
 .btn-outline-danger {
   --bs-btn-color: var(--bailoteca-primary);
   --bs-btn-border-color: var(--bailoteca-primary);
@@ -26,11 +85,91 @@
 }
 
 .btn-outline-warning {
-  --bs-btn-color: #f0b429;
-  --bs-btn-border-color: #f0b429;
+  --bs-btn-color: var(--bailoteca-yellow);
+  --bs-btn-border-color: var(--bailoteca-yellow);
 }
 .btn-outline-warning:hover {
-  background: #f0b429;
-  border-color: #f0b429;
+  background: var(--bailoteca-yellow);
+  border-color: var(--bailoteca-yellow);
   color: #222;
+}
+
+/* ============================================================
+   CARDS MODERNAS CON IMAGEN Y ESTILO DANZA
+============================================================ */
+
+.card-dance {
+  border-radius: 18px;
+  overflow: hidden;
+  position: relative;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+
+.card-dance::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.45);
+}
+
+.card-dance .card-body {
+  position: relative;
+  z-index: 2;
+  color: white;
+}
+
+.card-dance h5 {
+  font-size: 1.6rem;
+  margin-bottom: 0.75rem;
+}
+
+.card-dance:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 1rem 2rem rgba(0,0,0,0.18);
+}
+
+/* ============================================================
+   SECTION TRANSITIONS (para darle fluidez estilo baile)
+============================================================ */
+
+[data-aos] {
+  transition-timing-function: cubic-bezier(.25,.46,.45,.94) !important;
+}
+
+[data-aos="fade-up"] {
+  transform: translateY(20px);
+}
+
+/* Salsa: energía → animaciones más dinámicas */
+.card-dance[data-style="salsa"]:hover {
+  transform: translateY(-8px) rotate(0.5deg);
+}
+
+/* Bachata: suavidad → movimientos fluidos */
+.card-dance[data-style="bachata"]:hover {
+  transform: translateY(-5px) scale(1.015);
+}
+
+/* ============================================================
+   TEXTO & TIPOGRAFÍA
+============================================================ */
+
+.hero-title,
+.card-dance h5 {
+  font-weight: 800;
+  letter-spacing: 0.5px;
+}
+
+/* ============================================================ */
+
+
+/* Quitar solo el recuadro oscuro pequeño del texto dinámico */
+.hero-content > * {
+  background: transparent !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+  border: 0 !important;
 }

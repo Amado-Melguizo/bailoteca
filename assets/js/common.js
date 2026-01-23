@@ -1,8 +1,7 @@
-
 document.addEventListener("DOMContentLoaded", () => {
   /* ===========================================
-     HELPERS DE RUTA (root-aware)
-  ============================================ */
+      HELPERS DE RUTA (root-aware)
+    ============================================ */
   function resolveRoot() {
     // Normaliza por si Windows devuelve backslashes y elimina querystring
     const path = location.pathname.split("?")[0].replace(/\\/g, "/");
@@ -37,7 +36,9 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
   // Theme inicial (antes de cargar parciales para evitar "flash")
-  const prefersDark = window.matchMedia?.("(prefers-color-scheme: dark)")?.matches;
+  const prefersDark = window.matchMedia?.(
+    "(prefers-color-scheme: dark)",
+  )?.matches;
   const storedTheme = localStorage.getItem("theme");
   applyTheme(storedTheme || (prefersDark ? "dark" : "light"));
 
@@ -103,11 +104,16 @@ document.addEventListener("DOMContentLoaded", () => {
     // Mapeo semántico (5 niveles) → tier visual (3 niveles)
     const tierOf = (levelKey) => {
       if (levelKey === "foundation" || levelKey === "beginner") return "basic";
-      if (levelKey === "improver" || levelKey === "intermediate") return "intermediate";
+      if (levelKey === "improver" || levelKey === "intermediate")
+        return "intermediate";
       return "advanced";
     };
     const colorOf = (tier) =>
-      tier === "basic" ? "success" : tier === "intermediate" ? "primary" : "danger";
+      tier === "basic"
+        ? "success"
+        : tier === "intermediate"
+          ? "primary"
+          : "danger";
 
     Object.entries(data).forEach(([levelKey, level]) => {
       const tier = tierOf(levelKey);
@@ -119,120 +125,120 @@ document.addEventListener("DOMContentLoaded", () => {
       const buttons = (level.items || [])
         .map(
           (item) => `
-      <button class="btn btn-outline-${color} btn-sm"
-        data-bs-toggle="collapse"
-        data-bs-target="#${item.id}"
-        data-i18n="${item.name}"></button>
-    `,
+        <button class="btn btn-outline-${color} btn-sm"
+          data-bs-toggle="collapse"
+          data-bs-target="#${item.id}"
+          data-i18n="${item.name}"></button>
+      `,
         )
         .join("");
 
       const panels = (level.items || [])
         .map(
           (item) => `
-      <div class="collapse mt-3" id="${item.id}">
-        <div class="variation-head">
-          <h6 class="mb-1" data-i18n="${item.name}"></h6>
-          <div class="variation-meta">
-            <span class="badge rounded-pill text-bg-secondary">1‑8</span>
-            <span class="badge rounded-pill text-bg-light" data-i18n="${level.title}"></span>
-          </div>
-        </div>
-
-        <p class="variation-desc mt-2 mb-2" data-i18n="${item.desc}"></p>
-
-        <div class="variation-grid">
-          <div class="ratio ratio-16x9 video-preview" data-video-id="${item.video || ""}"></div>
-
-          <div class="variation-notes">
-            <div class="small text-muted fw-semibold mb-1" data-i18n="lbl.technique"></div>
-            <ul class="small mb-2">
-              <li data-i18n="${item.tech}"></li>
-            </ul>
-
-            <div class="small text-muted fw-semibold mb-1" data-i18n="lbl.errors"></div>
-            <ul class="small mb-2">
-              <li data-i18n="${item.err}"></li>
-            </ul>
-
-            <div class="alert alert-${color} py-2 px-3 mb-0 small">
-              <strong data-i18n="lbl.tip"></strong>:
-              <span data-i18n="${item.tip}"></span>
+        <div class="collapse mt-3" id="${item.id}">
+          <div class="variation-head">
+            <h6 class="mb-1" data-i18n="${item.name}"></h6>
+            <div class="variation-meta">
+              <span class="badge rounded-pill text-bg-secondary">1‑8</span>
+              <span class="badge rounded-pill text-bg-light" data-i18n="${level.title}"></span>
             </div>
           </div>
-        </div>
 
-        ${
-          item.variations && item.variations.length
-            ? `
-          <div class="d-flex flex-wrap gap-2 align-items-center mb-2 mt-3">
-            <span class="badge text-bg-light" data-i18n="variations.show"></span>
-            <button class="btn btn-outline-secondary btn-sm"
-              data-bs-toggle="collapse"
-              data-bs-target="#${item.id}-variaciones"
-              data-i18n="variations.button"></button>
+          <p class="variation-desc mt-2 mb-2" data-i18n="${item.desc}"></p>
+
+          <div class="variation-grid">
+            <div class="ratio ratio-16x9 video-preview" data-video-id="${item.video || ""}"></div>
+
+            <div class="variation-notes">
+              <div class="small text-muted fw-semibold mb-1" data-i18n="lbl.technique"></div>
+              <ul class="small mb-2">
+                <li data-i18n="${item.tech}"></li>
+              </ul>
+
+              <div class="small text-muted fw-semibold mb-1" data-i18n="lbl.errors"></div>
+              <ul class="small mb-2">
+                <li data-i18n="${item.err}"></li>
+              </ul>
+
+              <div class="alert alert-${color} py-2 px-3 mb-0 small">
+                <strong data-i18n="lbl.tip"></strong>:
+                <span data-i18n="${item.tip}"></span>
+              </div>
+            </div>
           </div>
 
-          <div class="collapse" id="${item.id}-variaciones">
-            <ul class="list-group list-group-flush variation-list">
-              ${item.variations
-                .map(
-                  (v) => `
-                <li class="list-group-item variation-item">
-                  <div class="variation-head">
-                    <h6 class="mb-1" data-i18n="${v.name}"></h6>
-                    <div class="variation-meta">
-                      <span class="badge rounded-pill text-bg-secondary">1‑8</span>
-                      <span class="badge rounded-pill text-bg-light" data-i18n="${level.title}"></span>
-                    </div>
-                  </div>
+          ${
+            item.variations && item.variations.length
+              ? `
+            <div class="d-flex flex-wrap gap-2 align-items-center mb-2 mt-3">
+              <span class="badge text-bg-light" data-i18n="variations.show"></span>
+              <button class="btn btn-outline-secondary btn-sm"
+                data-bs-toggle="collapse"
+                data-bs-target="#${item.id}-variaciones"
+                data-i18n="variations.button"></button>
+            </div>
 
-                  <p class="variation-desc mt-2 mb-2" data-i18n="${v.desc}"></p>
-
-                  <div class="variation-grid">
-                    <div class="ratio ratio-16x9 video-preview" data-video-id="${v.video || ""}"></div>
-
-                    <div class="variation-notes">
-                      <div class="small text-muted fw-semibold mb-1" data-i18n="lbl.technique"></div>
-                      <ul class="small mb-2">
-                        <li data-i18n="${v.tech}"></li>
-                      </ul>
-
-                      <div class="small text-muted fw-semibold mb-1" data-i18n="lbl.errors"></div>
-                      <ul class="small mb-2">
-                        <li data-i18n="${v.err}"></li>
-                      </ul>
-
-                      <div class="alert alert-${tier === "advanced" ? "danger" : "primary"} py-2 px-3 mb-0 small">
-                        <strong data-i18n="lbl.tip"></strong>:
-                        <span data-i18n="${v.tip}"></span>
+            <div class="collapse" id="${item.id}-variaciones">
+              <ul class="list-group list-group-flush variation-list">
+                ${item.variations
+                  .map(
+                    (v) => `
+                  <li class="list-group-item variation-item">
+                    <div class="variation-head">
+                      <h6 class="mb-1" data-i18n="${v.name}"></h6>
+                      <div class="variation-meta">
+                        <span class="badge rounded-pill text-bg-secondary">1‑8</span>
+                        <span class="badge rounded-pill text-bg-light" data-i18n="${level.title}"></span>
                       </div>
                     </div>
-                  </div>
-                </li>
-              `,
-                )
-                .join("")}
-            </ul>
-          </div>
-        `
-            : ""
-        }
-      </div>
-    `,
+
+                    <p class="variation-desc mt-2 mb-2" data-i18n="${v.desc}"></p>
+
+                    <div class="variation-grid">
+                      <div class="ratio ratio-16x9 video-preview" data-video-id="${v.video || ""}"></div>
+
+                      <div class="variation-notes">
+                        <div class="small text-muted fw-semibold mb-1" data-i18n="lbl.technique"></div>
+                        <ul class="small mb-2">
+                          <li data-i18n="${v.tech}"></li>
+                        </ul>
+
+                        <div class="small text-muted fw-semibold mb-1" data-i18n="lbl.errors"></div>
+                        <ul class="small mb-2">
+                          <li data-i18n="${v.err}"></li>
+                        </ul>
+
+                        <div class="alert alert-${tier === "advanced" ? "danger" : "primary"} py-2 px-3 mb-0 small">
+                          <strong data-i18n="lbl.tip"></strong>:
+                          <span data-i18n="${v.tip}"></span>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                `,
+                  )
+                  .join("")}
+              </ul>
+            </div>
+          `
+              : ""
+          }
+        </div>
+      `,
         )
         .join("");
 
       levelDiv.innerHTML = `
-      <div class="tree-node card border-0 shadow-sm hover-lift" data-level="${tier}">
-        <div class="card-body">
-          <h5 class="card-title mb-2" data-i18n="${level.title}"></h5>
-          <p class="text-muted small mb-3" data-i18n="${level.description}"></p>
-          <div class="d-flex flex-wrap gap-2">${buttons}</div>
-          ${panels}
+        <div class="tree-node card border-0 shadow-sm hover-lift"data-level="${levelKey}" data-level="${tier}">
+          <div class="card-body">
+            <h5 class="card-title mb-2" data-i18n="${level.title}"></h5>
+            <p class="text-muted small mb-3" data-i18n="${level.description}"></p>
+            <div class="d-flex flex-wrap gap-2">${buttons}</div>
+            ${panels}
+          </div>
         </div>
-      </div>
-    `;
+      `;
 
       container.appendChild(levelDiv);
       const connector = document.createElement("div");
@@ -311,13 +317,15 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   /* ========== YEAR ========== */
-  document.querySelectorAll("#year")
+  document
+    .querySelectorAll("#year")
     .forEach((el) => (el.textContent = new Date().getFullYear()));
 
   /* ========== SCROLL TOP ========== */
   const topBtn = document.getElementById("scrollTopBtn");
   if (topBtn) {
-    const toggleBtn = () => topBtn.classList.toggle("show", window.scrollY > 300);
+    const toggleBtn = () =>
+      topBtn.classList.toggle("show", window.scrollY > 300);
     window.addEventListener("scroll", toggleBtn, { passive: true });
     toggleBtn();
     topBtn.addEventListener("click", (e) => {
@@ -327,9 +335,9 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   /* ===========================================
-     LOAD PARTIALS (NAV + FOOTER)
-     Funciona en raíz y en /pages/ automáticamente.
-  ============================================ */
+      LOAD PARTIALS (NAV + FOOTER)
+      Funciona en raíz y en /pages/ automáticamente.
+    ============================================ */
   async function includePartials() {
     const navMount = document.getElementById("app-nav");
     const footerMount = document.getElementById("app-footer");
@@ -356,7 +364,8 @@ document.addEventListener("DOMContentLoaded", () => {
       try {
         const footerUrl = `${root}assets/partials/footer.html`;
         const res = await fetch(footerUrl);
-        if (!res.ok) throw new Error(`No se encontró footer.html en ${footerUrl}`);
+        if (!res.ok)
+          throw new Error(`No se encontró footer.html en ${footerUrl}`);
         const footerHtml = applyRoot(await res.text());
         footerMount.innerHTML = footerHtml;
       } catch (error) {
@@ -371,20 +380,113 @@ document.addEventListener("DOMContentLoaded", () => {
     // Reaplicar idioma y previews y actualizar año
     applyLanguage();
     activateVideoPreviews?.();
-    document.querySelectorAll("#year")
+    document
+      .querySelectorAll("#year")
       .forEach((el) => (el.textContent = new Date().getFullYear()));
   }
+
+  /* Cerrar cualquier otro panel al abrir uno nuevo */
+  document.addEventListener("show.bs.collapse", function (e) {
+    document.querySelectorAll(".collapse.show").forEach((open) => {
+      if (open !== e.target) {
+        const collapse = bootstrap.Collapse.getInstance(open);
+        collapse?.hide();
+      }
+    });
+  });
+
+  function activarEnlacesLeyenda() {
+    document.querySelectorAll(".legend-link").forEach((badge) => {
+      badge.addEventListener("click", () => {
+        const level = badge.dataset.targetLevel;
+        if (!level) return;
+
+        const nodo = document.querySelector(
+          `.tree-node[data-level="${level}"]`,
+        );
+        if (!nodo) return;
+
+        // Calcular posición para dejar el panel centrado
+        const rect = nodo.getBoundingClientRect();
+        const scrollTop =
+          window.scrollY +
+          rect.top -
+          (window.innerHeight / 2 - rect.height / 2);
+
+        window.scrollTo({
+          top: scrollTop,
+          behavior: "smooth",
+        });
+      });
+    });
+  }
+
+  /* Texto dinámico en el hero (multilenguaje) */
+
+  function initDynamicWords() {
+    const el = document.getElementById("dynamicWords");
+    if (!el) return;
+
+    // 1) Leer desde el diccionario actual (I18N debe estar cargado ya)
+    let words = I18N?.["home.hero.words"];
+
+    // 2) Fallback seguro si no hay array válido
+    if (!Array.isArray(words) || words.length === 0) {
+      words = ["Falla"];
+    }
+
+    // 3) Evitar duplicar intervalos si el usuario cambia de idioma
+    if (el._interval) {
+      clearInterval(el._interval);
+      el._interval = null;
+    }
+
+    // 4) Arranque y rotación
+    let i = 0;
+    const rotate = () => {
+      // Defensa por si el array cambia de longitud en runtime
+      if (i >= words.length) i = 0;
+      el.textContent = words[i];
+      i = (i + 1) % words.length;
+    };
+    rotate(); // pinta la primera palabra inmediatamente
+    el._interval = setInterval(rotate, 2000);
+  }
+
+function bindLangToggles() {
+  document.querySelectorAll(".langToggle").forEach((btn) => {
+    btn.replaceWith(btn.cloneNode(true));
+  });
+
+  document.querySelectorAll(".langToggle").forEach((btn) => {
+    btn.addEventListener("click", async () => {
+      const lang = btn.getAttribute("data-lang") || "es";
+      localStorage.setItem("lang", lang);
+
+      await loadI18n(lang);   // I18N recargado
+      applyLanguage();
+
+      initDynamicWords();     // ⭐ REINICIAR CARRUSEL CON NUEVO IDIOMA
+    });
+  });
+}
 
   /* ========== INIT (orden correcto) ========== */
   (async function init() {
     try {
-      // 1) Inyectar NAV/FOOTER (necesario para detectar y enlazar botones)
+      // 1) Inyectar NAV/FOOTER primero (necesario para tener los botones de idioma/tema)
       await includePartials();
 
-      // 2) Cargar i18n según idioma guardado y aplicar
-      await loadI18n(currentLang);
+      // 2) Cargar i18n según idioma guardado (esto también llama a applyLanguage() en tu código)
+      await loadI18n(currentLang); // <-- ahora I18N ya está disponible
 
-      // 3) Construcciones dinámicas según la página
+      // 3) Texto dinámico del hero (lee I18N ya cargado)
+      initDynamicWords();
+
+      // 4) Enlaces de leyenda (no es async, no uses await)
+      activarEnlacesLeyenda();
+
+      // 5) Construcciones dinámicas de páginas que existan
       await buildBachata(); // actúa SOLO si existe #bachata-tree
 
       if (document.querySelector("#salsa-cubana-tree")) {
@@ -393,6 +495,9 @@ document.addEventListener("DOMContentLoaded", () => {
       if (document.querySelector("#salsa-linea-tree")) {
         await buildSalsaLinea();
       }
+
+      // 6) (Opcional) Re‑aplicar idioma por seguridad tras construir dinámicos
+      applyLanguage();
     } catch (e) {
       console.error(e);
     }
