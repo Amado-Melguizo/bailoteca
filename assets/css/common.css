@@ -1,0 +1,398 @@
+
+:root {
+  /* Paleta base (modo claro) */
+  --salsa: #e53935;
+  --bachata: #ffb300;
+  --basic: #198754;
+  --intermediate: #0d6efd;
+  --advanced: #dc3545;
+
+  /* Tokens del tema (LIGHT) */
+  --bs-body-bg: #ffffff;
+  --bs-body-color: #212529;
+  --card-bg: #ffffff;
+  --card-border: rgba(0, 0, 0, 0.125);
+  --muted: #6c757d;
+  --surface-subtle: #f7f7fa;
+  --video-play-bg: rgba(255, 255, 255, 0.9);
+  --video-play-color: var(--salsa);
+
+  /* Estados/hover/efectos */
+  --elevation-shadow: 0 0.75rem 1.5rem rgba(0, 0, 0, 0.12);
+  --hover-shadow: 0 0.75rem 1.5rem rgba(0, 0, 0, 0.14);
+  --connector-grad: linear-gradient(180deg, rgba(0,0,0,0.05), rgba(0,0,0,0.15));
+  --inverse-on-accent: #fff;
+  --accent-on-inverse: currentColor;
+}
+
+/* ========== DARK MODE ========== */
+html[data-theme="dark"] {
+  --bs-body-bg: #1e2024;
+  --bs-body-color: #e6e6e6;
+  --card-bg: #262932;
+  --card-border: #323544;
+  --muted: #aeb1b8;
+  --surface-subtle: #2b2f39;
+  --video-play-bg: rgba(0, 0, 0, 0.82);
+  --video-play-color: #f9d15b;
+  --elevation-shadow: 0 0.75rem 1.5rem rgba(255,255,255,0.06);
+  --hover-shadow: 0 0.75rem 1.5rem rgba(255,255,255,0.09);
+  --connector-grad: linear-gradient(180deg, rgba(255,255,255,0.08), rgba(255,255,255,0.16));
+  --inverse-on-accent: currentColor;
+  --accent-on-inverse: #fff;
+}
+
+body.common-page .bg-gradient-header{
+  background: linear-gradient(135deg, var(--salsa), #9c27b0);
+  color:#fff;
+}
+body.common-page *{ font-weight: bold; }
+
+/* Aplicación de tokens base */
+body { background: var(--bs-body-bg); color: var(--bs-body-color); }
+.text-muted { color: var(--muted) !important; }
+.card { background: var(--card-bg); border-color: var(--card-border); }
+
+/* ===== Card-body por nivel (tiers) ===== */
+/* BASIC (verde) */
+.tree-node[data-level="basic"] .card-body {
+  background: color-mix(in srgb, var(--basic) 12%, white);
+  border: 1px solid color-mix(in srgb, var(--basic) 65%, black);
+}
+html[data-theme="dark"] .tree-node[data-level="basic"] .card-body {
+  background: color-mix(in srgb, var(--basic) 16%, var(--card-bg));
+  border: 1px solid color-mix(in srgb, var(--basic) 45%, #121317);
+}
+/* INTERMEDIATE (azul) */
+.tree-node[data-level="intermediate"] .card-body {
+  background: color-mix(in srgb, var(--intermediate) 12%, white);
+  border: 1px solid color-mix(in srgb, var(--intermediate) 65%, black);
+}
+html[data-theme="dark"] .tree-node[data-level="intermediate"] .card-body {
+  background: color-mix(in srgb, var(--intermediate) 16%, var(--card-bg));
+  border: 1px solid color-mix(in srgb, var(--intermediate) 45%, #121317);
+}
+/* ADVANCED (rojo) */
+.tree-node[data-level="advanced"] .card-body {
+  background: color-mix(in srgb, var(--advanced) 12%, white);
+  border: 1px solid color-mix(in srgb, var(--advanced) 65%, black);
+}
+html[data-theme="dark"] .tree-node[data-level="advanced"] .card-body {
+  background: color-mix(in srgb, var(--advanced) 16%, var(--card-bg));
+  border: 1px solid color-mix(in srgb, var(--advanced) 45%, #121317);
+}
+
+/* Redondeo */
+.tree-node .card-body { border-radius: 0.75rem; }
+
+/* Superficie sutil */
+.bg-light-subtle { background: var(--surface-subtle) !important; }
+
+/* Navbar/badge dark */
+html[data-theme="dark"] .navbar.bg-dark { background-color: #191b20 !important; }
+html[data-theme="dark"] .badge.text-bg-light { background-color: #2f3340 !important; color: #e6e6e6 !important; }
+
+/* Árbol / Niveles */
+.tree-wrapper { position: relative; margin-top: 1rem; }
+.tree { display: grid; grid-template-columns: 1fr; gap: 2rem; position: relative; }
+.tree-level { display: flex; justify-content: center; }
+.tree-node { width: min(900px, 95%); }
+.tree-connector { height: 40px; position: relative; }
+.tree-connector::before {
+  content: ""; position: absolute; left: 50%; transform: translateX(-50%);
+  width: 2px; height: 100%; background: var(--connector-grad); border-radius: 1px;
+}
+.tree-node[data-level="basic"] { border-left: 6px solid var(--basic); }
+.tree-node[data-level="intermediate"] { border-left: 6px solid var(--intermediate); }
+.tree-node[data-level="advanced"] { border-left: 6px solid var(--advanced); }
+
+/* Hover lift */
+.hover-lift { transition: transform 0.2s, box-shadow 0.2s; box-shadow: var(--elevation-shadow) !important; }
+.hover-lift:hover { transform: translateY(-3px); box-shadow: var(--hover-shadow) !important; }
+
+/* Variaciones */
+.variation-list .variation-item { padding-block: 1rem; }
+.variation-head h6 { margin: 0; font-weight: 700; }
+.variation-meta { display: flex; gap: 0.5rem; flex-wrap: wrap; }
+.variation-desc { line-height: 1.5; }
+.variation-grid { display: grid; grid-template-columns: 1fr; gap: 1rem; }
+@media (min-width: 768px) { .variation-grid { grid-template-columns: 1fr 1fr; align-items: start; } }
+.variation-notes ul { padding-left: 1.1rem; margin-bottom: 0.5rem; }
+
+/* Previsualización vídeo */
+.video-preview { position: relative; cursor: pointer; background: #000; border-radius: 0.5rem; overflow: hidden; }
+html[data-theme="dark"] .video-preview { background: #252831; }
+.video-thumb { width: 100%; height: 100%; object-fit: cover; display: block; filter: brightness(0.92); transition: filter 0.2s, transform 0.2s; }
+html[data-theme="dark"] .video-thumb { filter: brightness(0.98); }
+.video-preview:hover .video-thumb { filter: brightness(1); transform: scale(1.01); }
+.video-play {
+  position: absolute; inset: 0; margin: auto; width: 64px; height: 64px; border-radius: 50%;
+  background: var(--video-play-bg); border: 0; font-size: 28px; color: var(--video-play-color);
+  display: grid; place-items: center; box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.25);
+  transition: transform 0.15s, background 0.2s, color 0.2s;
+}
+.video-play:hover { transform: scale(1.05); background: #fff; color: var(--salsa); }
+html[data-theme="dark"] .video-play { box-shadow: 0 0.5rem 1rem rgba(255, 255, 255, 0.12); }
+html[data-theme="dark"] .video-play:hover { background: #0d0f14; color: #f9d15b; }
+.video-preview.is-playing .video-play, .video-preview.is-playing .video-thumb { display: none; }
+
+/* Scroll-top */
+.scroll-top { position: fixed; right: 1rem; bottom: 1rem; z-index: 1030; width: 56px; height: 56px; display: grid; place-items: center; opacity: 0; visibility: hidden; transform: scale(0.9); transition: opacity 0.2s, transform 0.2s, visibility 0.2s; }
+.scroll-top.show { opacity: 1; visibility: visible; transform: scale(1); }
+
+/* Toolbar */
+.toolbar .icon-btn { display: inline-grid; place-items: center; width: 36px; height: 36px; padding: 0; border-color: rgba(0,0,0,0.25) !important; }
+.toolbar .icon-btn:hover { border-color: rgba(0,0,0,0.45) !important; }
+html[data-theme="dark"] .toolbar .icon-btn { border-color: rgba(255,255,255,0.25) !important; }
+html[data-theme="dark"] .toolbar .icon-btn:hover { border-color: rgba(255,255,255,0.5) !important; }
+.theme-icon { font-size: 18px; line-height: 1; }
+
+/* Variaciones — fondo por nivel */
+.tree-node[data-level="basic"] .variation-item {
+  background: color-mix(in srgb, var(--basic) 12%, white);
+  border-radius: 0.5rem; padding: 1rem;
+}
+html[data-theme="dark"] .tree-node[data-level="basic"] .variation-item {
+  background: color-mix(in srgb, var(--basic) 16%, var(--card-bg));
+}
+.tree-node[data-level="intermediate"] .variation-item {
+  background: color-mix(in srgb, var(--intermediate) 12%, white);
+  border-radius: 0.5rem; padding: 1rem;
+}
+html[data-theme="dark"] .tree-node[data-level="intermediate"] .variation-item {
+  background: color-mix(in srgb, var(--intermediate) 16%, var(--card-bg));
+}
+.tree-node[data-level="advanced"] .variation-item {
+  background: color-mix(in srgb, var(--advanced) 12%, white);
+  border-radius: 0.5rem; padding: 1rem;
+}
+html[data-theme="dark"] .tree-node[data-level="advanced"] .variation-item {
+  background: color-mix(in srgb, var(--advanced) 16%, var(--card-bg));
+}
+
+/* ============================================================
+   🔥 AÑADIDO POR TU PETICIÓN: Badge sin subrayado en leyenda
+============================================================== */
+.legend-link {
+  text-decoration: none !important;
+  color: inherit !important;
+  cursor: pointer;
+}
+
+.legend-link:hover {
+  text-decoration: none !important;
+}
+
+/* ===== Footer stick-to-bottom (global) ===== */
+html, body { height: 100%; }
+body { display: flex; flex-direction: column; min-height: 100vh; }
+header, section, main, .page-wrapper, .content-wrapper { flex: 1 0 auto; }
+footer { margin-top: auto !important; }
+
+/* ============================================================
+   Alias visual para niveles nuevos (5 → 3 tiers)
+============================================================== */
+.tree-node[data-level="foundation"] .card-body,
+.tree-node[data-level="beginner"] .card-body {
+  background: color-mix(in srgb, var(--basic) 12%, white);
+  border: 1px solid color-mix(in srgb, var(--basic) 65%, black);
+}
+html[data-theme="dark"] .tree-node[data-level="foundation"] .card-body,
+html[data-theme="dark"] .tree-node[data-level="beginner"] .card-body {
+  background: color-mix(in srgb, var(--basic) 16%, var(--card-bg));
+  border: 1px solid color-mix(in srgb, var(--basic) 45%, #121317);
+}
+.tree-node[data-level="improver"] .card-body,
+.tree-node[data-level="intermediate"] .card-body {
+  background: color-mix(in srgb, var(--intermediate) 12%, white);
+  border: 1px solid color-mix(in srgb, var(--intermediate) 65%, black);
+}
+html[data-theme="dark"] .tree-node[data-level="improver"] .card-body,
+html[data-theme="dark"] .tree-node[data-level="intermediate"] .card-body {
+  background: color-mix(in srgb, var(--intermediate) 16%, var(--card-bg));
+  border: 1px solid color-mix(in srgb, var(--intermediate) 45%, #121317);
+}
+.tree-node[data-level="advanced"] .card-body {
+  background: color-mix(in srgb, var(--advanced) 12%, white);
+  border: 1px solid color-mix(in srgb, var(--advanced) 65%, black);
+}
+html[data-theme="dark"] .tree-node[data-level="advanced"] .card-body {
+  background: color-mix(in srgb, var(--advanced) 16%, var(--card-bg));
+  border: 1px solid color-mix(in srgb, var(--advanced) 45%, #121317);
+}
+
+/* ============================================================
+   FIGURES PAGES — HERO UNIFICADO PARA BACHATA / SALSA
+============================================================ */
+
+/* ----- HERO GENERAL (estructura) ----- */
+[class^="hero-"] {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 140px 0;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+[class^="hero-"]::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    circle at center,
+    rgba(0,0,0,0.55) 0%,
+    rgba(0,0,0,0.70) 45%,
+    rgba(0,0,0,0.82) 80%
+  );
+  z-index: 1;
+}
+
+[class^="hero-"] .container {
+  position: relative;
+  z-index: 2;
+}
+
+[class^="hero-"] h1 {
+  font-size: 3rem;
+  letter-spacing: 1px;
+  text-shadow:
+    0 0 10px rgba(0,0,0,0.7),
+    0 3px 8px rgba(0,0,0,0.6);
+}
+
+[class^="hero-"] p {
+  opacity: 0.95;
+  text-shadow: 0 0 8px rgba(0,0,0,0.6);
+}
+
+/* ----- HERO ESPECÍFICOS ----- */
+
+/* Bachata */
+.hero-bachata {
+  background-image: url('https://images.unsplash.com/photo-1532074205216-d0e1f4b87368?q=80');
+}
+/* Salsa Cubana */
+.hero-salsa-cubana {
+  background-image: url('https://images.unsplash.com/photo-1508804185872-d7badad00f7d?q=80');
+}
+/* Salsa en Línea */
+.hero-salsa-linea {
+  background-image: url('https://images.unsplash.com/photo-1517849845537-4d257902454a?q=80');
+}
+
+
+/* ============================================================
+   LEYENDA (UNIFICADA PARA LOS 3 ESTILOS)
+============================================================ */
+.legend-links a {
+  text-decoration: none !important;
+  color: #fff !important;
+  padding: 8px 14px;
+  font-weight: 600;
+  border-radius: 50px;
+  transition: transform .20s ease, opacity .20s ease, box-shadow .20s ease;
+}
+
+.legend-links a:hover {
+  transform: translateY(-3px);
+  opacity: .9;
+  box-shadow: 0 6px 14px rgba(0,0,0,.2);
+}
+
+/* Colores: Tier = Nivel */
+.legend-links .text-bg-success { background-color: var(--basic) !important; }
+.legend-links .text-bg-primary { background-color: var(--intermediate) !important; }
+.legend-links .text-bg-danger  { background-color: var(--advanced) !important; }
+
+
+/* ============================================================
+   ÁRBOL — Tarjetas premium unificadas
+============================================================ */
+
+.tree-node {
+  transition: transform .25s ease, box-shadow .25s ease !important;
+}
+
+.tree-node:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 1rem 2rem rgba(0,0,0,.15) !important;
+}
+
+.tree-node .card-body {
+  padding: 2rem !important;
+  border-radius: 1rem !important;
+}
+
+.tree-connector::before {
+  opacity: .35 !important;
+}
+
+/* Animación suave del collapse */
+.collapse {
+  transition: all .25s ease !important;
+}
+
+
+/* ============================================================
+   COREOGRAFÍAS — Tarjetas mejoradas
+============================================================ */
+
+#coreografias .card {
+  border-radius: 14px !important;
+  overflow: hidden;
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+
+#coreografias .card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 1rem 2rem rgba(0,0,0,.18);
+}
+
+#coreografias .video-preview img {
+  transition: transform .25s ease;
+}
+
+#coreografias .card:hover .video-preview img {
+  transform: scale(1.04);
+}
+
+/* Divider opcional */
+.bachata-divider,
+.salsa-divider {
+  background: rgba(0,0,0,0.05);
+  font-weight: 600;
+  letter-spacing: .4px;
+  padding: 14px 0;
+  text-align: center;
+}
+
+/* ===== Legend: distribución consistente en móvil ===== */
+@media (max-width: 576px) {
+  /* Convierto el contenedor en un flex-wrap con gap */
+  .legend-links .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px 14px;          /* vertical / horizontal */
+    margin-left: 0;          /* neutraliza gutters negativos del row */
+    margin-right: 0;
+  }
+
+  /* Los "col-*" pasan a auto-width en XS para que no fuercen 33%/50% */
+  .legend-links .col-4,
+  .legend-links .col-6,
+  .legend-links .col-md-auto {
+    flex: 0 0 auto;
+    width: auto;             /* clave para que cada badge ocupe su contenido */
+    padding-left: 0;         /* quitamos gutters internos */
+    padding-right: 0;
+  }
+
+  /* El propio badge no necesita margen; el spacing lo da "gap" */
+  .legend-links a {
+    margin: 0 !important;
+  }
+}

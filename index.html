@@ -1,0 +1,107 @@
+
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title data-i18n="home.h1">Bailoteca · Aprende a bailar con claridad</title>
+
+    <!-- CSS terceros -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet"/>
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet"/>
+
+    <!-- CSS propio -->
+    <link href="./assets/css/common.css" rel="stylesheet"/>
+    <link href="./assets/css/bailoteca.css" rel="stylesheet"/>
+  </head>
+
+  <body class="d-flex flex-column min-vh-100 common-page">
+    <!-- NAVBAR (parcial) -->
+    <div id="app-nav"></div>
+
+    <!-- HERO -->
+    <header class="hero-dance-section text-white d-flex align-items-center">
+      <div class="container text-center hero-content">
+        <h1 class="fw-bold mb-3 hero-title" data-i18n="home.h1">Bailoteca</h1>
+
+        <p class="lead mb-4 hero-subtitle" data-i18n="home.lead">
+          La plataforma para aprender Salsa y Bachata con claridad.
+        </p>
+
+        <p>
+          <span data-i18n="home.hero.prefix">Tu biblioteca de baile moderna —</span>
+          <span id="dynamicWords"></span>
+          <span data-i18n="home.hero.suffix"> —</span>
+        </p>
+      </div>
+    </header>
+
+    <!-- CARDS -->
+    <section class="py-5">
+      <div class="container">
+        <div class="row g-4">
+
+          <!-- SALSA -->
+          <div class="col-md-6" data-aos="fade-up">
+            <div
+              class="card card-dance h-100"
+              style="background-image:url('https://images.unsplash.com/photo-1508804185872-d7badad00f7d?auto=format&fit=crop&w=1200&q=80');">
+              <div class="card-body">
+                <h5 class="card-title" data-i18n="home.card.salsa.title">Salsa</h5>
+                <p class="card-text" data-i18n="home.card.salsa.text">
+                  Explora figuras, técnica y rutas guiadas.
+                </p>
+                <div class="d-flex flex-wrap gap-2">
+                  <a class="btn btn-outline-light" href="./pages/salsa-cubana.html" data-i18n="home.cta.salsa.cubana">
+                    Salsa Cubana
+                  </a>
+                  <a class="btn btn-danger" href="./pages/salsa-linea.html" data-i18n="home.cta.salsa.linea">
+                    Salsa en Línea
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- BACHATA -->
+          <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div
+              class="card card-dance h-100"
+              style="background-image:url('https://images.unsplash.com/photo-1532074205216-d0e1f4b87368?auto=format&fit=crop&w=1200&q=80');">
+              <div class="card-body">
+                <h5 class="card-title" data-i18n="home.card.bachata.title">Bachata</h5>
+                <p class="card-text" data-i18n="home.card.bachata.text">
+                  Aprende pasos, estilo y secuencias listas para el social.
+                </p>
+                <a class="btn btn-warning" href="./pages/bachata.html" data-i18n="home.cta.bachata">
+                  Entrar en Bachata
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div><!-- /row -->
+      </div>
+    </section>
+
+    <!-- BOTÓN VOLVER ARRIBA -->
+    <button
+      id="scrollTopBtn"
+      class="scroll-top btn btn-danger btn-lg rounded-circle"
+      data-i18n-attr="aria-label:ui.backToTop"
+      aria-label="Volver arriba">
+      ↑
+    </button>
+
+    <!-- FOOTER (parcial) -->
+    <div id="app-footer"></div>
+
+    <!-- JS terceros -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+    <!-- JS propio -->
+    <script src="./assets/js/common.js"></script>
+  </body>
+</html>

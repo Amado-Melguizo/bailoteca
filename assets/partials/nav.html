@@ -1,0 +1,66 @@
+
+<!-- NAVBAR (PARCIAL COMÚN) -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="{{root}}index.html">Bailoteca</a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav"
+      aria-controls="nav" aria-expanded="false" aria-label="Abrir navegación">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div id="nav" class="collapse navbar-collapse">
+      <ul class="navbar-nav ms-auto align-items-lg-center">
+
+        <li class="nav-item">
+          <a class="nav-link" href="{{root}}index.html" data-i18n="nav.home">Inicio</a>
+        </li>
+
+        <!-- SALSA como dropdown: cubana / en línea -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="salsaMenu" role="button" data-bs-toggle="dropdown"
+             aria-expanded="false" data-i18n="nav.salsa">
+            Salsa
+          </a>
+          <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="salsaMenu">
+            <li>
+              <a class="dropdown-item" href="{{root}}pages/salsa-cubana.html" data-i18n="nav.salsa.cubana">
+                Salsa Cubana
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="{{root}}pages/salsa-linea.html" data-i18n="nav.salsa.linea">
+                Salsa en Línea
+              </a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="{{root}}pages/bachata.html" data-i18n="nav.bachata">Bachata</a>
+        </li>
+        
+        <!-- Toolbar: tema e idioma -->
+        <li class="nav-item ms-lg-3">
+          <div class="toolbar d-flex align-items-center gap-2">
+            <!-- Modo oscuro/claro -->
+            <button id="themeToggle" class="btn btn-outline-light btn-sm icon-btn" type="button"
+              aria-label="Cambiar modo" data-i18n-attr="aria-label:theme.toggle" title="Modo oscuro/claro">
+              <span class="theme-icon" aria-hidden="true">🌙</span>
+            </button>
+            <!-- Idioma ES -->
+            <button class="btn btn-outline-light btn-sm icon-btn langToggle" type="button" data-lang="es"
+              aria-label="Español" data-i18n-attr="aria-label:lang.es" title="Español">
+              🇪🇸
+            </button>
+            <!-- Idioma EN -->
+            <button class="btn btn-outline-light btn-sm icon-btn langToggle" type="button" data-lang="en"
+              aria-label="English" data-i18n-attr="aria-label:lang.en" title="English">
+              🇬🇧
+            </button>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
