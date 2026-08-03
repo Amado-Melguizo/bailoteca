@@ -1,0 +1,197 @@
+/* ==========================================================
+   TREE LAYOUT
+========================================================== */
+
+.tree-wrapper{
+
+    margin:2rem auto;
+
+    position:relative;
+
+}
+
+.tree{
+
+    display:grid;
+
+    gap:2rem;
+
+}
+
+.tree-level{
+
+    display:flex;
+
+    justify-content:center;
+
+}
+
+.tree-node{
+
+    width:min(950px,95%);
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+    transition:
+
+        transform .25s,
+
+        box-shadow .25s;
+
+}
+
+.tree-node:hover{
+
+    transform:translateY(-6px);
+
+    box-shadow:var(--hover-shadow);
+
+}
+
+.tree-node .card{
+
+    border:0;
+
+}
+
+.tree-node .card-body{
+
+    padding:2rem;
+
+    border-radius:18px;
+
+}
+
+/* ==========================================================
+   CONNECTOR
+========================================================== */
+
+.tree-connector{
+
+    height:45px;
+
+    position:relative;
+
+}
+
+.tree-connector::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    width:3px;
+
+    height:100%;
+
+    background:var(--connector-grad);
+
+    border-radius:4px;
+
+}
+
+/* ==========================================================
+   LEVEL COLORS
+========================================================== */
+
+.tree-node[data-level="foundation"],
+
+.tree-node[data-level="beginner"]{
+
+    border-left:8px solid var(--basic);
+
+}
+
+.tree-node[data-level="improver"],
+
+.tree-node[data-level="intermediate"]{
+
+    border-left:8px solid var(--intermediate);
+
+}
+
+.tree-node[data-level="advanced"]{
+
+    border-left:8px solid var(--advanced);
+
+}
+
+/* ==========================================================
+   CARD COLORS
+========================================================== */
+
+.tree-node[data-level="foundation"] .card-body,
+.tree-node[data-level="beginner"] .card-body{
+
+    background:
+        color-mix(
+            in srgb,
+            var(--basic) 12%,
+            white
+        );
+
+}
+
+.tree-node[data-level="improver"] .card-body,
+.tree-node[data-level="intermediate"] .card-body{
+
+    background:
+        color-mix(
+            in srgb,
+            var(--intermediate) 12%,
+            white
+        );
+
+}
+
+.tree-node[data-level="advanced"] .card-body{
+
+    background:
+        color-mix(
+            in srgb,
+            var(--advanced) 12%,
+            white
+        );
+
+}
+
+html[data-theme="dark"] .tree-node[data-level="foundation"] .card-body,
+html[data-theme="dark"] .tree-node[data-level="beginner"] .card-body{
+
+    background:
+        color-mix(
+            in srgb,
+            var(--basic) 16%,
+            var(--card-bg)
+        );
+
+}
+
+html[data-theme="dark"] .tree-node[data-level="improver"] .card-body,
+html[data-theme="dark"] .tree-node[data-level="intermediate"] .card-body{
+
+    background:
+        color-mix(
+            in srgb,
+            var(--intermediate) 16%,
+            var(--card-bg)
+        );
+
+}
+
+html[data-theme="dark"] .tree-node[data-level="advanced"] .card-body{
+
+    background:
+        color-mix(
+            in srgb,
+            var(--advanced) 16%,
+            var(--card-bg)
+        );
+
+}

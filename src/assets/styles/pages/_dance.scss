@@ -1,0 +1,198 @@
+/* ============================================================
+   ÁRBOL DE FIGURAS
+============================================================ */
+
+.tree-wrapper {
+  position: relative;
+  margin-top: 2rem;
+}
+
+.tree {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.tree-level {
+  display: flex;
+  justify-content: center;
+}
+
+.tree-node {
+  width: min(900px, 95%);
+  border-radius: 18px;
+  overflow: hidden;
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.tree-node:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+}
+
+.tree-node .card-body {
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+/* ======================================
+   Conector entre niveles
+====================================== */
+
+.tree-connector {
+  height: 40px;
+  position: relative;
+}
+
+.tree-connector::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2px;
+  height: 100%;
+  background: var(--connector-grad);
+  opacity: 0.35;
+}
+
+/* ======================================
+   Colores del lateral
+====================================== */
+
+.tree-node[data-level='foundation'],
+.tree-node[data-level='beginner'] {
+  border-left: 6px solid var(--basic);
+}
+
+.tree-node[data-level='improver'],
+.tree-node[data-level='intermediate'] {
+  border-left: 6px solid var(--intermediate);
+}
+
+.tree-node[data-level='advanced'] {
+  border-left: 6px solid var(--advanced);
+}
+
+/* ======================================
+   Fondo por nivel
+====================================== */
+
+.tree-node[data-level='foundation'] .card-body,
+.tree-node[data-level='beginner'] .card-body {
+  background: color-mix(in srgb, var(--basic) 12%, white);
+  border: 1px solid color-mix(in srgb, var(--basic) 65%, black);
+}
+
+.tree-node[data-level='improver'] .card-body,
+.tree-node[data-level='intermediate'] .card-body {
+  background: color-mix(in srgb, var(--intermediate) 12%, white);
+  border: 1px solid color-mix(in srgb, var(--intermediate) 65%, black);
+}
+
+.tree-node[data-level='advanced'] .card-body {
+  background: color-mix(in srgb, var(--advanced) 12%, white);
+  border: 1px solid color-mix(in srgb, var(--advanced) 65%, black);
+}
+
+/* ======================================
+   Dark Mode
+====================================== */
+
+html[data-theme='dark'] .tree-node[data-level='foundation'] .card-body,
+html[data-theme='dark'] .tree-node[data-level='beginner'] .card-body {
+  background: color-mix(in srgb, var(--basic) 16%, var(--card-bg));
+  border: 1px solid color-mix(in srgb, var(--basic) 45%, #121317);
+}
+
+html[data-theme='dark'] .tree-node[data-level='improver'] .card-body,
+html[data-theme='dark'] .tree-node[data-level='intermediate'] .card-body {
+  background: color-mix(in srgb, var(--intermediate) 16%, var(--card-bg));
+  border: 1px solid color-mix(in srgb, var(--intermediate) 45%, #121317);
+}
+
+html[data-theme='dark'] .tree-node[data-level='advanced'] .card-body {
+  background: color-mix(in srgb, var(--advanced) 16%, var(--card-bg));
+  border: 1px solid color-mix(in srgb, var(--advanced) 45%, #121317);
+}
+
+/* ======================================
+   Variaciones
+====================================== */
+
+.variation-list .variation-item {
+  padding-block: 1rem;
+}
+
+.variation-item {
+  border-radius: 0.75rem;
+  padding: 1rem;
+}
+
+.tree-node[data-level='foundation'] .variation-item,
+.tree-node[data-level='beginner'] .variation-item {
+  background: color-mix(in srgb, var(--basic) 12%, white);
+}
+
+.tree-node[data-level='improver'] .variation-item,
+.tree-node[data-level='intermediate'] .variation-item {
+  background: color-mix(in srgb, var(--intermediate) 12%, white);
+}
+
+.tree-node[data-level='advanced'] .variation-item {
+  background: color-mix(in srgb, var(--advanced) 12%, white);
+}
+
+html[data-theme='dark'] .tree-node[data-level='foundation'] .variation-item,
+html[data-theme='dark'] .tree-node[data-level='beginner'] .variation-item {
+  background: color-mix(in srgb, var(--basic) 16%, var(--card-bg));
+}
+
+html[data-theme='dark'] .tree-node[data-level='improver'] .variation-item,
+html[data-theme='dark'] .tree-node[data-level='intermediate'] .variation-item {
+  background: color-mix(in srgb, var(--intermediate) 16%, var(--card-bg));
+}
+
+html[data-theme='dark'] .tree-node[data-level='advanced'] .variation-item {
+  background: color-mix(in srgb, var(--advanced) 16%, var(--card-bg));
+}
+
+.variation-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.variation-head h6 {
+  margin: 0;
+  font-weight: 700;
+}
+
+.variation-meta {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.variation-desc {
+  margin-top: 0.75rem;
+  line-height: 1.6;
+}
+
+.variation-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+@media (min-width: 768px) {
+  .variation-grid {
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+  }
+}
+
+.variation-notes ul {
+  padding-left: 1.2rem;
+}

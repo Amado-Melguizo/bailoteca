@@ -1,0 +1,103 @@
+/* ==========================================================
+   LEGEND
+========================================================== */
+
+.legend-links{
+
+margin-bottom:2rem;
+
+}
+
+.legend-links .row{
+
+justify-content:center;
+
+}
+
+.legend-link{
+
+display:inline-flex;
+
+align-items:center;
+
+justify-content:center;
+
+padding:.65rem 1.2rem;
+
+border-radius:999px;
+
+font-weight:700;
+
+color:white!important;
+
+transition:
+
+transform .25s,
+
+box-shadow .25s,
+
+opacity .25s;
+
+}
+
+.legend-link:hover{
+
+transform:translateY(-3px);
+
+opacity:.95;
+
+box-shadow:
+
+0 .75rem 1.5rem rgba(0,0,0,.18);
+
+}
+
+.legend-links .text-bg-success{
+
+background:var(--basic)!important;
+
+}
+
+.legend-links .text-bg-primary{
+
+background:var(--intermediate)!important;
+
+}
+
+.legend-links .text-bg-danger{
+
+background:var(--advanced)!important;
+
+}
+
+/* ==========================================================
+   MOBILE
+========================================================== */
+
+@media(max-width:576px){
+
+.legend-links .row{
+
+display:flex;
+
+flex-wrap:wrap;
+
+gap:12px;
+
+margin:0;
+
+}
+
+.legend-links .col-4,
+.legend-links .col-6,
+.legend-links .col-md-auto{
+
+width:auto;
+
+flex:0 0 auto;
+
+padding:0;
+
+}
+
+}

@@ -1,0 +1,173 @@
+/* ==========================================================
+   HERO GENERAL
+========================================================== */
+
+.hero-dance-section,
+[class^="hero-"] {
+
+  position: relative;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  min-height: 60vh;
+
+  padding: 140px 0;
+
+  overflow: hidden;
+
+  background-position: center;
+
+  background-repeat: no-repeat;
+
+  background-size: cover;
+
+}
+
+.hero-dance-section::before,
+[class^="hero-"]::before {
+
+  content: "";
+
+  position: absolute;
+
+  inset: 0;
+
+  background:
+    radial-gradient(
+      circle,
+      rgba(0,0,0,.45),
+      rgba(0,0,0,.70)
+    );
+
+}
+
+.hero-content,
+[class^="hero-"] .container{
+
+  position: relative;
+
+  z-index:2;
+
+  text-align:center;
+
+  color:white;
+
+}
+
+.hero-title,
+[class^="hero-"] h1{
+
+  font-size:clamp(2.4rem,5vw,4rem);
+
+  font-weight:800;
+
+  letter-spacing:1px;
+
+  text-shadow:
+
+      0 5px 15px rgba(0,0,0,.55);
+
+}
+
+.hero-subtitle,
+[class^="hero-"] p{
+
+  margin-top:1rem;
+
+  font-size:1.2rem;
+
+  opacity:.95;
+
+}
+
+/* ==========================================================
+   HOME
+========================================================== */
+
+.hero-dance-section{
+
+  background-image:url("https://media1.tenor.com/images/614ee6d0770138b76547b448c210dc2f/tenor.gif");
+
+}
+
+/* ==========================================================
+   DANCE PAGES
+========================================================== */
+
+.hero-bachata{
+
+  background-image:url("https://images.unsplash.com/photo-1532074205216-d0e1f4b87368?q=80");
+
+}
+
+.hero-salsa-cubana{
+
+  background-image:url("https://images.unsplash.com/photo-1508804185872-d7badad00f7d?q=80");
+
+}
+
+.hero-salsa-linea{
+
+  background-image:url("https://images.unsplash.com/photo-1517849845537-4d257902454a?q=80");
+
+}
+
+/* ==========================================================
+   Dynamic words
+========================================================== */
+
+.hero-dynamic-text{
+
+  margin-top:25px;
+
+  font-size:1.3rem;
+
+  font-weight:700;
+
+}
+
+#dynamicWords{
+
+  color:var(--bailoteca-yellow);
+
+  animation:fadeWord 1.6s infinite;
+
+}
+
+@keyframes fadeWord{
+
+0%{
+
+opacity:0;
+
+transform:translateY(10px);
+
+}
+
+20%{
+
+opacity:1;
+
+transform:none;
+
+}
+
+80%{
+
+opacity:1;
+
+}
+
+100%{
+
+opacity:0;
+
+transform:translateY(-10px);
+
+}
+
+}

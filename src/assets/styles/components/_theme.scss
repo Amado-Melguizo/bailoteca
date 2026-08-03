@@ -1,0 +1,85 @@
+/* ==========================================================
+   COMPONENTES BASE
+========================================================== */
+
+.card{
+
+    background:var(--card-bg);
+
+    border-color:var(--card-border);
+
+    transition:
+
+        background .25s,
+
+        border-color .25s,
+
+        color .25s;
+
+}
+
+.hover-lift{
+
+    transition:
+
+        transform .25s,
+
+        box-shadow .25s;
+
+    box-shadow:var(--elevation-shadow);
+
+}
+
+.hover-lift:hover{
+
+    transform:translateY(-6px);
+
+    box-shadow:var(--hover-shadow);
+
+}
+
+html[data-theme="dark"] .navbar{
+
+    background:#17191d!important;
+
+}
+
+html[data-theme="dark"] .dropdown-menu{
+
+    background:#2b2e38;
+
+    color:white;
+
+}
+
+html[data-theme="dark"] .dropdown-item{
+
+    color:white;
+
+}
+
+html[data-theme="dark"] .dropdown-item:hover{
+
+    background:#3a3d48;
+
+}
+
+html[data-theme="dark"] .modal-content{
+
+    background:var(--card-bg);
+
+}
+
+html[data-theme="dark"] .accordion-item{
+
+    background:var(--card-bg);
+
+}
+
+html[data-theme="dark"] .accordion-button{
+
+    background:var(--card-bg);
+
+    color:white;
+
+}
